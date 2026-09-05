@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Al_Barkat Trading LLC</title>
+  
+  <!-- Tailwind CSS CDN for utility classes -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  
+  <!-- SheetJS for Excel (.xlsx) Import & Export -->
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+
+  <!-- JsBarcode for Barcode Rendering -->
+  <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.6/dist/JsBarcode.all.min.js"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="brand-logo">
+        <div class="brand-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="m7.5 4.27 9 5.15"/>
+            <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/>
+            <path d="m3.3 7 8.7 5 8.7-5"/>
+            <path d="M12 22V12"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>Al_Barkat Trading LLC</h1>
+          <p>Product & SKU Catalog Management System</p>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <div id="autoSaveIndicator" class="autosave-badge" title="IndexedDB real-time automatic saving">
+          <span class="autosave-dot"></span>
+          <span id="autoSaveText">All changes auto-saved</span>
+        </div>
+
+        <button id="btnSaveCatalogFile" class="btn btn-secondary btn-sm" title="Save updated catalog to file (initial-catalog.js) to sync changes to any computer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+          Save to File
+        </button>
+
+        <button id="btnImportModal" class="btn btn-secondary btn-sm" title="Upload CSV, Excel, or JSON">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          Import Data
+        </button>
+
+        <button id="btnExportModal" class="btn btn-secondary btn-sm" title="Export to CSV, Excel, or JSON">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Export Data
+        </button>
+
+        <button id="btnPrintBarcodes" class="btn btn-secondary btn-sm" title="Print Barcode Labels">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
+          Print Barcodes
+        </button>
+
+        <button id="btnNewProduct" class="btn btn-primary btn-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          Add Product
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Quick Statistics Bar -->
+  <div class="stats-bar">
+    <div class="stat-card">
+      <div class="stat-icon blue">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+      </div>
+      <div class="stat-info">
+        <div class="stat-value" id="statTotalItems">0</div>
+        <div class="stat-label">Total Products</div>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-icon purple">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+      </div>
+      <div class="stat-info">
+        <div class="stat-value" id="statTotalBrands">0</div>
+        <div class="stat-label">Active Brands</div>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-icon green">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"/></svg>
+      </div>
+      <div class="stat-info">
+        <div class="stat-value" id="statTotalCategories">0</div>
+        <div class="stat-label">Categories</div>
+      </div>
+    </div>
+
+    <div class="stat-card">
+      <div class="stat-icon amber">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>
+      </div>
+      <div class="stat-info">
+        <div class="stat-value" id="statTotalSuppliers">0</div>
+        <div class="stat-label">Suppliers</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Content Container -->
+  <main class="main-container">
+    
+    <!-- Controls / Toolbar Card -->
+    <div class="toolbar-card">
+      <div class="toolbar-row-top">
+        
+        <!-- Global Search Input -->
+        <div class="search-box">
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" id="globalSearchInput" placeholder="Search by SKU, Name, Barcode, Saudi SKU, Alt SKU, Brand, Supplier..." />
+          <button id="clearSearchBtn" class="clear-btn" title="Clear search">&times;</button>
+        </div>
+
+        <!-- Filter Dropdowns -->
+        <div class="toolbar-filters">
+          <select id="filterBrand" class="filter-select">
+            <option value="all">All Brands</option>
+          </select>
+
+          <select id="filterCategory" class="filter-select">
+            <option value="all">All Categories</option>
+          </select>
+
+          <select id="filterSupplier" class="filter-select">
+            <option value="all">All Suppliers</option>
+          </select>
+
+          <!-- View Mode Toggle Buttons -->
+          <div class="view-toggle-group">
+            <button id="viewTableBtn" class="view-btn active" title="Table View">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+              Table
+            </button>
+            <button id="viewGridBtn" class="view-btn" title="Card Grid View">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
+              Cards
+            </button>
+          </div>
+
+          <button id="btnAutoLinkImages" class="btn btn-purple btn-sm" title="Auto-match and link images from sku_images/ folder">
+            ⚡ Auto-Link Images
+          </button>
+        </div>
+      </div>
+
+      <!-- Active Filter Chips -->
+      <div id="activeFilterChips" class="active-filters-bar" style="display: none;"></div>
+    </div>
+
+    <!-- Data Table View -->
+    <div id="tableWrapper" class="table-container">
+      <div class="table-responsive">
+        <table class="catalog-table">
+          <thead>
+            <tr>
+              <th style="width: 40px; text-align: center;">
+                <input type="checkbox" id="selectAllRows" title="Select all rows on this page" />
+              </th>
+              <th style="width: 64px;">Images</th>
+              <th>Product Info</th>
+              <th>SKU & Saudi SKU</th>
+              <th>Alternative SKUs</th>
+              <th>Barcode</th>
+              <th>Supplier Info</th>
+              <th style="text-align: right;">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="catalogTableBody">
+            <!-- Dynamic Rows -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Table Footer / Pagination -->
+      <div class="table-footer">
+        <div id="paginationInfo" class="text-xs text-slate-500">
+          Showing 0 products
+        </div>
+        <div id="paginationControls" class="pagination">
+          <!-- Page Buttons -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Card / Grid View -->
+    <div id="gridWrapper" class="catalog-grid" style="display: none;">
+      <!-- Dynamic Product Cards -->
+    </div>
+
+    <!-- Empty State -->
+    <div id="catalogEmptyState" class="empty-state" style="display: none;">
+      <div class="empty-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </div>
+      <h3>No Products Found</h3>
+      <p>No products match your search query or filter criteria. Try adjusting your filters or add a new product.</p>
+      <div class="flex gap-2 mt-2">
+        <button class="btn btn-secondary btn-sm" onclick="AppUI.clearAllFilters()">Clear All Filters</button>
+        <button class="btn btn-primary btn-sm" onclick="AppUI.openProductModal()">+ Add New Product</button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ==================== MODALS ==================== -->
+
+  <!-- 1. Product Form Modal (Create & Edit) -->
+  <div id="productFormModal" class="modal-backdrop">
+    <div class="modal-card modal-lg">
+      <div class="modal-header">
+        <h2 id="productModalTitle">Add New Product</h2>
+        <button class="btn-icon" data-close-modal>&times;</button>
+      </div>
+
+      <form id="productForm" class="flex flex-col flex-1 overflow-hidden">
+        <div class="modal-body">
+          <div class="form-grid">
+            
+            <!-- Section 1: General Product Information -->
+            <div class="form-section-title">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+              General Information
+            </div>
+
+            <div class="form-group">
+              <div class="flex items-center justify-between mb-1">
+                <label class="form-label mb-0">Brand Name <span class="required">*</span></label>
+                <span class="text-[11px] text-slate-400">Select or enter new</span>
+              </div>
+              <input type="text" id="formBrand" list="brandSuggestionsList" class="form-input" placeholder="e.g. Homecare, Redblossom, NeoOrbit..." required autocomplete="off" />
+              <datalist id="brandSuggestionsList">
+                <option value="Homecare"></option>
+                <option value="Redblossom"></option>
+                <option value="NeoOrbit"></option>
+              </datalist>
+              <div class="form-quick-chips" id="brandQuickPicks">
+                <!-- Clickable chips populated dynamically -->
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="flex items-center justify-between mb-1">
+                <label class="form-label mb-0">Category <span class="required">*</span></label>
+                <span class="text-[11px] text-slate-400">Auto-suggests from catalog</span>
+              </div>
+              <input type="text" id="formCategory" list="categorySuggestionsList" class="form-input" placeholder="e.g. Christmas, Gift Set, Clock..." required autocomplete="off" />
+              <datalist id="categorySuggestionsList">
+                <!-- Dynamically populated from all created categories -->
+              </datalist>
+              <div class="form-quick-chips" id="categoryQuickPicks">
+                <!-- Clickable chips populated dynamically -->
+              </div>
+            </div>
+
+            <div class="form-group form-full">
+              <label class="form-label">Item Name <span class="required">*</span></label>
+              <input type="text" id="formName" class="form-input" placeholder="e.g. 100 M Cooking Twine, Strong Food Safe Cotton Wraps String" required />
+            </div>
+
+            <!-- Section 2: SKU & Identifiers -->
+            <div class="form-section-title">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 7V4h16v3"/><path d="M9 20h6"/><path d="M12 4v16"/></svg>
+              SKU & Identifiers
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Primary SKU <span class="required">*</span></label>
+              <input type="text" id="formSku" class="form-input font-mono" placeholder="e.g. Z68042E7AD63B8A157FD2Z-1" required />
+              <div id="formImageSuggestionBox" class="text-xs text-purple-700 bg-purple-50 p-2 rounded-lg border border-purple-200 mt-1 flex items-center justify-between" style="display: none;">
+                <span id="formImageSuggestionText">Found image in sku_images!</span>
+                <button type="button" class="btn btn-purple btn-sm py-0.5 px-2 text-[11px]" onclick="AppUI.applySuggestedImages()">Apply Images</button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Saudi SKU (KSA Market Identifier)</label>
+              <input type="text" id="formSaudiSku" class="form-input font-mono" placeholder="e.g. KSA-Z68042E7AD63B8A157FD2Z" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Barcode (UPC / EAN / Code 128)</label>
+              <input type="text" id="formBarcode" class="form-input font-mono" placeholder="e.g. 4060460696911" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Live Barcode Preview</label>
+              <div class="live-barcode-preview">
+                <svg id="formLiveBarcode"></svg>
+              </div>
+            </div>
+
+            <!-- Section 3: Alternative SKUs -->
+            <div class="form-section-title">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="m16 3 4 4-4 4"/><path d="M20 7H4"/><path d="m8 21-4-4 4-4"/><path d="M4 17h16"/></svg>
+              Alternative SKUs
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Alternative SKU 1</label>
+              <input type="text" id="formAltSku1" class="form-input font-mono" placeholder="e.g. Z68042E7AD63B8A157FD2Z" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Alternative SKU 2</label>
+              <input type="text" id="formAltSku2" class="form-input font-mono" placeholder="e.g. BC-4060460696911" />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Alternative SKU 3</label>
+              <input type="text" id="formAltSku3" class="form-input font-mono" placeholder="e.g. ALB-TWINE-100M" />
+            </div>
+
+            <!-- Section 4: Supplier Information -->
+            <div class="form-section-title">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/></svg>
+              Supplier Details
+            </div>
+
+            <div class="form-group">
+              <div class="flex items-center justify-between mb-1">
+                <label class="form-label mb-0">Supplier Name</label>
+                <span class="text-[11px] text-slate-400">Select or enter new</span>
+              </div>
+              <input type="text" id="formSupplierName" list="supplierSuggestionsList" class="form-input" placeholder="e.g. DF IMPORT & EXPORT LTD..." autocomplete="off" />
+              <datalist id="supplierSuggestionsList">
+                <option value="DF IMPORT & EXPORT LTD"></option>
+                <option value="JIYANGSUYIFAN INTERNATIONAL TRADE CO. LTD"></option>
+                <option value="Beone Mart Trading LLC"></option>
+                <option value="Shenzhen Weichenyang CHINA"></option>
+                <option value="Guangzhou Huapan Cosmetics"></option>
+                <option value="Yuyao Artisans Commodity CO.,LTD"></option>
+                <option value="NINGBO HAWARD RAZOR CO.,LTD."></option>
+                <option value="Dongguan Wontravel Electric Co., Ltd"></option>
+              </datalist>
+              <div class="form-quick-chips" id="supplierQuickPicks">
+                <!-- Clickable chips populated dynamically -->
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Supplier Code</label>
+              <input type="text" id="formSupplierCode" class="form-input font-mono" placeholder="e.g. 45453" />
+            </div>
+
+            <!-- Section 5: Dual Product Images -->
+            <div class="form-section-title">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+              Product Images (Image 1 & Image 2)
+            </div>
+
+            <!-- Image 1 Uploader -->
+            <div class="form-group">
+              <label class="form-label">Image 1 (Primary)</label>
+              <div id="image1Dropzone" class="image-dropzone">
+                <input type="file" id="image1FileInput" accept="image/*" class="hidden" />
+                <img id="image1PreviewImg" class="image-preview-filled" style="display: none;" />
+                
+                <div id="image1Placeholder" class="flex flex-col items-center gap-1.5 pointer-events-none">
+                  <svg class="text-slate-400" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                  <span class="text-xs font-semibold text-slate-700">Click or Drag & Drop Image 1</span>
+                  <span class="text-[11px] text-slate-400">PNG, JPG, WEBP, or sku_images path</span>
+                </div>
+
+                <div id="image1Overlay" class="image-overlay-actions">
+                  <button type="button" id="image1RemoveBtn" class="btn btn-danger btn-sm">Remove</button>
+                </div>
+              </div>
+              <input type="text" id="image1UrlInput" class="form-input text-xs mt-1.5" placeholder="Or enter Image 1 URL or path (e.g. sku_images/Z68042E7AD63B8A157FD2Z-1.png)" />
+            </div>
+
+            <!-- Image 2 Uploader -->
+            <div class="form-group">
+              <label class="form-label">Image 2 (Secondary / Alternate)</label>
+              <div id="image2Dropzone" class="image-dropzone">
+                <input type="file" id="image2FileInput" accept="image/*" class="hidden" />
+                <img id="image2PreviewImg" class="image-preview-filled" style="display: none;" />
+                
+                <div id="image2Placeholder" class="flex flex-col items-center gap-1.5 pointer-events-none">
+                  <svg class="text-slate-400" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                  <span class="text-xs font-semibold text-slate-700">Click or Drag & Drop Image 2</span>
+                  <span class="text-[11px] text-slate-400">PNG, JPG, WEBP, or sku_images path</span>
+                </div>
+
+                <div id="image2Overlay" class="image-overlay-actions">
+                  <button type="button" id="image2RemoveBtn" class="btn btn-danger btn-sm">Remove</button>
+                </div>
+              </div>
+              <input type="text" id="image2UrlInput" class="form-input text-xs mt-1.5" placeholder="Or enter Image 2 URL or path (e.g. sku_images/Z68042E7AD63B8A157FD2Z-1_img2.png)" />
+            </div>
+
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-close-modal>Cancel</button>
+          <button type="submit" class="btn btn-primary">Save Product</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 2. Product Detail Drawer / Modal -->
+  <div id="productDetailModal" class="modal-backdrop">
+    <div class="modal-card modal-lg">
+      <div class="modal-header">
+        <h2>Product Details</h2>
+        <button class="btn-icon" data-close-modal>&times;</button>
+      </div>
+      <div class="modal-body" id="productDetailContent">
+        <!-- Dynamic Product Detail Content -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Import Data Wizard Modal -->
+  <div id="importWizardModal" class="modal-backdrop">
+    <div class="modal-card modal-lg">
+      <div class="modal-header">
+        <h2>Import Products Data</h2>
+        <button class="btn-icon" data-close-modal>&times;</button>
+      </div>
+
+      <div class="modal-body">
+        
+        <!-- Step Indicators -->
+        <div class="wizard-steps">
+          <div id="wizardStep1" class="wizard-step-item active">
+            <div class="step-circle">1</div>
+            <span class="step-title">Upload File</span>
+          </div>
+          <div id="wizardStep2" class="wizard-step-item">
+            <div class="step-circle">2</div>
+            <span class="step-title">Column Mapping</span>
+          </div>
+          <div id="wizardStep3" class="wizard-step-item">
+            <div class="step-circle">3</div>
+            <span class="step-title">Preview & Verify</span>
+          </div>
+          <div id="wizardStep4" class="wizard-step-item">
+            <div class="step-circle">4</div>
+            <span class="step-title">Done</span>
+          </div>
+        </div>
+
+        <!-- Step 1: Upload Panel -->
+        <div id="wizardPanel1">
+          <div class="flex flex-col gap-4">
+            <div id="importDropzone" class="border-2 border-dashed border-slate-300 rounded-2xl p-8 text-center bg-slate-50 hover:bg-blue-50/40 hover:border-blue-400 transition cursor-pointer flex flex-col items-center justify-center">
+              <input type="file" id="importFileInput" accept=".csv, .xlsx, .xls, .json" class="hidden" />
+              <svg class="text-blue-500 mb-3" xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              <h3 class="text-base font-bold text-slate-800 mb-1">Click or Drag & Drop File Here</h3>
+              <p class="text-xs text-slate-500 max-w-sm mb-4">Supports Microsoft Excel (.xlsx, .xls), CSV (.csv), and JSON (.json) files containing catalog attributes.</p>
+              <button type="button" class="btn btn-primary btn-sm">Select File From Computer</button>
+            </div>
+
+            <!-- Download Templates -->
+            <div class="bg-blue-50 border border-blue-200 rounded-xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div>
+                <h4 class="text-xs font-bold text-blue-900">Need a format guide?</h4>
+                <p class="text-xs text-blue-700">Download a pre-formatted template with all 13 fields and sample rows.</p>
+              </div>
+              <div class="flex gap-2">
+                <button type="button" class="btn btn-secondary btn-sm bg-white" onclick="ImportExportManager.downloadTemplate('csv')">📄 Download CSV Template</button>
+                <button type="button" class="btn btn-secondary btn-sm bg-white" onclick="ImportExportManager.downloadTemplate('xlsx')">📊 Download Excel Template</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2: Column Mapping Panel -->
+        <div id="wizardPanel2" style="display: none;">
+          <div class="mb-3">
+            <h3 class="text-sm font-bold text-slate-800">Match File Columns to Catalog Fields</h3>
+            <p class="text-xs text-slate-500">We automatically matched known header names. Review or adjust mappings below:</p>
+          </div>
+
+          <div class="border border-slate-200 rounded-xl overflow-hidden max-h-72 overflow-y-auto">
+            <table class="mapping-table">
+              <thead>
+                <tr>
+                  <th>Standard Product Field</th>
+                  <th>Matched File Column</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="wizardMappingBody">
+                <!-- Dynamic Mappings -->
+              </tbody>
+            </table>
+          </div>
+
+          <div class="flex justify-end gap-2 mt-4">
+            <button class="btn btn-secondary btn-sm" onclick="AppUI.renderWizardStep(1)">Back</button>
+            <button class="btn btn-primary btn-sm" onclick="AppUI.goToWizardPreview()">Continue to Preview &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Step 3: Preview & Validation Panel -->
+        <div id="wizardPanel3" style="display: none;">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+            <div>
+              <h3 class="text-sm font-bold text-slate-800">Import Data Preview & Validation</h3>
+              <p class="text-xs text-slate-500">Previewing first rows. Review validation results before executing import.</p>
+            </div>
+            <div class="flex gap-2">
+              <span class="badge bg-slate-100 text-slate-700">Total: <b id="importTotalCount">0</b></span>
+              <span class="badge bg-green-100 text-green-700">Valid: <b id="importValidCount">0</b></span>
+              <span class="badge bg-red-100 text-red-700">Errors: <b id="importErrorCount">0</b></span>
+            </div>
+          </div>
+
+          <div class="border border-slate-200 rounded-xl overflow-hidden max-h-64 overflow-y-auto mb-4">
+            <table class="catalog-table text-xs">
+              <thead>
+                <tr>
+                  <th>Row</th>
+                  <th>SKU</th>
+                  <th>Item Name</th>
+                  <th>Brand</th>
+                  <th>Category</th>
+                  <th>Saudi SKU</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="wizardPreviewBody">
+                <!-- Preview Rows -->
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Duplicate Conflict Strategy -->
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-3.5 mb-4">
+            <label class="text-xs font-bold text-slate-700 block mb-2">If a product SKU already exists in catalog:</label>
+            <div class="flex flex-wrap gap-4 text-xs">
+              <label class="flex items-center gap-1.5 cursor-pointer">
+                <input type="radio" name="importStrategy" value="overwrite" checked />
+                <span class="font-medium text-slate-800">Overwrite & Update existing product</span>
+              </label>
+              <label class="flex items-center gap-1.5 cursor-pointer">
+                <input type="radio" name="importStrategy" value="skip" />
+                <span class="font-medium text-slate-800">Skip row (keep existing product)</span>
+              </label>
+              <label class="flex items-center gap-1.5 cursor-pointer">
+                <input type="radio" name="importStrategy" value="append" />
+                <span class="font-medium text-slate-800">Append as new SKU (-NEW)</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="flex justify-end gap-2">
+            <button class="btn btn-secondary btn-sm" onclick="AppUI.renderWizardStep(2)">Back</button>
+            <button class="btn btn-primary btn-sm" onclick="AppUI.executeImport()">Confirm & Ingest Data</button>
+          </div>
+        </div>
+
+        <!-- Step 4: Summary / Complete Panel -->
+        <div id="wizardPanel4" style="display: none;">
+          <div class="text-center py-6 flex flex-col items-center gap-3">
+            <div class="w-16 h-16 rounded-full bg-green-100 text-green-600 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900">Import Complete!</h3>
+            <p class="text-xs text-slate-600 max-w-sm">Products have been successfully processed into your local catalog database.</p>
+            
+            <div class="flex gap-4 my-2">
+              <div class="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center min-w-[90px]">
+                <div class="text-lg font-bold text-green-600" id="importSummaryAdded">0</div>
+                <div class="text-[11px] text-slate-500 font-medium uppercase">Added</div>
+              </div>
+              <div class="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center min-w-[90px]">
+                <div class="text-lg font-bold text-blue-600" id="importSummaryUpdated">0</div>
+                <div class="text-[11px] text-slate-500 font-medium uppercase">Updated</div>
+              </div>
+              <div class="bg-slate-50 border border-slate-200 rounded-lg p-3 text-center min-w-[90px]">
+                <div class="text-lg font-bold text-slate-500" id="importSummarySkipped">0</div>
+                <div class="text-[11px] text-slate-500 font-medium uppercase">Skipped</div>
+              </div>
+            </div>
+
+            <button class="btn btn-primary btn-sm" data-close-modal>Close & View Catalog</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Export Data Modal -->
+  <div id="exportModal" class="modal-backdrop">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h2>Export Catalog Data</h2>
+        <button class="btn-icon" data-close-modal>&times;</button>
+      </div>
+
+      <div class="modal-body flex flex-col gap-4">
+        
+        <!-- Format Selector -->
+        <div>
+          <label class="form-label mb-2 block">Choose Export File Format</label>
+          <div class="grid grid-cols-3 gap-2">
+            <label class="border border-slate-200 rounded-xl p-3 flex items-center gap-2 cursor-pointer hover:border-blue-500 bg-slate-50">
+              <input type="radio" name="exportFormat" value="csv" checked />
+              <div>
+                <div class="text-xs font-bold text-slate-900">CSV (.csv)</div>
+                <div class="text-[11px] text-slate-500">Universal comma-separated</div>
+              </div>
+            </label>
+
+            <label class="border border-slate-200 rounded-xl p-3 flex items-center gap-2 cursor-pointer hover:border-blue-500 bg-slate-50">
+              <input type="radio" name="exportFormat" value="excel" />
+              <div>
+                <div class="text-xs font-bold text-slate-900">Excel (.xlsx)</div>
+                <div class="text-[11px] text-slate-500">Formatted spreadsheet</div>
+              </div>
+            </label>
+
+            <label class="border border-slate-200 rounded-xl p-3 flex items-center gap-2 cursor-pointer hover:border-blue-500 bg-slate-50">
+              <input type="radio" name="exportFormat" value="json" />
+              <div>
+                <div class="text-xs font-bold text-slate-900">JSON (.json)</div>
+                <div class="text-[11px] text-slate-500">Structured data object</div>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Scope Selector -->
+        <div>
+          <label class="form-label mb-2 block">Select Items to Export</label>
+          <div class="flex flex-col gap-2 text-xs">
+            <label class="flex items-center gap-2 cursor-pointer">
+              <input type="radio" name="exportScope" value="all" checked />
+              <span>All Products in Catalog <span class="text-slate-500 font-semibold" id="exportCountAll">(0 items)</span></span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer">
+              <input type="radio" name="exportScope" value="filtered" />
+              <span>Current Search & Filter Results <span class="text-slate-500 font-semibold" id="exportCountFiltered">(0 items)</span></span>
+            </label>
+            <label class="flex items-center gap-2 cursor-pointer">
+              <input type="radio" id="exportScopeSelected" name="exportScope" value="selected" />
+              <span>Selected Products Only <span class="text-slate-500 font-semibold" id="exportCountSelected">(0 items)</span></span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Select Columns -->
+        <div>
+          <div class="flex items-center justify-between mb-2">
+            <label class="form-label">Include Fields</label>
+            <div class="flex gap-2">
+              <button type="button" class="text-xs text-blue-600 hover:underline cursor-pointer font-medium" onclick="AppUI.toggleAllExportColumns(true)">Select All</button>
+              <span class="text-slate-300">|</span>
+              <button type="button" class="text-xs text-slate-500 hover:underline cursor-pointer font-medium" onclick="AppUI.toggleAllExportColumns(false)">Deselect All</button>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 bg-slate-50 p-3 rounded-xl border border-slate-200 text-xs">
+            <label class="flex items-center gap-1.5"><input type="checkbox" class="export-column-cb" value="brand" checked /> Brand Name</label>
+            <label class="flex items-center gap-1.5"><input type="checkbox" class="export-column-cb" value="category" checked /> Category</label>
+            <label class="flex items-center gap-1.5"><input type="checkbox" class="export-column-cb" value="sku" checked /> SKU (Primary)</label>
+            <label class="flex items-center gap-1.5"><input type="checkbox" class="export-column-cb" value="name" checked /> Item Name</label>
+            <label class="flex items-center gap-1.5"><input type="checkbox" class="export-column-cb" value="barcode" checked /> Barcode</label>
+            <label class="flex items-center gap-1.5"><input type="checkbox" class="export-column-cb" value="supplier_code" checked /> Supplier Code</label>
+            <label class="flex items-center gap-1.5"><input type="checkbox" class="export-column-cb" value="image1" checked /> Image 1</label>
+            <label class="flex items-center gap-1.5"><input type="checkbox" class="export-column-cb" value="image2" checked /> Image 2</label>
+            <label class="flex items-center gap-1.5"><input type="checkbox" class="export-column-cb" value="alt_sku_1" checked /> Alternative SKU 1</label>
+            <label class="flex items-center gap-1.5"><input type="checkbox" class="export-column-cb" value="alt_sku_2" checked /> Alternative SKU 2</label>
+            <label class="flex items-center gap-1.5"><input type="checkbox" class="export-column-cb" value="alt_sku_3" checked /> Alternative SKU 3</label>
+            <label class="flex items-center gap-1.5"><input type="checkbox" class="export-column-cb" value="saudi_sku" checked /> Saudi SKU</label>
+            <label class="flex items-center gap-1.5"><input type="checkbox" class="export-column-cb" value="supplier_name" checked /> Supplier Name</label>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-close-modal>Cancel</button>
+        <button type="button" class="btn btn-primary" onclick="AppUI.executeExport()">⬇ Download Export File</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. Barcode Label Print Modal -->
+  <div id="barcodePrintModal" class="modal-backdrop">
+    <div class="modal-card modal-lg">
+      <div class="modal-header">
+        <h2>Print Barcode Labels Sheet</h2>
+        <button class="btn-icon" data-close-modal>&times;</button>
+      </div>
+
+      <div class="modal-body flex flex-col gap-3">
+        <p class="text-xs text-slate-500">Previewing printable barcode stickers for your catalog items. Click "Print Label Sheet" to send directly to your printer or save as PDF.</p>
+        
+        <div id="printPreviewContainer" class="border border-slate-200 p-4 rounded-xl bg-slate-50 max-h-96 overflow-y-auto">
+          <!-- Print Sheet Preview -->
+          <div id="printBarcodeSheet" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+            <!-- Stickers rendered dynamically -->
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-close-modal>Close</button>
+        <button type="button" class="btn btn-primary" onclick="AppUI.triggerBrowserPrint()">🖨 Print Label Sheet</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. Auto-Link SKU Images Modal -->
+  <div id="autoLinkImagesModal" class="modal-backdrop">
+    <div class="modal-card modal-lg">
+      <div class="modal-header">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-lg bg-purple-100 text-purple-700 flex items-center justify-center font-bold">⚡</div>
+          <div>
+            <h2 class="text-base font-bold text-slate-900">Auto-Link SKU Images</h2>
+            <p class="text-xs text-slate-500">Match product catalog SKUs with images from local folder or directory</p>
+          </div>
+        </div>
+        <button class="btn-icon" data-close-modal>&times;</button>
+      </div>
+
+      <div class="modal-body flex flex-col gap-4">
+        
+        <!-- Methods Tabs -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div id="tabFolderPicker" class="p-4 rounded-xl border-2 border-purple-500 bg-purple-50/50 flex flex-col gap-2">
+            <div class="flex items-center gap-2">
+              <span class="text-base">📁</span>
+              <h3 class="text-xs font-bold text-purple-900">Select Images Folder from Computer</h3>
+            </div>
+            <p class="text-[11px] text-slate-600">Select your <code>sku_images</code> folder (or any folder with product photos). The browser will read all images directly and link them to matching SKUs.</p>
+            <input type="file" id="bulkFolderInput" webkitdirectory directory multiple class="hidden" />
+            <button type="button" class="btn btn-purple btn-sm mt-auto" onclick="document.getElementById('bulkFolderInput').click()">
+              📂 Choose Images Folder...
+            </button>
+          </div>
+
+          <div id="tabAutoScan" class="p-4 rounded-xl border border-slate-200 bg-slate-50 flex flex-col gap-2">
+            <div class="flex items-center gap-2">
+              <span class="text-base">⚡</span>
+              <h3 class="text-xs font-bold text-slate-800">Scan Built-in App Images</h3>
+            </div>
+            <p class="text-[11px] text-slate-600">Instantly auto-match and link all 981 images stored in the application's <code>sku_images/</code> directory.</p>
+            <button type="button" class="btn btn-secondary btn-sm mt-auto" onclick="AppUI.runManifestAutoMatch()">
+              🔍 Scan App Directory
+            </button>
+          </div>
+        </div>
+
+        <!-- Overwrite options -->
+        <div class="flex items-center justify-between bg-slate-50 p-3 rounded-xl border border-slate-200 text-xs">
+          <label class="flex items-center gap-2 cursor-pointer">
+            <input type="checkbox" id="chkOverwriteImages" checked />
+            <span class="font-medium text-slate-800">Overwrite / Refresh already assigned image links</span>
+          </label>
+          <span class="text-slate-400 text-[11px]">Matches on Primary SKU, Alt SKUs, Saudi SKU, Barcode & Name</span>
+        </div>
+
+        <!-- Matching Results Stats Bar -->
+        <div id="autoLinkStatsBar" class="grid grid-cols-4 gap-2 text-center" style="display: none;">
+          <div class="bg-blue-50 border border-blue-200 rounded-lg p-2.5">
+            <div class="text-base font-bold text-blue-700" id="statFilesScanned">0</div>
+            <div class="text-[10px] text-slate-500 uppercase font-semibold">Images Scanned</div>
+          </div>
+          <div class="bg-green-50 border border-green-200 rounded-lg p-2.5">
+            <div class="text-base font-bold text-green-700" id="statProductsMatched">0</div>
+            <div class="text-[10px] text-slate-500 uppercase font-semibold">Products Matched</div>
+          </div>
+          <div class="bg-purple-50 border border-purple-200 rounded-lg p-2.5">
+            <div class="text-base font-bold text-purple-700" id="statImage1Matched">0</div>
+            <div class="text-[10px] text-slate-500 uppercase font-semibold">Image 1 Linked</div>
+          </div>
+          <div class="bg-amber-50 border border-amber-200 rounded-lg p-2.5">
+            <div class="text-base font-bold text-amber-700" id="statImage2Matched">0</div>
+            <div class="text-[10px] text-slate-500 uppercase font-semibold">Image 2 Linked</div>
+          </div>
+        </div>
+
+        <!-- Matching Preview Table -->
+        <div id="autoLinkPreviewContainer" style="display: none;">
+          <h4 class="text-xs font-bold text-slate-800 mb-2">Matched Products Preview:</h4>
+          <div class="border border-slate-200 rounded-xl overflow-hidden max-h-56 overflow-y-auto">
+            <table class="catalog-table text-xs">
+              <thead>
+                <tr>
+                  <th style="width: 50px;">Preview</th>
+                  <th>SKU</th>
+                  <th>Product Name</th>
+                  <th>Image 1</th>
+                  <th>Image 2</th>
+                </tr>
+              </thead>
+              <tbody id="autoLinkPreviewBody">
+                <!-- Dynamic Rows -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-close-modal>Close</button>
+        <button type="button" id="btnApplyAutoLink" class="btn btn-primary" style="display: none;" onclick="AppUI.applyAutoLinkResults()">
+          ✓ Apply Images to Catalog
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toastContainer" class="toast-container"></div>
+
+  <!-- Application Modules -->
+  <script src="image-manifest.js"></script>
+  <script src="initial-catalog.js"></script>
+  <script src="import-export.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
