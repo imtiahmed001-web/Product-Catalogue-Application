@@ -334,6 +334,17 @@ class AppState {
       const dbProducts = await CatalogDB.getAllProducts();
       if (dbProducts && Array.isArray(dbProducts) && dbProducts.length > 0) {
         this.products = dbProducts;
+
+        // Auto-merge: If master catalog contains new products not yet in local DB, import them
+        if (masterData.length > 0) {
+          const existingIdSet = new Set(this.products.map(p => p.id));
+          const newMasterItems = masterData.filter(p => !existingIdSet.has(p.id));
+          if (newMasterItems.length > 0) {
+            this.products = [...this.products, ...newMasterItems];
+            await CatalogDB.saveAllProducts(this.products);
+          }
+        }
+
         // Clean up any dead blob URLs from older browser sessions
         this.products.forEach(p => {
           if (p.image1 && p.image1.startsWith('blob:')) p.image1 = '';
