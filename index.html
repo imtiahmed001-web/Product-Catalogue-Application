@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
   <title>Al_Barkat Trading LLC</title>
   
   <!-- Tailwind CSS CDN for utility classes -->
@@ -38,6 +41,15 @@
       </div>
 
       <div class="header-actions">
+        <!-- Mobile Quick Sync Button -->
+        <button id="btnMobileCloudSync" class="btn btn-sm mobile-sync-btn" onclick="AppUI.forceCloudPull()" title="Force Refresh from Cloud">
+          🔄 Cloud
+        </button>
+
+        <button id="btnCloudSync" class="btn btn-secondary btn-sm" onclick="AppUI.openCloudSyncModal()" title="Sync & Publish catalog directly to GitHub Live">
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+          <span class="btn-text-full">☁️ Cloud Sync</span>
+        </button>
         <div id="autoSaveIndicator" class="autosave-badge" title="IndexedDB real-time automatic saving">
           <span class="autosave-dot"></span>
           <span id="autoSaveText">All changes auto-saved</span>
@@ -823,6 +835,72 @@
         <button type="button" id="btnApplyAutoLink" class="btn btn-primary" style="display: none;" onclick="AppUI.applyAutoLinkResults()">
           ✓ Apply Images to Catalog
         </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. Cloud Sync & GitHub Publisher Modal -->
+  <div id="cloudSyncModal" class="modal-backdrop">
+    <div class="modal-card modal-md">
+      <div class="modal-header">
+        <div class="flex items-center gap-2">
+          <span class="text-xl">☁️</span>
+          <h2>Cloud Synchronization & GitHub Live</h2>
+        </div>
+        <button class="btn-icon" data-close-modal>&times;</button>
+      </div>
+      <div class="modal-body">
+        <!-- Live Status Card -->
+        <div class="sync-status-box mb-4 p-4 rounded-xl border border-slate-700 bg-slate-900/60">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Current Status</span>
+            <span id="cloudModalSyncBadge" class="badge badge-success">Synced with GitHub</span>
+          </div>
+          <div class="grid grid-cols-2 gap-3 mt-3 text-xs">
+            <div class="p-2.5 rounded-lg bg-slate-800/80 border border-slate-700/60">
+              <div class="text-slate-400 text-[11px]">Local Cached Products</div>
+              <div class="text-base font-bold text-white mt-0.5" id="syncLocalCount">912 items (v3)</div>
+            </div>
+            <div class="p-2.5 rounded-lg bg-slate-800/80 border border-slate-700/60">
+              <div class="text-slate-400 text-[11px]">Live GitHub Products</div>
+              <div class="text-base font-bold text-emerald-400 mt-0.5" id="syncRemoteCount">Checking...</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GitHub Publishing Section -->
+        <div class="p-4 rounded-xl border border-slate-700/80 bg-slate-900/40 mb-4">
+          <h3 class="text-xs font-bold text-white uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+            <span>🚀</span> Publish Catalog Updates to GitHub Live
+          </h3>
+          <p class="text-[12px] text-slate-400 mb-3">
+            Save changes (new products, updated barcodes, supplier names, categories) directly to GitHub Pages so everyone opening the app sees the updated catalog automatically.
+          </p>
+
+          <div class="form-group mb-3">
+            <label class="form-label text-xs">GitHub Personal Access Token</label>
+            <input type="password" id="githubTokenInput" class="form-input text-xs font-mono" placeholder="ghp_... or gho_..." autocomplete="off" />
+            <span class="text-[11px] text-slate-500 mt-1 block">Saved only in this browser's local storage for your security. Requires repo permissions.</span>
+          </div>
+
+          <button type="button" id="btnPublishGitHub" class="btn btn-primary btn-sm w-full py-2.5" onclick="AppUI.publishToGitHub()">
+            <span>🚀 Publish Updates to GitHub Live</span>
+          </button>
+        </div>
+
+        <!-- Pull & Force Refresh -->
+        <div class="p-4 rounded-xl border border-slate-700/80 bg-slate-900/40 flex items-center justify-between gap-3">
+          <div>
+            <h4 class="text-xs font-bold text-white">Force Pull Latest from Cloud</h4>
+            <p class="text-[11px] text-slate-400">Flush device cache and download the latest live catalog immediately.</p>
+          </div>
+          <button type="button" class="btn btn-secondary btn-sm shrink-0" onclick="AppUI.forceCloudPull(true)">
+            <span>🔄 Pull Now</span>
+          </button>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-close-modal>Close</button>
       </div>
     </div>
   </div>
