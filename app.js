@@ -529,6 +529,8 @@ class AppState {
 }
 
 const state = new AppState();
+window.state = state;
+window.AppState = AppState;
 
 /**
  * Barcode Drawing Helper
