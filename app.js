@@ -750,7 +750,14 @@ const BarcodeHelper = {
 const AppUI = {
   _suggestedImages: null,
 
+  openThemeModal() {
+    if (window.ThemeManager) {
+      window.ThemeManager.openThemeModal();
+    }
+  },
+
   async init() {
+    ThemeManager.init();
     ImageStorageDB.init();
     await state.loadFromStorage();
     this.bindEvents();
@@ -956,6 +963,7 @@ const AppUI = {
     document.getElementById('btnPrintBarcodes')?.addEventListener('click', () => this.openBarcodePrintModal());
     document.getElementById('btnAutoLinkImages')?.addEventListener('click', () => this.openAutoLinkModal());
     document.getElementById('btnSaveCatalogFile')?.addEventListener('click', () => this.downloadUpdatedCatalogFile());
+    document.getElementById('btnThemeSettings')?.addEventListener('click', () => this.openThemeModal());
     document.getElementById('btnCloudSync')?.addEventListener('click', () => this.openCloudSyncModal());
     document.getElementById('btnMobileCloudSync')?.addEventListener('click', () => this.forceCloudPull());
 
@@ -2455,6 +2463,8 @@ const AppUI = {
 };
 
 // Initialize Application when DOM is ready
+window.AppUI = AppUI;
+
 document.addEventListener('DOMContentLoaded', () => {
   AppUI.init();
 });
