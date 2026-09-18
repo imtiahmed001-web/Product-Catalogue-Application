@@ -854,11 +854,27 @@
       <div class="modal-header">
         <div class="flex items-center gap-2">
           <span class="text-xl">☁️</span>
-          <h2>Cloud Synchronization & GitHub Live</h2>
+          <div>
+            <h2 class="text-base font-bold">Cloud Synchronization & GitHub Live</h2>
+            <p class="text-xs text-slate-400">Keep catalog synchronized across all devices & colleagues</p>
+          </div>
         </div>
         <button class="btn-icon" data-close-modal>&times;</button>
       </div>
       <div class="modal-body">
+        <!-- Explainer Card: What is Cloud Sync & What is it for? -->
+        <div class="p-3.5 mb-4 rounded-xl border border-blue-900/60 bg-blue-950/40 text-xs text-slate-300 flex flex-col gap-2">
+          <div class="font-bold text-blue-300 flex items-center gap-1.5">
+            <span>ℹ️</span> What is Cloud Sync & what is it for?
+          </div>
+          <p class="leading-relaxed">
+            This app is hosted on <strong>GitHub Pages</strong>. When you add or edit products, changes are automatically saved to your computer's browser storage (IndexedDB).
+          </p>
+          <p class="leading-relaxed">
+            <strong>Cloud Sync</strong> pushes your updated catalog directly to your GitHub repository (<code class="font-mono text-blue-300 text-[11px]">catalog.json</code>). Once pushed, GitHub Pages automatically redeploys, so <strong>any phone, tablet, or PC worldwide</strong> instantly sees the latest products without requiring file transfers!
+          </p>
+        </div>
+
         <!-- Live Status Card -->
         <div class="sync-status-box mb-4 p-4 rounded-xl border border-slate-700 bg-slate-900/60">
           <div class="flex items-center justify-between mb-2">
@@ -867,7 +883,7 @@
           </div>
           <div class="grid grid-cols-2 gap-3 mt-3 text-xs">
             <div class="p-2.5 rounded-lg bg-slate-800/80 border border-slate-700/60">
-              <div class="text-slate-400 text-[11px]">Local Cached Products</div>
+              <div class="text-slate-400 text-[11px]">Local Saved Products</div>
               <div class="text-base font-bold text-white mt-0.5" id="syncLocalCount">912 items (v3)</div>
             </div>
             <div class="p-2.5 rounded-lg bg-slate-800/80 border border-slate-700/60">
@@ -880,21 +896,43 @@
         <!-- GitHub Publishing Section -->
         <div class="p-4 rounded-xl border border-slate-700/80 bg-slate-900/40 mb-4">
           <h3 class="text-xs font-bold text-white uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
-            <span>🚀</span> Publish Catalog Updates to GitHub Live
+            <span>🚀</span> GitHub Live Publishing & Auto-Push
           </h3>
           <p class="text-[12px] text-slate-400 mb-3">
-            Save changes (new products, updated barcodes, supplier names, categories) directly to GitHub Pages so everyone opening the app sees the updated catalog automatically.
+            Authenticate once with a GitHub Personal Access Token to enable seamless cloud syncing.
           </p>
 
           <div class="form-group mb-3">
-            <label class="form-label text-xs">GitHub Personal Access Token</label>
-            <input type="password" id="githubTokenInput" class="form-input text-xs font-mono" placeholder="ghp_... or gho_..." autocomplete="off" />
-            <span class="text-[11px] text-slate-500 mt-1 block">Saved only in this browser's local storage for your security. Requires repo permissions.</span>
+            <div class="flex justify-between items-center mb-1">
+              <label class="form-label text-xs mb-0">GitHub Personal Access Token</label>
+              <a href="https://github.com/settings/tokens/new?description=Catalog%20Manager%20Token&scopes=repo" target="_blank" rel="noopener" class="text-[11px] text-blue-400 hover:underline">
+                Generate Token ↗
+              </a>
+            </div>
+            <input type="password" id="githubTokenInput" class="form-input text-xs font-mono" placeholder="ghp_... (Classic Token with 'repo' scope)" autocomplete="off" />
+            <span class="text-[11px] text-slate-500 mt-1 block">Saved safely in this browser only. It is never transmitted anywhere except directly to GitHub's API.</span>
           </div>
 
-          <button type="button" id="btnPublishGitHub" class="btn btn-primary btn-sm w-full py-2.5" onclick="AppUI.publishToGitHub()">
-            <span>🚀 Publish Updates to GitHub Live</span>
-          </button>
+          <!-- Auto-Push Toggle -->
+          <div class="p-3 rounded-lg bg-slate-800/80 border border-slate-700/60 mb-3 flex items-center justify-between gap-3">
+            <div>
+              <label for="chkAutoPushGitHub" class="text-xs font-bold text-white flex items-center gap-1.5 cursor-pointer">
+                <span>⚡ Auto-Push to GitHub Live</span>
+                <span class="badge badge-success text-[10px] py-0.5 px-1.5">Auto</span>
+              </label>
+              <p class="text-[11px] text-slate-400 mt-0.5">Automatically push to GitHub in the background whenever you add or edit a product.</p>
+            </div>
+            <input type="checkbox" id="chkAutoPushGitHub" class="w-4 h-4 rounded text-blue-600 cursor-pointer" onchange="AppUI.toggleAutoPush(this.checked)" />
+          </div>
+
+          <div class="flex flex-col gap-2">
+            <button type="button" id="btnPublishGitHub" class="btn btn-primary btn-sm w-full py-2.5" onclick="AppUI.publishToGitHub()">
+              <span>🚀 Publish Updates to GitHub Live Now</span>
+            </button>
+            <button type="button" id="btnDownloadCatalogJson" class="btn btn-secondary btn-sm w-full py-2" onclick="AppUI.downloadUpdatedCatalogJson()">
+              <span>📥 Download Updated catalog.json</span>
+            </button>
+          </div>
         </div>
 
         <!-- Pull & Force Refresh -->

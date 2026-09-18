@@ -371,7 +371,9 @@ class AppState {
             if (p.image2 && p.image2.startsWith('blob:')) p.image2 = '';
           });
           ImageResolver.autoLinkAll(this.products, false);
-          AppUI.updateSyncStatusBadge('synced', `Synced with GitHub (v${remoteVersion})`);
+          if (typeof AppUI !== 'undefined' && AppUI.updateSyncStatusBadge) {
+            AppUI.updateSyncStatusBadge('synced', `Synced with GitHub (v${remoteVersion})`);
+          }
           return;
         }
       }
@@ -381,10 +383,12 @@ class AppState {
         this.products = dbProducts;
         this.catalogVersion = localVersion;
         this.hasUnpublishedEdits = localHasEdits;
-        if (localHasEdits) {
-          AppUI.updateSyncStatusBadge('warning', 'Unpublished Local Edits');
-        } else {
-          AppUI.updateSyncStatusBadge('synced', `Synced (v${localVersion})`);
+        if (typeof AppUI !== 'undefined' && AppUI.updateSyncStatusBadge) {
+          if (localHasEdits) {
+            AppUI.updateSyncStatusBadge('warning', 'Unpublished Local Edits');
+          } else {
+            AppUI.updateSyncStatusBadge('synced', `Synced (v${localVersion})`);
+          }
         }
         this.products.forEach(p => {
           if (p.image1 && p.image1.startsWith('blob:')) p.image1 = '';
@@ -422,19 +426,35 @@ class AppState {
     // Flag unpublished edits for cross-device sync tracking
     this.hasUnpublishedEdits = true;
     localStorage.setItem('albarkat_has_unpublished_edits', 'true');
-    AppUI.updateSyncStatusBadge('warning', 'Unpublished Changes');
+    
+    if (typeof AppUI !== 'undefined' && AppUI.updateSyncStatusBadge) {
+      AppUI.updateSyncStatusBadge('warning', 'Unpublished Changes');
+    }
 
     // Real-time asynchronous auto-save to IndexedDB with visual indicator
-    AppUI.updateSaveStatus('saving');
+    if (typeof AppUI !== 'undefined' && AppUI.updateSaveStatus) {
+      AppUI.updateSaveStatus('saving');
+    }
+
     CatalogDB.saveAllProducts(this.products).then(success => {
       if (success) {
-        AppUI.updateSaveStatus('saved');
+        if (typeof AppUI !== 'undefined' && AppUI.updateSaveStatus) {
+          AppUI.updateSaveStatus('saved');
+        }
+        // Auto-push to GitHub in background if enabled
+        if (typeof AppUI !== 'undefined' && AppUI.scheduleAutoPushToGitHub) {
+          AppUI.scheduleAutoPushToGitHub();
+        }
       } else {
-        AppUI.updateSaveStatus('error');
+        if (typeof AppUI !== 'undefined' && AppUI.updateSaveStatus) {
+          AppUI.updateSaveStatus('error');
+        }
       }
     }).catch(err => {
       console.error('Auto-save error:', err);
-      AppUI.updateSaveStatus('error');
+      if (typeof AppUI !== 'undefined' && AppUI.updateSaveStatus) {
+        AppUI.updateSaveStatus('error');
+      }
     });
   }
 
@@ -565,165 +585,6 @@ const BarcodeHelper = {
     this.renderFallbackBarcodeSvg(svgElement, cleanVal);
   },
 
-  updateSyncStatusBadge(type = 'synced', label = 'Synced with GitHub') {
-    const badge = document.getElementById('cloudModalSyncBadge');
-    if (badge) {
-      badge.className = `badge ${type === 'warning' ? 'badge-warning' : 'badge-success'}`;
-      badge.textContent = label;
-    }
-  },
-
-  async openCloudSyncModal() {
-    const modal = document.getElementById('cloudSyncModal');
-    if (!modal) return;
-
-    const localCount = document.getElementById('syncLocalCount');
-    const remoteCount = document.getElementById('syncRemoteCount');
-    const tokenInput = document.getElementById('githubTokenInput');
-
-    if (localCount) {
-      localCount.textContent = `${state.products.length} items (v${state.catalogVersion || 3})`;
-    }
-
-    const savedToken = localStorage.getItem('albarkat_github_token') || localStorage.getItem('sico_github_token') || '';
-    if (tokenInput && !tokenInput.value) {
-      tokenInput.value = savedToken;
-    }
-
-    if (remoteCount) remoteCount.textContent = 'Checking GitHub...';
-
-    // Check remote catalog.json
-    try {
-      const resp = await fetch(`./catalog.json?t=${Date.now()}`, { cache: 'no-store' });
-      if (resp.ok) {
-        const data = await resp.json();
-        if (remoteCount) {
-          remoteCount.textContent = `${data.totalProducts || data.products?.length || 0} items (v${data.version || 1})`;
-        }
-      } else {
-        if (remoteCount) remoteCount.textContent = 'Not accessible';
-      }
-    } catch (e) {
-      if (remoteCount) remoteCount.textContent = 'Offline / Local mode';
-    }
-
-    modal.classList.add('show');
-  },
-
-  async forceCloudPull(manual = true) {
-    localStorage.removeItem('albarkat_has_unpublished_edits');
-    localStorage.removeItem('albarkat_catalog_version');
-    this.showToast('Pulling latest catalog from GitHub Cloud...', 'info');
-    await state.loadFromStorage();
-    this.render();
-    if (manual) {
-      this.showToast(`Refreshed! Loaded ${state.products.length} products from cloud.`, 'success');
-      const modal = document.getElementById('cloudSyncModal');
-      if (modal) modal.classList.remove('show');
-    }
-  },
-
-  async publishToGitHub() {
-    const tokenInput = document.getElementById('githubTokenInput');
-    const token = tokenInput ? tokenInput.value.trim() : '';
-
-    if (!token) {
-      this.showToast('Please enter a GitHub Personal Access Token with repo scope.', 'warning');
-      return;
-    }
-
-    localStorage.setItem('albarkat_github_token', token);
-
-    const btn = document.getElementById('btnPublishGitHub');
-    const origText = btn ? btn.innerHTML : '';
-    if (btn) {
-      btn.disabled = true;
-      btn.innerHTML = '<span>Publishing to GitHub Live... ⏳</span>';
-    }
-
-    try {
-      const owner = 'imtiahmed001-web';
-      const repo = 'Product-Catalogue-Application';
-      const path = 'catalog.json';
-      const nextVersion = (state.catalogVersion || 3) + 1;
-
-      // 1. Get current SHA of catalog.json from GitHub
-      let currentSha = null;
-      try {
-        const getResp = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`, {
-          headers: {
-            'Authorization': `Bearer ${token}`,
-            'Accept': 'application/vnd.github.v3+json'
-          }
-        });
-        if (getResp.ok) {
-          const fileData = await getResp.json();
-          currentSha = fileData.sha;
-        }
-      } catch (err) {
-        console.warn('Could not fetch existing SHA:', err);
-      }
-
-      // 2. Prepare payload
-      const catalogData = {
-        version: nextVersion,
-        lastUpdated: Date.now(),
-        totalProducts: state.products.length,
-        products: state.products
-      };
-
-      const jsonString = JSON.stringify(catalogData, null, 2);
-      // UTF-8 safe base64 encoding
-      const base64Content = btoa(unescape(encodeURIComponent(jsonString)));
-
-      const commitBody = {
-        message: `Update product catalog to version ${nextVersion} (${state.products.length} products)`,
-        content: base64Content,
-        branch: 'main'
-      };
-      if (currentSha) {
-        commitBody.sha = currentSha;
-      }
-
-      // 3. Put content to GitHub
-      const putResp = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`, {
-        method: 'PUT',
-        headers: {
-          'Authorization': `Bearer ${token}`,
-          'Accept': 'application/vnd.github.v3+json',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(commitBody)
-      });
-
-      if (!putResp.ok) {
-        const errData = await putResp.json();
-        throw new Error(errData.message || 'GitHub API rejected commit');
-      }
-
-      // Success! Update local state
-      state.catalogVersion = nextVersion;
-      state.hasUnpublishedEdits = false;
-      localStorage.setItem('albarkat_catalog_version', nextVersion.toString());
-      localStorage.removeItem('albarkat_has_unpublished_edits');
-
-      this.updateSyncStatusBadge('synced', `Synced with GitHub (v${nextVersion})`);
-      this.showToast(`🚀 Published v${nextVersion} to GitHub! GitHub Pages will update in ~30s.`, 'success');
-
-      const modal = document.getElementById('cloudSyncModal');
-      if (modal) modal.classList.remove('show');
-
-    } catch (err) {
-      console.error('Publish error:', err);
-      this.showToast(`Publish failed: ${err.message}`, 'danger');
-    } finally {
-      if (btn) {
-        btn.disabled = false;
-        btn.innerHTML = origText;
-      }
-    }
-  },
-
   renderFallbackBarcodeSvg(svgElement, value) {
     let hash = 0;
     for (let i = 0; i < value.length; i++) hash = (hash << 5) - hash + value.charCodeAt(i);
@@ -776,6 +637,10 @@ const AppUI = {
       indicator.className = 'autosave-badge saving';
       indicator.title = 'Saving data to IndexedDB...';
       text.textContent = 'Auto-saving...';
+    } else if (status === 'syncing') {
+      indicator.className = 'autosave-badge saving';
+      indicator.title = 'Pushing updates to GitHub repository in background...';
+      text.textContent = 'Pushing to GitHub...';
     } else if (status === 'error') {
       indicator.className = 'autosave-badge error';
       indicator.title = 'Failed to auto-save to browser storage';
@@ -786,6 +651,229 @@ const AppUI = {
       indicator.title = `All records permanently saved in browser IndexedDB (Last auto-saved: ${timeStr})`;
       text.textContent = `All changes auto-saved (${timeStr})`;
     }
+  },
+
+  updateSyncStatusBadge(type = 'synced', label = 'Synced with GitHub') {
+    const badge = document.getElementById('cloudModalSyncBadge');
+    if (badge) {
+      badge.className = `badge ${type === 'warning' ? 'badge-warning' : 'badge-success'}`;
+      badge.textContent = label;
+    }
+  },
+
+  async openCloudSyncModal() {
+    const modal = document.getElementById('cloudSyncModal');
+    if (!modal) return;
+
+    const localCount = document.getElementById('syncLocalCount');
+    const remoteCount = document.getElementById('syncRemoteCount');
+    const tokenInput = document.getElementById('githubTokenInput');
+    const autoPushChk = document.getElementById('chkAutoPushGitHub');
+
+    if (localCount) {
+      const editTag = state.hasUnpublishedEdits ? ' (Unpublished Edits)' : ' (Synced)';
+      localCount.textContent = `${state.products.length} items (v${state.catalogVersion || 3})${editTag}`;
+    }
+
+    const savedToken = localStorage.getItem('albarkat_github_token') || localStorage.getItem('sico_github_token') || '';
+    if (tokenInput && !tokenInput.value) {
+      tokenInput.value = savedToken;
+    }
+
+    if (autoPushChk) {
+      autoPushChk.checked = localStorage.getItem('albarkat_auto_push') === 'true';
+    }
+
+    if (remoteCount) remoteCount.textContent = 'Checking GitHub...';
+
+    // Check remote catalog.json
+    try {
+      const resp = await fetch(`./catalog.json?t=${Date.now()}`, { cache: 'no-store' });
+      if (resp.ok) {
+        const data = await resp.json();
+        if (remoteCount) {
+          remoteCount.textContent = `${data.totalProducts || data.products?.length || 0} items (v${data.version || 1})`;
+        }
+      } else {
+        if (remoteCount) remoteCount.textContent = 'Not accessible';
+      }
+    } catch (e) {
+      if (remoteCount) remoteCount.textContent = 'Offline / Local mode';
+    }
+
+    modal.classList.add('show');
+  },
+
+  toggleAutoPush(enabled) {
+    localStorage.setItem('albarkat_auto_push', enabled ? 'true' : 'false');
+    if (enabled) {
+      const token = localStorage.getItem('albarkat_github_token') || localStorage.getItem('sico_github_token') || '';
+      if (!token) {
+        this.showToast('Auto-Push enabled! Please enter your GitHub Personal Access Token above so changes can be committed to GitHub.', 'warning');
+      } else {
+        this.showToast('⚡ Auto-Push enabled! Every addition or edit will automatically push to GitHub.', 'success');
+      }
+    } else {
+      this.showToast('Auto-Push disabled. Changes will save locally in your browser.', 'info');
+    }
+  },
+
+  _autoPushTimer: null,
+
+  scheduleAutoPushToGitHub() {
+    const token = localStorage.getItem('albarkat_github_token') || localStorage.getItem('sico_github_token') || '';
+    const autoPush = localStorage.getItem('albarkat_auto_push') === 'true';
+    if (!token || !autoPush) return;
+
+    if (this._autoPushTimer) clearTimeout(this._autoPushTimer);
+    this._autoPushTimer = setTimeout(() => {
+      this.publishToGitHub(true);
+    }, 3500);
+  },
+
+  async forceCloudPull(manual = true) {
+    localStorage.removeItem('albarkat_has_unpublished_edits');
+    localStorage.removeItem('albarkat_catalog_version');
+    this.showToast('Pulling latest catalog from GitHub Cloud...', 'info');
+    await state.loadFromStorage();
+    this.render();
+    if (manual) {
+      this.showToast(`Refreshed! Loaded ${state.products.length} products from cloud.`, 'success');
+      const modal = document.getElementById('cloudSyncModal');
+      if (modal) modal.classList.remove('show');
+    }
+  },
+
+  async publishToGitHub(silent = false) {
+    const tokenInput = document.getElementById('githubTokenInput');
+    let token = tokenInput ? tokenInput.value.trim() : '';
+    if (!token) {
+      token = localStorage.getItem('albarkat_github_token') || localStorage.getItem('sico_github_token') || '';
+    }
+
+    if (!token) {
+      if (!silent) {
+        this.showToast('Please enter a GitHub Personal Access Token with repo scope in Cloud Sync.', 'warning');
+        this.openCloudSyncModal();
+      }
+      return;
+    }
+
+    localStorage.setItem('albarkat_github_token', token);
+
+    const btn = document.getElementById('btnPublishGitHub');
+    const origText = btn ? btn.innerHTML : '';
+    if (btn && !silent) {
+      btn.disabled = true;
+      btn.innerHTML = '<span>Publishing to GitHub Live... ⏳</span>';
+    }
+
+    this.updateSaveStatus('syncing');
+
+    try {
+      const owner = 'imtiahmed001-web';
+      const repo = 'Product-Catalogue-Application';
+      const path = 'catalog.json';
+      const nextVersion = (state.catalogVersion || 3) + 1;
+
+      // 1. Get current SHA of catalog.json from GitHub
+      let currentSha = null;
+      try {
+        const getResp = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`, {
+          headers: {
+            'Authorization': `Bearer ${token}`,
+            'Accept': 'application/vnd.github.v3+json'
+          }
+        });
+        if (getResp.ok) {
+          const fileData = await getResp.json();
+          currentSha = fileData.sha;
+        }
+      } catch (err) {
+        console.warn('Could not fetch existing SHA:', err);
+      }
+
+      // 2. Prepare payload
+      const catalogData = {
+        version: nextVersion,
+        lastUpdated: Date.now(),
+        totalProducts: state.products.length,
+        products: state.products
+      };
+
+      const jsonString = JSON.stringify(catalogData, null, 2);
+      // UTF-8 safe base64 encoding
+      const base64Content = btoa(unescape(encodeURIComponent(jsonString)));
+
+      const commitBody = {
+        message: silent 
+          ? `Auto-sync: update catalog to v${nextVersion} (${state.products.length} products)`
+          : `Update product catalog to version ${nextVersion} (${state.products.length} products)`,
+        content: base64Content,
+        branch: 'main'
+      };
+      if (currentSha) {
+        commitBody.sha = currentSha;
+      }
+
+      // 3. Put content to GitHub
+      const putResp = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`, {
+        method: 'PUT',
+        headers: {
+          'Authorization': `Bearer ${token}`,
+          'Accept': 'application/vnd.github.v3+json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(commitBody)
+      });
+
+      if (!putResp.ok) {
+        const errData = await putResp.json();
+        throw new Error(errData.message || 'GitHub API rejected commit');
+      }
+
+      // Success! Update local state
+      state.catalogVersion = nextVersion;
+      state.hasUnpublishedEdits = false;
+      localStorage.setItem('albarkat_catalog_version', nextVersion.toString());
+      localStorage.removeItem('albarkat_has_unpublished_edits');
+
+      this.updateSyncStatusBadge('synced', `Synced with GitHub (v${nextVersion})`);
+      this.updateSaveStatus('saved');
+      
+      if (silent) {
+        this.showToast(`☁️ Auto-pushed v${nextVersion} to GitHub! Live site updating...`, 'success');
+      } else {
+        this.showToast(`🚀 Published v${nextVersion} to GitHub! GitHub Pages will update in ~30s.`, 'success');
+        const modal = document.getElementById('cloudSyncModal');
+        if (modal) modal.classList.remove('show');
+      }
+
+    } catch (err) {
+      console.error('Publish error:', err);
+      this.updateSaveStatus('saved'); // Local IndexedDB is preserved
+      this.showToast(`GitHub Publish note: ${err.message}`, 'danger');
+    } finally {
+      if (btn && !silent) {
+        btn.disabled = false;
+        btn.innerHTML = origText;
+      }
+    }
+  },
+
+  downloadUpdatedCatalogJson() {
+    const catalogData = {
+      version: (state.catalogVersion || 3),
+      lastUpdated: Date.now(),
+      totalProducts: state.products.length,
+      products: state.products
+    };
+    const jsonStr = JSON.stringify(catalogData, null, 2);
+    ImportExportManager.downloadBlob(
+      new Blob([jsonStr], { type: 'application/json;charset=utf-8;' }),
+      'catalog.json'
+    );
+    this.showToast('Downloaded "catalog.json" file! You can keep this as a backup or commit it to GitHub.', 'success');
   },
 
   populateFormSuggestions(selectedBrand = '', selectedCategory = '', selectedSupplier = '') {
