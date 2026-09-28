@@ -1,6 +1,6 @@
 {
-  "version": 5,
-  "lastUpdated": 1790333973372,
+  "version": 6,
+  "lastUpdated": 1790599639276,
   "totalProducts": 921,
   "products": [
     {
@@ -3498,16 +3498,16 @@
     {
       "id": "prod_1787659425170_ixk87g_128",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-08-25T12:03:45.170Z",
+      "updated_at": "2026-09-28T12:47:14.665Z",
       "brand": "NeoOrbit",
-      "category": "",
+      "category": "Laptop",
       "sku": "Z32C2BD5793CE88BCDF4BZ-1",
       "name": "Protective Tablet & Laptop Sleeve Case",
-      "barcode": "587968574",
+      "barcode": "4060460708379",
       "supplier_code": "",
       "image1": "sku_images/Z32C2BD5793CE88BCDF4BZ-1.png",
       "image2": "",
-      "alt_sku_1": "",
+      "alt_sku_1": "587968574",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
