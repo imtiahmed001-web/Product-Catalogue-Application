@@ -1,6 +1,6 @@
 {
-  "version": 7,
-  "lastUpdated": 1790600021066,
+  "version": 8,
+  "lastUpdated": 1790600108712,
   "totalProducts": 921,
   "products": [
     {
@@ -5280,12 +5280,12 @@
     {
       "id": "prod_1787659425171_18dfp1_506",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-08-25T12:03:45.171Z",
+      "updated_at": "2026-09-28T12:55:04.567Z",
       "brand": "Homecare",
-      "category": "",
+      "category": "Regular",
       "sku": "Z3981142B4B44B55DD163Z-1",
       "name": "Set of 6 Decorative Throw Pillow Covers – 18x18 Inch",
-      "barcode": "-",
+      "barcode": "4060460708369",
       "supplier_code": "",
       "image1": "sku_images/Z3981142B4B44B55DD163Z-1.png",
       "image2": "",
