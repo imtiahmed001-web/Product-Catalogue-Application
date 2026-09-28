@@ -1,6 +1,6 @@
 {
-  "version": 6,
-  "lastUpdated": 1790599639276,
+  "version": 7,
+  "lastUpdated": 1790600021066,
   "totalProducts": 921,
   "products": [
     {
@@ -14406,12 +14406,12 @@
     {
       "id": "prod_1787659425172_m6zboq_833",
       "created_at": "2026-08-25T12:03:45.172Z",
-      "updated_at": "2026-08-25T12:03:45.172Z",
+      "updated_at": "2026-09-28T12:53:36.665Z",
       "brand": "Homecare",
-      "category": "",
+      "category": "Regular",
       "sku": "Z7420E7421D27C140C841Z-1",
       "name": "Portable Self-Extinguishing Ashtray Bucket (Black)",
-      "barcode": "-",
+      "barcode": "6812578586282",
       "supplier_code": "",
       "image1": "sku_images/Z7420E7421D27C140C841Z-1.png",
       "image2": "",
