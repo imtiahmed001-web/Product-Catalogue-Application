@@ -1,6 +1,6 @@
 {
-  "version": 16,
-  "lastUpdated": 1790692219874,
+  "version": 17,
+  "lastUpdated": 1790692277676,
   "totalProducts": 924,
   "products": [
     {
@@ -13146,9 +13146,9 @@
     {
       "id": "prod_1787659425172_fdur0p_851",
       "created_at": "2026-08-25T12:03:45.172Z",
-      "updated_at": "2026-08-25T12:03:45.172Z",
+      "updated_at": "2026-09-29T14:31:13.437Z",
       "brand": "Homecare",
-      "category": "",
+      "category": "Shelf",
       "sku": "ZDF118AF8B2B1BD5525ECZ-1",
       "name": "Sink Caddy, Sponge Holder for Kitchen Sink, Metal Kitchen Sink Organizer, Kitchen Organizer Shelf with Dishcloth Rack, Kitchen Sink Rack",
       "barcode": "-",
