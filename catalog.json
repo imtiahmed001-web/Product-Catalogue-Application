@@ -1,6 +1,6 @@
 {
-  "version": 13,
-  "lastUpdated": 1790683428018,
+  "version": 14,
+  "lastUpdated": 1790684167796,
   "totalProducts": 925,
   "products": [
     {
@@ -3066,13 +3066,13 @@
     {
       "id": "prod_1787659425170_daacji_59",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-09-12T07:22:06.149Z",
+      "updated_at": "2026-09-29T12:16:03.649Z",
       "brand": "Redblossom",
       "category": "Hair Brush",
       "sku": "ZBF742410DC2E22A2FF00Z-1",
       "name": "Anti-Static Hair Brush Comb Multicolour 4.00cm",
       "barcode": "4060460694993",
-      "supplier_code": "KJ972-163 RB",
+      "supplier_code": "KJ972-259RB",
       "image1": "sku_images/ZBF742410DC2E22A2FF00Z-1.png",
       "image2": "",
       "alt_sku_1": "",
