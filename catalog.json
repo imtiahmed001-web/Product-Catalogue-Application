@@ -1,7 +1,7 @@
 {
-  "version": 19,
-  "lastUpdated": 1790692912279,
-  "totalProducts": 926,
+  "version": 20,
+  "lastUpdated": 1790693293310,
+  "totalProducts": 925,
   "products": [
     {
       "id": "alb_1790692908109_4fa203",
@@ -2300,24 +2300,6 @@
       "barcode": "4060460709727",
       "supplier_code": "",
       "image1": "sku_images/Z0A53F727869BBC9FD357Z-1.png",
-      "image2": "",
-      "alt_sku_1": "",
-      "alt_sku_2": "",
-      "alt_sku_3": "",
-      "saudi_sku": "",
-      "supplier_name": ""
-    },
-    {
-      "id": "prod_1787659425170_35o8za_101",
-      "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-08-25T12:03:45.170Z",
-      "brand": "Redblossom",
-      "category": "",
-      "sku": "NOSKU140",
-      "name": "Lymphatic Contour Face Brush Sample",
-      "barcode": "-",
-      "supplier_code": "",
-      "image1": "sku_images/NOSKU140.jpg",
       "image2": "",
       "alt_sku_1": "",
       "alt_sku_2": "",
