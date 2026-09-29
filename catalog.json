@@ -1,6 +1,6 @@
 {
-  "version": 29,
-  "lastUpdated": 1790693910597,
+  "version": 30,
+  "lastUpdated": 1790693944645,
   "totalProducts": 925,
   "products": [
     {
@@ -8448,12 +8448,12 @@
     {
       "id": "prod_1787659425171_l0nk1l_381",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-08-25T12:03:45.171Z",
+      "updated_at": "2026-09-29T14:59:00.184Z",
       "brand": "Homecare",
       "category": "Christmas",
       "sku": "ZEF222674636BE274FAD6Z-1",
       "name": "Mini Christmas Tree – 15 cm Pine",
-      "barcode": "-",
+      "barcode": "4060460713366",
       "supplier_code": "",
       "image1": "sku_images/ZEF222674636BE274FAD6Z-1.png",
       "image2": "",
@@ -8461,7 +8461,7 @@
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
-      "supplier_name": ""
+      "supplier_name": "Beone Mart Trading LLC"
     },
     {
       "id": "prod_1787659425171_l8b6az_460",
