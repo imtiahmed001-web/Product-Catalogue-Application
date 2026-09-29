@@ -1,6 +1,6 @@
 {
-  "version": 20,
-  "lastUpdated": 1790693293310,
+  "version": 21,
+  "lastUpdated": 1790693493609,
   "totalProducts": 925,
   "products": [
     {
@@ -2346,12 +2346,12 @@
     {
       "id": "prod_1787659425170_4kaqfr_99",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-08-25T12:03:45.170Z",
-      "brand": "Redblossom",
-      "category": "",
+      "updated_at": "2026-09-29T14:51:29.522Z",
+      "brand": "Tubeaut",
+      "category": "Regular",
       "sku": "NOSKU138",
-      "name": "Eyelash Curler Sample",
-      "barcode": "-",
+      "name": "FALSE EYELASHAPPLICATOR",
+      "barcode": "4060460711003",
       "supplier_code": "",
       "image1": "sku_images/NOSKU138.jpg",
       "image2": "",
