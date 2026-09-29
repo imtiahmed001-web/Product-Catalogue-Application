@@ -1,6 +1,6 @@
 {
-  "version": 30,
-  "lastUpdated": 1790693944645,
+  "version": 31,
+  "lastUpdated": 1790693976617,
   "totalProducts": 925,
   "products": [
     {
@@ -8358,12 +8358,12 @@
     {
       "id": "prod_1787659425171_kb81gs_382",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-08-25T12:03:45.171Z",
+      "updated_at": "2026-09-29T14:59:32.562Z",
       "brand": "Homecare",
       "category": "Christmas",
       "sku": "Z853FF5FF76E20DA09659Z-1",
       "name": "Artificial Christmas Wreath with Pinecones and Red Berries – 30 cm",
-      "barcode": "-",
+      "barcode": "4060460713304",
       "supplier_code": "",
       "image1": "sku_images/Z853FF5FF76E20DA09659Z-1.png",
       "image2": "",
@@ -8371,7 +8371,7 @@
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
-      "supplier_name": ""
+      "supplier_name": "Beone Mart Trading LLC"
     },
     {
       "id": "prod_1787659425171_kiz1ka_365",
