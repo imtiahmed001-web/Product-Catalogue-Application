@@ -1,6 +1,6 @@
 {
-  "version": 32,
-  "lastUpdated": 1790694012621,
+  "version": 33,
+  "lastUpdated": 1790694050618,
   "totalProducts": 925,
   "products": [
     {
@@ -5316,12 +5316,12 @@
     {
       "id": "prod_1787659425171_135ozm_212",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-12T13:51:04.188Z",
+      "updated_at": "2026-09-29T15:00:45.854Z",
       "brand": "Homecare",
       "category": "Candle",
       "sku": "Z96B5DD8BAB0E279CDDBAZ-1",
       "name": "Set of 5 Red Glass Flameless LED Candles",
-      "barcode": "-",
+      "barcode": "4060460713250",
       "supplier_code": "",
       "image1": "sku_images/Z96B5DD8BAB0E279CDDBAZ-1.png",
       "image2": "",
