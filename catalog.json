@@ -1,6 +1,6 @@
 {
-  "version": 28,
-  "lastUpdated": 1790693875689,
+  "version": 29,
+  "lastUpdated": 1790693910597,
   "totalProducts": 925,
   "products": [
     {
@@ -5964,12 +5964,12 @@
     {
       "id": "prod_1787659425171_5pkdxa_388",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-08-25T12:03:45.171Z",
+      "updated_at": "2026-09-29T14:58:26.441Z",
       "brand": "Homecare",
       "category": "Christmas",
       "sku": "Z7B18319913AEF03BFF5BZ-1",
       "name": "Christmas Curtain Lights Indoor – Hanging Window Light with 20 Star Rings",
-      "barcode": "-",
+      "barcode": "4060460713359",
       "supplier_code": "",
       "image1": "sku_images/Z7B18319913AEF03BFF5BZ-1.png",
       "image2": "",
@@ -5977,7 +5977,7 @@
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
-      "supplier_name": ""
+      "supplier_name": "Beone Mart Trading LLC"
     },
     {
       "id": "prod_1787659425171_5pz1q2_214",
