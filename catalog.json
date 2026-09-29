@@ -1,6 +1,6 @@
 {
-  "version": 22,
-  "lastUpdated": 1790693570611,
+  "version": 23,
+  "lastUpdated": 1790693630029,
   "totalProducts": 925,
   "products": [
     {
@@ -10086,12 +10086,12 @@
     {
       "id": "prod_1787659425171_w24ou3_373",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-08-25T12:03:45.171Z",
+      "updated_at": "2026-09-29T14:53:45.961Z",
       "brand": "Homecare",
       "category": "Christmas",
       "sku": "ZBB94842479F2445FADB7Z-1",
       "name": "Christmas Tree Tea Spoon Set (Pack of 4)",
-      "barcode": "-",
+      "barcode": "4060460713335",
       "supplier_code": "",
       "image1": "sku_images/ZBB94842479F2445FADB7Z-1.png",
       "image2": "",
