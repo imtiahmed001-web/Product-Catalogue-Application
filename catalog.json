@@ -1,6 +1,6 @@
 {
-  "version": 50,
-  "lastUpdated": 1790925359001,
+  "version": 51,
+  "lastUpdated": 1790925381994,
   "totalProducts": 926,
   "products": [
     {
@@ -491,7 +491,7 @@
     },
     {
       "id": "alb_1787834423048_li08e7",
-      "brand": "Redblossom",
+      "brand": "Tubeaut",
       "category": "Clip",
       "sku": "P",
       "name": "4pcs/Set Clip with LOGO",
@@ -505,7 +505,7 @@
       "saudi_sku": "",
       "supplier_name": "Beone Mart Trading LLC",
       "created_at": "2026-08-27T12:40:23.048Z",
-      "updated_at": "2026-08-27T12:40:23.048Z"
+      "updated_at": "2026-10-02T07:16:17.764Z"
     },
     {
       "id": "alb_1788603227244_daavfh",
