@@ -1,6 +1,6 @@
 {
-  "version": 53,
-  "lastUpdated": 1790925455002,
+  "version": 54,
+  "lastUpdated": 1790925489653,
   "totalProducts": 926,
   "products": [
     {
@@ -3552,9 +3552,9 @@
     {
       "id": "prod_1787659425170_ivhenv_98",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-08-25T12:03:45.170Z",
-      "brand": "Redblossom",
-      "category": "",
+      "updated_at": "2026-10-02T07:18:05.562Z",
+      "brand": "Tubeaut",
+      "category": "Clip",
       "sku": "NOSKU137",
       "name": "CLAW CLIPS Hairpin Sample",
       "barcode": "-",
