@@ -1,6 +1,6 @@
 {
-  "version": 47,
-  "lastUpdated": 1790925143304,
+  "version": 48,
+  "lastUpdated": 1790925252900,
   "totalProducts": 926,
   "products": [
     {
@@ -3966,9 +3966,9 @@
     {
       "id": "prod_1787659425170_mz6qh4_103",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-08-25T12:03:45.170Z",
-      "brand": "Redblossom",
-      "category": "",
+      "updated_at": "2026-10-02T07:14:08.652Z",
+      "brand": "Tubeaut",
+      "category": "Regular",
       "sku": "NOSKU185",
       "name": "Silicone Ice Facial Bowl Black Color",
       "barcode": "-",
