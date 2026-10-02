@@ -1,6 +1,6 @@
 {
-  "version": 49,
-  "lastUpdated": 1790925333063,
+  "version": 50,
+  "lastUpdated": 1790925359001,
   "totalProducts": 926,
   "products": [
     {
@@ -2760,8 +2760,8 @@
     {
       "id": "prod_1787659425170_aj760b_96",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-09-12T14:41:04.014Z",
-      "brand": "Redblossom",
+      "updated_at": "2026-10-02T07:15:54.668Z",
+      "brand": "Tubeaut",
       "category": "Nail Clipper",
       "sku": "NOSKU135",
       "name": "Rose Gold Nail Clipper Set Sample",
