@@ -1,6 +1,6 @@
 {
-  "version": 62,
-  "lastUpdated": 1790940466606,
+  "version": 63,
+  "lastUpdated": 1790941025709,
   "totalProducts": 927,
   "products": [
     {
@@ -10122,7 +10122,7 @@
     {
       "id": "prod_1787659425171_w24ou3_373",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-29T14:54:09.123Z",
+      "updated_at": "2026-10-02T11:37:01.280Z",
       "brand": "Homecare",
       "category": "Christmas",
       "sku": "ZBB94842479F2445FADB7Z-1",
@@ -10131,7 +10131,7 @@
       "supplier_code": "",
       "image1": "sku_images/ZBB94842479F2445FADB7Z-1.png",
       "image2": "",
-      "alt_sku_1": "",
+      "alt_sku_1": "Z05D8A65274C34EDB6BEDZ-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
