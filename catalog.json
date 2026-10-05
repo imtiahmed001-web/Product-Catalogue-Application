@@ -1,6 +1,6 @@
 {
-  "version": 67,
-  "lastUpdated": 1791203034221,
+  "version": 68,
+  "lastUpdated": 1791204040034,
   "totalProducts": 927,
   "products": [
     {
@@ -8376,7 +8376,7 @@
     {
       "id": "prod_1787659425171_k56yjg_300",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-07T12:50:27.917Z",
+      "updated_at": "2026-10-05T12:40:35.681Z",
       "brand": "Homecare",
       "category": "Mat",
       "sku": "ZD3C49F15C8363D25E170Z-1",
@@ -8385,7 +8385,7 @@
       "supplier_code": "4060460712802",
       "image1": "sku_images/ZD3C49F15C8363D25E170Z-1.png",
       "image2": "",
-      "alt_sku_1": "",
+      "alt_sku_1": "Z7C46F5C0E6F747452024Z-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
