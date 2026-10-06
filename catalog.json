@@ -1,6 +1,6 @@
 {
-  "version": 73,
-  "lastUpdated": 1791266957581,
+  "version": 74,
+  "lastUpdated": 1791267073016,
   "totalProducts": 927,
   "products": [
     {
@@ -5316,7 +5316,7 @@
     {
       "id": "prod_1787659425171_100ude_291",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-12T12:20:03.723Z",
+      "updated_at": "2026-10-06T06:11:08.868Z",
       "brand": "Homecare",
       "category": "Regular",
       "sku": "Z99ECAC926D221F808765Z-1",
@@ -5325,7 +5325,7 @@
       "supplier_code": "KJ972-49 HC",
       "image1": "sku_images/Z99ECAC926D221F808765Z-1.png",
       "image2": "300cm/120 Inch",
-      "alt_sku_1": "",
+      "alt_sku_1": "N22490829A-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
