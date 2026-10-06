@@ -1,6 +1,6 @@
 {
-  "version": 72,
-  "lastUpdated": 1791266755023,
+  "version": 73,
+  "lastUpdated": 1791266957581,
   "totalProducts": 927,
   "products": [
     {
@@ -5478,7 +5478,7 @@
     {
       "id": "prod_1787659425171_1taggs_249",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-11T15:10:15.259Z",
+      "updated_at": "2026-10-06T06:09:13.408Z",
       "brand": "Homecare",
       "category": "3-Way",
       "sku": "ZFA506772F966CB924CABZ-1",
@@ -5487,7 +5487,7 @@
       "supplier_code": "HC6103B (QC6103B)",
       "image1": "sku_images/ZFA506772F966CB924CABZ-1.png",
       "image2": "",
-      "alt_sku_1": "",
+      "alt_sku_1": "N70148311V-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
