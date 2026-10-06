@@ -1,6 +1,6 @@
 {
-  "version": 85,
-  "lastUpdated": 1791272271990,
+  "version": 86,
+  "lastUpdated": 1791272682699,
   "totalProducts": 927,
   "products": [
     {
@@ -7944,7 +7944,7 @@
     {
       "id": "prod_1787659425171_hk1sfi_435",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-12T14:25:17.254Z",
+      "updated_at": "2026-10-06T07:44:38.208Z",
       "brand": "Homecare",
       "category": "Regular",
       "sku": "Z4AC0C4598BECE8DFE2EBZ-1",
@@ -7953,7 +7953,7 @@
       "supplier_code": "",
       "image1": "sku_images/Z4AC0C4598BECE8DFE2EBZ-1.png",
       "image2": "",
-      "alt_sku_1": "",
+      "alt_sku_1": "Z6D17F41C04A55916D542Z-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
