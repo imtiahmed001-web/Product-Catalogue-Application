@@ -1,6 +1,6 @@
 {
-  "version": 75,
-  "lastUpdated": 1791267187257,
+  "version": 76,
+  "lastUpdated": 1791267341449,
   "totalProducts": 927,
   "products": [
     {
@@ -7206,16 +7206,16 @@
     {
       "id": "prod_1787659425171_cvz03d_328",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-08-25T12:03:45.171Z",
+      "updated_at": "2026-10-06T06:15:37.161Z",
       "brand": "Homecare",
-      "category": "",
+      "category": "Bidet",
       "sku": "Z170DF1D1A2AD91DF5F39Z-1",
       "name": "Premium Portable Bidet - Rechargeable Travel Bidet",
       "barcode": "-",
       "supplier_code": "",
       "image1": "sku_images/Z170DF1D1A2AD91DF5F39Z-1.png",
       "image2": "",
-      "alt_sku_1": "",
+      "alt_sku_1": "N70126306V-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
