@@ -1,6 +1,6 @@
 {
-  "version": 79,
-  "lastUpdated": 1791269066155,
+  "version": 80,
+  "lastUpdated": 1791269370743,
   "totalProducts": 927,
   "products": [
     {
@@ -9960,7 +9960,7 @@
     {
       "id": "prod_1787659425171_umivhj_246",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-12T09:28:00.401Z",
+      "updated_at": "2026-10-06T06:49:26.343Z",
       "brand": "Homecare",
       "category": "Clip",
       "sku": "Z46791050DE8B864B0054Z-1",
@@ -9969,7 +9969,7 @@
       "supplier_code": "",
       "image1": "sku_images/Z46791050DE8B864B0054Z-1.png",
       "image2": "",
-      "alt_sku_1": "",
+      "alt_sku_1": "Z75327895AD19F7C12075Z-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
