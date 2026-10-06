@@ -1,6 +1,6 @@
 {
-  "version": 83,
-  "lastUpdated": 1791269958477,
+  "version": 84,
+  "lastUpdated": 1791271439683,
   "totalProducts": 927,
   "products": [
     {
@@ -7170,16 +7170,16 @@
     {
       "id": "prod_1787659425171_cg1qbq_331",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-08-25T12:03:45.171Z",
+      "updated_at": "2026-10-06T07:23:55.466Z",
       "brand": "Homecare",
-      "category": "",
+      "category": "Regular",
       "sku": "Z9F264581D04CD2887D59Z-1",
       "name": "2 Pcs Ripple Glass Cups 18 Oz Clear Ribbed Cocktail Glasses",
       "barcode": "-",
       "supplier_code": "",
       "image1": "sku_images/Z9F264581D04CD2887D59Z-1.png",
       "image2": "",
-      "alt_sku_1": "",
+      "alt_sku_1": "N70218728V-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
