@@ -1,6 +1,6 @@
 {
-  "version": 70,
-  "lastUpdated": 1791207990811,
+  "version": 71,
+  "lastUpdated": 1791266392455,
   "totalProducts": 927,
   "products": [
     {
@@ -10230,7 +10230,7 @@
     {
       "id": "prod_1787659425171_x4t6uq_349",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-10T12:18:17.775Z",
+      "updated_at": "2026-10-06T05:59:48.058Z",
       "brand": "Homecare",
       "category": "Regular",
       "sku": "Z9337E98512D9B6650698Z-1",
@@ -10239,7 +10239,7 @@
       "supplier_code": "KJ972-147 HC",
       "image1": "sku_images/Z9337E98512D9B6650698Z-1_img1.png",
       "image2": "sku_images/Z9337E98512D9B6650698Z-1_img2.png",
-      "alt_sku_1": "",
+      "alt_sku_1": "N70195182V-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
