@@ -1,6 +1,6 @@
 {
-  "version": 80,
-  "lastUpdated": 1791269370743,
+  "version": 81,
+  "lastUpdated": 1791269466698,
   "totalProducts": 927,
   "products": [
     {
@@ -9690,7 +9690,7 @@
     {
       "id": "prod_1787659425171_t8nwvt_207",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-12T09:38:32.323Z",
+      "updated_at": "2026-10-06T06:51:01.571Z",
       "brand": "Homecare",
       "category": "Regular",
       "sku": "Z4640D086BDDEC3BF088CZ-1",
@@ -9699,7 +9699,7 @@
       "supplier_code": "",
       "image1": "sku_images/Z4640D086BDDEC3BF088CZ-1_img1.png",
       "image2": "sku_images/Z4640D086BDDEC3BF088CZ-1_img2.png",
-      "alt_sku_1": "",
+      "alt_sku_1": "Z473603753FAF9A7624E3Z-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
