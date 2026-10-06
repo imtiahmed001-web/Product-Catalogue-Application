@@ -1,6 +1,6 @@
 {
-  "version": 78,
-  "lastUpdated": 1791268824799,
+  "version": 79,
+  "lastUpdated": 1791269066155,
   "totalProducts": 927,
   "products": [
     {
@@ -15882,16 +15882,16 @@
     {
       "id": "prod_1787659425172_vci3xc_634",
       "created_at": "2026-08-25T12:03:45.172Z",
-      "updated_at": "2026-08-25T12:03:45.172Z",
+      "updated_at": "2026-10-06T06:44:21.919Z",
       "brand": "Homecare",
-      "category": "",
+      "category": "Screw",
       "sku": "Z4633C1F13C2108C7C5CAZ-1",
       "name": "86 PCS Self Tapping Screw Assortment Kit",
       "barcode": "-",
       "supplier_code": "",
       "image1": "sku_images/Z4633C1F13C2108C7C5CAZ-1.png",
       "image2": "",
-      "alt_sku_1": "",
+      "alt_sku_1": "N70290583V-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
