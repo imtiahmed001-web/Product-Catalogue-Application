@@ -1,6 +1,6 @@
 {
-  "version": 77,
-  "lastUpdated": 1791268760175,
+  "version": 78,
+  "lastUpdated": 1791268824799,
   "totalProducts": 927,
   "products": [
     {
@@ -6828,7 +6828,7 @@
     {
       "id": "prod_1787659425171_9sx1vv_356",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-12T09:30:08.387Z",
+      "updated_at": "2026-10-06T06:40:20.649Z",
       "brand": "Homecare",
       "category": "Thread",
       "sku": "Z68042E7AD63B8A157FD2Z-1",
@@ -6837,7 +6837,7 @@
       "supplier_code": "",
       "image1": "sku_images/Z68042E7AD63B8A157FD2Z-1.png",
       "image2": "",
-      "alt_sku_1": "",
+      "alt_sku_1": "Z5AF1D69A58C729A582C7Z-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
