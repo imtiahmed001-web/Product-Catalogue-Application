@@ -1,6 +1,6 @@
 {
-  "version": 76,
-  "lastUpdated": 1791267341449,
+  "version": 77,
+  "lastUpdated": 1791268760175,
   "totalProducts": 927,
   "products": [
     {
@@ -9564,7 +9564,7 @@
     {
       "id": "prod_1787659425171_sp4ofv_204",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-12T13:24:22.221Z",
+      "updated_at": "2026-10-06T06:39:15.975Z",
       "brand": "Homecare",
       "category": "Regular",
       "sku": "Z0453F4E79CCC3484D5E0Z-1",
@@ -9573,7 +9573,7 @@
       "supplier_code": "KJ972-62 HC",
       "image1": "sku_images/Z0453F4E79CCC3484D5E0Z-1_img1.png",
       "image2": "sku_images/Z0453F4E79CCC3484D5E0Z-1_img2.png",
-      "alt_sku_1": "",
+      "alt_sku_1": "N70148876V-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
