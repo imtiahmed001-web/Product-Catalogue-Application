@@ -1,6 +1,6 @@
 {
-  "version": 81,
-  "lastUpdated": 1791269466698,
+  "version": 82,
+  "lastUpdated": 1791269538482,
   "totalProducts": 927,
   "products": [
     {
@@ -7620,16 +7620,16 @@
     {
       "id": "prod_1787659425171_f0z3il_341",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-08-25T12:03:45.171Z",
+      "updated_at": "2026-10-06T06:52:14.163Z",
       "brand": "Homecare",
-      "category": "",
+      "category": "Regular",
       "sku": "ZC07970FDD61662C8729EZ-1",
       "name": "8 Pcs Drink Coasters with Holder, 8 Colors Absorbent Coasters 4.3 Inch",
       "barcode": "-",
       "supplier_code": "",
       "image1": "sku_images/ZC07970FDD61662C8729EZ-1.png",
       "image2": "",
-      "alt_sku_1": "",
+      "alt_sku_1": "N70218734V-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
