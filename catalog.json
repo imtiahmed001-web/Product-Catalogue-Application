@@ -1,6 +1,6 @@
 {
-  "version": 92,
-  "lastUpdated": 1791460247759,
+  "version": 93,
+  "lastUpdated": 1791461728124,
   "totalProducts": 927,
   "products": [
     {
@@ -7026,16 +7026,16 @@
     {
       "id": "prod_1787659425171_b7go4b_353",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-08-25T12:03:45.171Z",
+      "updated_at": "2026-10-08T12:15:23.677Z",
       "brand": "Homecare",
-      "category": "",
+      "category": "Regular",
       "sku": "Z6C00C866118D3F713ED5Z-1",
       "name": "Stainless Steel Paper Towel Holder Countertop",
       "barcode": "-",
       "supplier_code": "",
       "image1": "sku_images/Z6C00C866118D3F713ED5Z-1.png",
       "image2": "",
-      "alt_sku_1": "",
+      "alt_sku_1": "N70218727V-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
