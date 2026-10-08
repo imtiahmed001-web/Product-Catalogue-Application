@@ -1,6 +1,6 @@
 {
-  "version": 86,
-  "lastUpdated": 1791272682699,
+  "version": 87,
+  "lastUpdated": 1791447987744,
   "totalProducts": 927,
   "products": [
     {
@@ -5532,10 +5532,10 @@
     {
       "id": "prod_1787659425171_23t40n_499",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-12T14:34:54.312Z",
+      "updated_at": "2026-10-08T08:26:23.224Z",
       "brand": "Homecare",
       "category": "Bottle",
-      "sku": "NOSKU176",
+      "sku": "ZAC5D7D7848785A97A150Z-1",
       "name": "18oz 550ml colorful box packing Pink",
       "barcode": "6815065302335",
       "supplier_code": "KJ972-233HC PINK",
