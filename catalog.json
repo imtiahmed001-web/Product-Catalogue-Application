@@ -1,6 +1,6 @@
 {
-  "version": 91,
-  "lastUpdated": 1791460147132,
+  "version": 92,
+  "lastUpdated": 1791460247759,
   "totalProducts": 927,
   "products": [
     {
@@ -5964,16 +5964,16 @@
     {
       "id": "prod_1787659425171_5ku42i_433",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-08-25T12:03:45.171Z",
+      "updated_at": "2026-10-08T11:50:43.372Z",
       "brand": "Homecare",
-      "category": "",
+      "category": "Regular",
       "sku": "Z5EA153ACE6365E2BEB22Z-1",
       "name": "Grill Basket – Rustproof Stainless Steel BBQ Grilling Basket for Meat",
       "barcode": "-",
       "supplier_code": "",
       "image1": "sku_images/Z5EA153ACE6365E2BEB22Z-1.png",
       "image2": "",
-      "alt_sku_1": "",
+      "alt_sku_1": "Z22A1D0244C006F3C027AZ-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
