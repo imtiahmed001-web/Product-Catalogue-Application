@@ -1,6 +1,6 @@
 {
-  "version": 99,
-  "lastUpdated": 1791547914139,
+  "version": 100,
+  "lastUpdated": 1791548139637,
   "totalProducts": 927,
   "products": [
     {
@@ -9186,12 +9186,12 @@
     {
       "id": "prod_1787659425171_pp2793_292",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-08-26T06:20:14.869Z",
+      "updated_at": "2026-10-09T12:15:35.022Z",
       "brand": "Homecare",
       "category": "Regular",
       "sku": "Z30E703A6B6898AC3399CZ-1",
       "name": "Hot Glue Gun Kit – 20W Blue Glue Gun with 50 Glue Sticks",
-      "barcode": "-",
+      "barcode": "4060460703329",
       "supplier_code": "",
       "image1": "sku_images/Z30E703A6B6898AC3399CZ-1.png",
       "image2": "",
