@@ -1,6 +1,6 @@
 {
-  "version": 100,
-  "lastUpdated": 1791548139637,
+  "version": 101,
+  "lastUpdated": 1791548378467,
   "totalProducts": 927,
   "products": [
     {
@@ -11328,12 +11328,12 @@
     {
       "id": "prod_1787659425172_4ebe0g_673",
       "created_at": "2026-08-25T12:03:45.172Z",
-      "updated_at": "2026-08-25T12:03:45.172Z",
+      "updated_at": "2026-10-09T12:19:34.228Z",
       "brand": "Homecare",
-      "category": "",
+      "category": "Regular",
       "sku": "Z11B01179614F6FE7A44FZ-1",
       "name": "Wall Mounted Toothpaste Dispenser with UV Sterilization, Toothbrush Holder",
-      "barcode": "-",
+      "barcode": "4060460708399",
       "supplier_code": "",
       "image1": "sku_images/Z11B01179614F6FE7A44FZ-1_img1.png",
       "image2": "sku_images/Z11B01179614F6FE7A44FZ-1_img2.png",
