@@ -1,6 +1,6 @@
 {
-  "version": 102,
-  "lastUpdated": 1791548505565,
+  "version": 103,
+  "lastUpdated": 1791548707619,
   "totalProducts": 927,
   "products": [
     {
@@ -8322,12 +8322,12 @@
     {
       "id": "prod_1787659425171_k0az2a_208",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-08-25T12:03:45.171Z",
+      "updated_at": "2026-10-09T12:25:03.449Z",
       "brand": "Homecare",
-      "category": "",
+      "category": "Artificial Plant",
       "sku": "ZF9A1E7A350F6323F2B04Z-1",
       "name": "2 Pack Small Artificial Eucalyptus Plants",
-      "barcode": "-",
+      "barcode": "4060460707327",
       "supplier_code": "",
       "image1": "sku_images/ZF9A1E7A350F6323F2B04Z-1.png",
       "image2": "",
