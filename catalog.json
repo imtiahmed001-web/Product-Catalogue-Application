@@ -1,6 +1,6 @@
 {
-  "version": 94,
-  "lastUpdated": 1791540634234,
+  "version": 95,
+  "lastUpdated": 1791540712569,
   "totalProducts": 927,
   "products": [
     {
@@ -2346,9 +2346,9 @@
     {
       "id": "prod_1787659425170_37tvud_29",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-08-25T12:03:45.170Z",
+      "updated_at": "2026-10-09T10:11:48.379Z",
       "brand": "Redblossom",
-      "category": "",
+      "category": "Regular",
       "sku": "ZCED15EB002FB9BC3F234Z-1",
       "name": "Cosmetic Pencil Sharpener",
       "barcode": "78490467630",
@@ -2359,7 +2359,7 @@
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
-      "supplier_name": ""
+      "supplier_name": "Shenzhen Weichenyang CHINA"
     },
     {
       "id": "prod_1787659425170_4gn0l1_159",
