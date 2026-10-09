@@ -1,6 +1,6 @@
 {
-  "version": 98,
-  "lastUpdated": 1791546830901,
+  "version": 99,
+  "lastUpdated": 1791547914139,
   "totalProducts": 927,
   "products": [
     {
@@ -6828,12 +6828,12 @@
     {
       "id": "prod_1787659425171_9sx1vv_356",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-10-06T06:40:20.649Z",
+      "updated_at": "2026-10-09T12:11:49.775Z",
       "brand": "Homecare",
       "category": "Thread",
       "sku": "Z68042E7AD63B8A157FD2Z-1",
       "name": "100 M Cooking Twine, Strong Food Safe Cotton Wraps String",
-      "barcode": "-",
+      "barcode": "4060460707884",
       "supplier_code": "",
       "image1": "sku_images/Z68042E7AD63B8A157FD2Z-1.png",
       "image2": "",
