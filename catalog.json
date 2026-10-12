@@ -1,6 +1,6 @@
 {
-  "version": 106,
-  "lastUpdated": 1791549307039,
+  "version": 107,
+  "lastUpdated": 1791784898901,
   "totalProducts": 927,
   "products": [
     {
@@ -4776,20 +4776,20 @@
     {
       "id": "prod_1787659425170_trk0x9_87",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-08-25T12:03:45.170Z",
+      "updated_at": "2026-10-12T06:01:34.479Z",
       "brand": "Redblossom",
-      "category": "",
+      "category": "Regular",
       "sku": "Z6D1D9BBC1FCE488F1079Z-1",
       "name": "Professional Tweezer Set 3 Pieces Stainless Steel",
       "barcode": "4978336523",
-      "supplier_code": "",
+      "supplier_code": "KJ972-303 RB",
       "image1": "sku_images/Z6D1D9BBC1FCE488F1079Z-1.png",
       "image2": "",
       "alt_sku_1": "",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
-      "supplier_name": ""
+      "supplier_name": "DF IMPORT & EXPORT LTD"
     },
     {
       "id": "prod_1787659425170_uinr28_74",
