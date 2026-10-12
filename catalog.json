@@ -1,6 +1,6 @@
 {
-  "version": 113,
-  "lastUpdated": 1791787260374,
+  "version": 114,
+  "lastUpdated": 1791806984070,
   "totalProducts": 927,
   "products": [
     {
@@ -2904,7 +2904,7 @@
     {
       "id": "prod_1787659425170_bzl7zr_126",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-09-12T07:26:25.801Z",
+      "updated_at": "2026-10-12T12:09:39.659Z",
       "brand": "NeoOrbit",
       "category": "Regular",
       "sku": "ZCF6C9D3BE2BA6242BE10Z-1",
@@ -2916,7 +2916,7 @@
       "alt_sku_1": "4060460708378",
       "alt_sku_2": "",
       "alt_sku_3": "",
-      "saudi_sku": "",
+      "saudi_sku": "Z926E86F15B4E8549D514Z-1",
       "supplier_name": ""
     },
     {
