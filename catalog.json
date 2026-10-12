@@ -1,6 +1,6 @@
 {
-  "version": 109,
-  "lastUpdated": 1791786206471,
+  "version": 110,
+  "lastUpdated": 1791786224319,
   "totalProducts": 927,
   "products": [
     {
@@ -11454,10 +11454,10 @@
     {
       "id": "prod_1787659425172_4v6yoa_518",
       "created_at": "2026-08-25T12:03:45.172Z",
-      "updated_at": "2026-10-12T06:23:22.337Z",
+      "updated_at": "2026-10-12T06:23:40.247Z",
       "brand": "Homecare",
       "category": "Karaoke",
-      "sku": "NOSKU119",
+      "sku": "Z0B4CA1E5116F8FFAFE00Z-1",
       "name": "Kids Karaoke Machine with 2 Wireless Mics (Cream / Beige)",
       "barcode": "6815065301812",
       "supplier_code": "KJ972-181HC CREAM",
