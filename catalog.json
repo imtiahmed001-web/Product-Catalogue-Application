@@ -1,6 +1,6 @@
 {
-  "version": 111,
-  "lastUpdated": 1791786244345,
+  "version": 112,
+  "lastUpdated": 1791786996001,
   "totalProducts": 926,
   "products": [
     {
@@ -12516,20 +12516,20 @@
     {
       "id": "prod_1787659425172_aw0f7o_567",
       "created_at": "2026-08-25T12:03:45.172Z",
-      "updated_at": "2026-09-12T14:44:51.399Z",
+      "updated_at": "2026-10-12T06:36:31.899Z",
       "brand": "Homecare",
       "category": "Vase",
       "sku": "ZB512CA2A0A8BB4DC5F66Z-1",
       "name": "Ins Modern Glass Vase – Hydroponic 3-Layer Bubble Flower Vase",
       "barcode": "4060460708373",
-      "supplier_code": "",
+      "supplier_code": "KJ972-305HC",
       "image1": "sku_images/ZB512CA2A0A8BB4DC5F66Z-1_img1.png",
       "image2": "sku_images/ZB512CA2A0A8BB4DC5F66Z-1_img2.png",
       "alt_sku_1": "",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
-      "supplier_name": ""
+      "supplier_name": "DF IMPORT & EXPORT LTD"
     },
     {
       "id": "prod_1787659425172_b8os95_715",
