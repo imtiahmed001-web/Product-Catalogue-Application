@@ -1,7 +1,7 @@
 {
-  "version": 110,
-  "lastUpdated": 1791786224319,
-  "totalProducts": 927,
+  "version": 111,
+  "lastUpdated": 1791786244345,
+  "totalProducts": 926,
   "products": [
     {
       "id": "alb_1790939986740_ezevwv",
@@ -15170,24 +15170,6 @@
       "barcode": "-",
       "supplier_code": "",
       "image1": "sku_images/Z9368DC6F1F1D8E45638CZ-1.png",
-      "image2": "",
-      "alt_sku_1": "",
-      "alt_sku_2": "",
-      "alt_sku_3": "",
-      "saudi_sku": "",
-      "supplier_name": ""
-    },
-    {
-      "id": "prod_1787659425172_qezuo5_517",
-      "created_at": "2026-08-25T12:03:45.172Z",
-      "updated_at": "2026-09-12T14:37:32.927Z",
-      "brand": "Homecare",
-      "category": "Karaoke",
-      "sku": "Z0B4CA1E5116F8FFAFE00Z-1",
-      "name": "Kids Karaoke Machine with 2 Wireless Mics (Beige)",
-      "barcode": "-",
-      "supplier_code": "",
-      "image1": "sku_images/Z0B4CA1E5116F8FFAFE00Z-1.png",
       "image2": "",
       "alt_sku_1": "",
       "alt_sku_2": "",
