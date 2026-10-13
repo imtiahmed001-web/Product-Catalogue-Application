@@ -1,6 +1,6 @@
 {
-  "version": 121,
-  "lastUpdated": 1791810007099,
+  "version": 122,
+  "lastUpdated": 1791874835818,
   "totalProducts": 928,
   "products": [
     {
@@ -7692,20 +7692,20 @@
     {
       "id": "prod_1787659425171_fbtuvp_462",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-12T13:51:49.835Z",
+      "updated_at": "2026-10-13T07:00:30.793Z",
       "brand": "Homecare",
       "category": "Waterfall",
       "sku": "Z5E8E6F105FC902B2660BZ-1",
       "name": "Tabletop Water Fountain with LED Light & Candle Holders",
       "barcode": "681506531012",
-      "supplier_code": "",
+      "supplier_code": "KJ972-101H",
       "image1": "sku_images/Z5E8E6F105FC902B2660BZ-1_img1.png",
       "image2": "sku_images/Z5E8E6F105FC902B2660BZ-1_img2.png",
       "alt_sku_1": "",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
-      "supplier_name": ""
+      "supplier_name": "DF IMPORT & EXPORT LTD"
     },
     {
       "id": "prod_1787659425171_fh5nji_276",
