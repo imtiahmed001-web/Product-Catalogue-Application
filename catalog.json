@@ -1,6 +1,6 @@
 {
-  "version": 122,
-  "lastUpdated": 1791874835818,
+  "version": 123,
+  "lastUpdated": 1791875090076,
   "totalProducts": 928,
   "products": [
     {
@@ -10986,20 +10986,20 @@
     {
       "id": "prod_1787659425172_2mttyc_513",
       "created_at": "2026-08-25T12:03:45.172Z",
-      "updated_at": "2026-09-12T09:43:55.386Z",
+      "updated_at": "2026-10-13T07:04:45.926Z",
       "brand": "Homecare",
       "category": "Artificial Plant",
       "sku": "Z93F45AB295E91DF47C97Z-1",
       "name": "Artificial Flowers Plants Silk Flower Arrangements Wedding Bouquets",
       "barcode": "4060460708371",
-      "supplier_code": "",
+      "supplier_code": "KJ972-306HC",
       "image1": "sku_images/Z93F45AB295E91DF47C97Z-1.png",
       "image2": "",
       "alt_sku_1": "",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
-      "supplier_name": "Beone Mart Trading LLC"
+      "supplier_name": "DF IMPORT & EXPORT LTD"
     },
     {
       "id": "prod_1787659425172_2pstgs_592",
