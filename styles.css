@@ -319,6 +319,72 @@
   --shadow-glow: 0 0 20px rgba(37, 99, 235, 0.15);
 }
 
+/* 8. MIDNIGHT (Stockdesk Dark Slate, Deep Forest Teal & Mint) */
+[data-theme="midnight"] {
+  --theme-id: "midnight";
+  --theme-name: "Midnight";
+  --theme-dot: #2dd4bf;
+
+  /* Deep Petrol Slate & Forest Teal Radial Gradients */
+  --bg-base: #0c1218;
+  --bg-mesh: radial-gradient(circle at 80% 15%, rgba(24, 59, 60, 0.45) 0%, transparent 55%),
+             radial-gradient(circle at 15% 10%, rgba(45, 212, 191, 0.08) 0%, transparent 45%),
+             radial-gradient(circle at 50% 90%, rgba(249, 115, 22, 0.04) 0%, transparent 40%),
+             #0c1218;
+  --surface: #10171e;
+  --surface-card: #141d25;
+  --surface-hover: #1b2631;
+  --surface-input: #121a22;
+  --surface-header: #0a0f14;
+  --surface-alt: #131c24;
+  --surface-subtle: #0d141b;
+
+  /* Refined Glassmorphic Micro-Borders */
+  --border: rgba(45, 212, 191, 0.12);
+  --border-light: rgba(255, 255, 255, 0.12);
+  --border-focus: #2dd4bf;
+
+  /* Typography */
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --text-inverse: #020617;
+
+  /* Accents & Status */
+  --primary: #2dd4bf;
+  --primary-hover: #14b8a6;
+  --primary-gradient: linear-gradient(135deg, #183b3c 0%, #14b8a6 100%);
+  --primary-light: rgba(45, 212, 191, 0.15);
+  --primary-ring: rgba(45, 212, 191, 0.35);
+
+  --success: #34d399;
+  --success-hover: #10b981;
+  --success-gradient: linear-gradient(135deg, #059669 0%, #34d399 100%);
+  --success-light: rgba(52, 211, 153, 0.15);
+
+  --warning: #f97316;
+  --warning-hover: #ea580c;
+  --warning-gradient: linear-gradient(135deg, #ea580c 0%, #f97316 100%);
+  --warning-light: rgba(249, 115, 22, 0.15);
+
+  --danger: #ef4444;
+  --danger-hover: #dc2626;
+  --danger-gradient: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+  --danger-light: rgba(239, 68, 68, 0.15);
+
+  --purple: #a855f7;
+  --purple-hover: #9333ea;
+  --purple-gradient: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+  --purple-light: rgba(168, 85, 247, 0.15);
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 12px 28px rgba(0, 0, 0, 0.6);
+  --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.75);
+  --shadow-glow: 0 0 22px rgba(45, 212, 191, 0.25);
+}
+
 /* Base Reset & Typography */
 * {
   margin: 0;

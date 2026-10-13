@@ -1,6 +1,6 @@
 /**
  * Al_Barkat Trading LLC - Theme & Appearance Manager
- * Manages 7 handcrafted elegant luxury color palettes with instant zero-flicker live switching & persistence.
+ * Manages 8 handcrafted elegant luxury color palettes with instant zero-flicker live switching & persistence.
  */
 (function(window) {
   'use strict';
@@ -84,6 +84,17 @@
         surface: '#ffffff',
         accent: '#2563eb',
         text: '#0f172a'
+      },
+      {
+        id: 'midnight',
+        name: 'Midnight',
+        tag: 'Stockdesk Slate & Mint',
+        desc: 'Deep petroleum slate with dark forest-teal surfaces, luminous mint highlights, and warm amber details.',
+        mode: 'dark',
+        bg: '#0c1218',
+        surface: '#10171e',
+        accent: '#2dd4bf',
+        text: '#f1f5f9'
       }
     ],
 
