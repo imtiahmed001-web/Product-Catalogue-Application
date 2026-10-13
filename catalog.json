@@ -1,6 +1,6 @@
 {
-  "version": 125,
-  "lastUpdated": 1791890476385,
+  "version": 126,
+  "lastUpdated": 1791891312230,
   "totalProducts": 928,
   "products": [
     {
@@ -5532,12 +5532,12 @@
     {
       "id": "prod_1787659425171_1z8z91_467",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-12T14:08:56.240Z",
+      "updated_at": "2026-10-13T11:35:07.195Z",
       "brand": "Homecare",
       "category": "Bottle",
       "sku": "Z793FA0D0371F4FDDE562Z-1",
       "name": "Owala FreeSip Insulated Stainless Steel Water Bottle, 24oz, Foggy Tide",
-      "barcode": "-",
+      "barcode": "4060460712796",
       "supplier_code": "",
       "image1": "sku_images/Z793FA0D0371F4FDDE562Z-1.png",
       "image2": "",
