@@ -1,6 +1,6 @@
 {
-  "version": 132,
-  "lastUpdated": 1792044736013,
+  "version": 133,
+  "lastUpdated": 1792045291699,
   "totalProducts": 928,
   "products": [
     {
@@ -2706,7 +2706,7 @@
     {
       "id": "prod_1787659425170_91a2c3_24",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-09-12T14:14:21.026Z",
+      "updated_at": "2026-10-15T06:21:27.505Z",
       "brand": "Redblossom",
       "category": "Regular",
       "sku": "ZB531F48237E4CCD17E1BZ-1",
@@ -2718,7 +2718,7 @@
       "alt_sku_1": "",
       "alt_sku_2": "",
       "alt_sku_3": "",
-      "saudi_sku": "",
+      "saudi_sku": "Z1E7F7B3FAD7088422690Z-1",
       "supplier_name": ""
     },
     {
