@@ -1,6 +1,6 @@
 {
-  "version": 129,
-  "lastUpdated": 1791984575035,
+  "version": 130,
+  "lastUpdated": 1792043281590,
   "totalProducts": 928,
   "products": [
     {
@@ -3138,7 +3138,7 @@
     {
       "id": "prod_1787659425170_daacji_59",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-09-29T12:16:03.649Z",
+      "updated_at": "2026-10-15T05:47:57.046Z",
       "brand": "Redblossom",
       "category": "Hair Brush",
       "sku": "ZBF742410DC2E22A2FF00Z-1",
@@ -3150,7 +3150,7 @@
       "alt_sku_1": "",
       "alt_sku_2": "",
       "alt_sku_3": "",
-      "saudi_sku": "",
+      "saudi_sku": "Z849C8F0A12059129C351Z-1",
       "supplier_name": "DF IMPORT & EXPORT LTD"
     },
     {
