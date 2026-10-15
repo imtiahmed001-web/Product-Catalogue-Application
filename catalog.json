@@ -1,6 +1,6 @@
 {
-  "version": 146,
-  "lastUpdated": 1792051924406,
+  "version": 147,
+  "lastUpdated": 1792052089345,
   "totalProducts": 931,
   "products": [
     {
@@ -7764,11 +7764,11 @@
     {
       "id": "prod_1787659425171_fh5nji_276",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-12T14:21:58.224Z",
+      "updated_at": "2026-10-15T08:14:45.083Z",
       "brand": "Homecare",
       "category": "Tiffin",
-      "sku": "NOSKU170",
-      "name": "Tiffin Box Green",
+      "sku": "Z05E415CB16A5454E19F6Z-1",
+      "name": "Bento Lunch Box – Mint Green 1200ml | 2 Layers | Includes Spoon & Fork",
       "barcode": "6815065302307",
       "supplier_code": "KJ972-230HC GREEN",
       "image1": "sku_images/NOSKU170.png",
