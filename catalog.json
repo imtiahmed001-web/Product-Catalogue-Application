@@ -1,6 +1,6 @@
 {
-  "version": 149,
-  "lastUpdated": 1792052526372,
+  "version": 150,
+  "lastUpdated": 1792062817811,
   "totalProducts": 931,
   "products": [
     {
@@ -4992,20 +4992,20 @@
     {
       "id": "prod_1787659425170_vvwbtu_100",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-10-02T07:16:56.620Z",
+      "updated_at": "2026-10-15T11:13:33.442Z",
       "brand": "Tubeaut",
       "category": "Regular",
       "sku": "NOSKU139",
       "name": "Hairband",
       "barcode": "-",
-      "supplier_code": "",
+      "supplier_code": "XCXC-KJ8972",
       "image1": "sku_images/NOSKU139.jpg",
       "image2": "",
       "alt_sku_1": "",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
-      "supplier_name": ""
+      "supplier_name": "DF IMPORT & EXPORT LTD"
     },
     {
       "id": "prod_1787659425170_w39i4h_17",
