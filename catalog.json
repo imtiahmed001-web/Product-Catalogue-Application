@@ -1,6 +1,6 @@
 {
-  "version": 134,
-  "lastUpdated": 1792045728061,
+  "version": 135,
+  "lastUpdated": 1792047229634,
   "totalProducts": 928,
   "products": [
     {
@@ -14874,12 +14874,12 @@
     {
       "id": "prod_1787659425172_o52797_568",
       "created_at": "2026-08-25T12:03:45.172Z",
-      "updated_at": "2026-08-25T12:03:45.172Z",
+      "updated_at": "2026-10-15T06:53:45.504Z",
       "brand": "Homecare",
-      "category": "",
+      "category": "String Light",
       "sku": "ZAF442A9CCBB64C66CD91Z-1",
       "name": "LED Fairy String Lights, 10Ft/3M 30leds Firefly String Lights (Warm White)",
-      "barcode": "-",
+      "barcode": "4060460707853",
       "supplier_code": "",
       "image1": "sku_images/ZAF442A9CCBB64C66CD91Z-1_img1.png",
       "image2": "sku_images/ZAF442A9CCBB64C66CD91Z-1_img2.png",
