@@ -1,6 +1,6 @@
 {
-  "version": 139,
-  "lastUpdated": 1792049808515,
+  "version": 140,
+  "lastUpdated": 1792050789210,
   "totalProducts": 931,
   "products": [
     {
@@ -5784,11 +5784,11 @@
     {
       "id": "prod_1787659425171_3dykap_492",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-12T14:17:56.562Z",
+      "updated_at": "2026-10-15T07:53:04.808Z",
       "brand": "Homecare",
       "category": "Bottle",
-      "sku": "NOSKU161",
-      "name": "Vacuum Cup 550ml Black",
+      "sku": "Z9FE83B01AA8E74AC3E64Z-1",
+      "name": "Active Stainless Steel Travel Tumbler 550ml – Matte Black Water Bottle Black",
       "barcode": "6815065302258",
       "supplier_code": "KJ972-225HC BLACK",
       "image1": "sku_images/NOSKU161.png",
