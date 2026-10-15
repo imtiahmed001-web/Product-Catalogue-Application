@@ -1,6 +1,6 @@
 {
-  "version": 141,
-  "lastUpdated": 1792051116641,
+  "version": 142,
+  "lastUpdated": 1792051286367,
   "totalProducts": 931,
   "products": [
     {
@@ -6846,11 +6846,11 @@
     {
       "id": "prod_1787659425171_99zpnp_274",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-12T14:21:05.244Z",
+      "updated_at": "2026-10-15T08:01:22.187Z",
       "brand": "Homecare",
       "category": "Tiffin",
-      "sku": "NOSKU168",
-      "name": "Catoon Tiffin Box Green",
+      "sku": "Z83250A8B63A0037D1DA5Z-1",
+      "name": "Kids Lunch Box Set - Panda Stainless Steel | Includes Insulated Bag & Cutlery",
       "barcode": "6815065302291",
       "supplier_code": "KJ972-229HC GREEN",
       "image1": "sku_images/NOSKU168.png",
