@@ -1,6 +1,6 @@
 {
-  "version": 144,
-  "lastUpdated": 1792051623526,
+  "version": 145,
+  "lastUpdated": 1792051782861,
   "totalProducts": 931,
   "products": [
     {
@@ -7368,11 +7368,11 @@
     {
       "id": "prod_1787659425171_d56ras_271",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-12T13:26:40.341Z",
+      "updated_at": "2026-10-15T08:09:38.675Z",
       "brand": "Homecare",
       "category": "Tiffin",
-      "sku": "NOSKU159",
-      "name": "Lunch Box spoon and fork Pink Color",
+      "sku": "Z4A2570B81A9CFD175983Z-1",
+      "name": "Bento Lunch Box – Pink 1100ml | 2 Compartments | Includes Spoon & Fork",
       "barcode": "6815065300508",
       "supplier_code": "KJ972-50HC PINK",
       "image1": "sku_images/NOSKU159.png",
