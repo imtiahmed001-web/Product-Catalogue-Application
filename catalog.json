@@ -1,6 +1,6 @@
 {
-  "version": 147,
-  "lastUpdated": 1792052089345,
+  "version": 148,
+  "lastUpdated": 1792052234620,
   "totalProducts": 931,
   "products": [
     {
@@ -5352,11 +5352,11 @@
     {
       "id": "prod_1787659425171_06aqon_279",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-12T14:22:17.340Z",
+      "updated_at": "2026-10-15T08:17:09.366Z",
       "brand": "Homecare",
       "category": "Tiffin",
-      "sku": "NOSKU180",
-      "name": "Tiffin Box Plastic Spoon and Fork Green",
+      "sku": "Z99A3798F812DF1A77357Z-1",
+      "name": "Bento Lunch Box – Green 5 Compartments | Leakproof",
       "barcode": "6815065302345",
       "supplier_code": "KJ972-234HC GREEN",
       "image1": "sku_images/NOSKU180.png",
