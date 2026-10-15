@@ -1,6 +1,6 @@
 {
-  "version": 142,
-  "lastUpdated": 1792051286367,
+  "version": 143,
+  "lastUpdated": 1792051447398,
   "totalProducts": 931,
   "products": [
     {
@@ -8664,11 +8664,11 @@
     {
       "id": "prod_1787659425171_lqsv23_273",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-12T14:20:45.415Z",
+      "updated_at": "2026-10-15T08:04:02.454Z",
       "brand": "Homecare",
       "category": "Tiffin",
-      "sku": "NOSKU167",
-      "name": "Catoon Tiffin Box Brown",
+      "sku": "Z2BE3EC819A842DE45FABZ-1",
+      "name": "Kids Lunch Box Set - Bear Stainless Steel | Includes Insulated Bag & Cutlery",
       "barcode": "6815065302296",
       "supplier_code": "KJ972-229HC BROWN",
       "image1": "sku_images/NOSKU167.png",
