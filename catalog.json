@@ -1,6 +1,6 @@
 {
-  "version": 153,
-  "lastUpdated": 1792158312638,
+  "version": 154,
+  "lastUpdated": 1792158483940,
   "totalProducts": 931,
   "products": [
     {
@@ -7278,7 +7278,7 @@
     {
       "id": "prod_1787659425171_cpja57_384",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-08-25T12:03:45.171Z",
+      "updated_at": "2026-10-16T13:47:59.772Z",
       "brand": "Homecare",
       "category": "Christmas",
       "sku": "Z25A6A3D3CF48058E4E6FZ-1",
@@ -7287,7 +7287,7 @@
       "supplier_code": "",
       "image1": "sku_images/Z25A6A3D3CF48058E4E6FZ-1.png",
       "image2": "",
-      "alt_sku_1": "",
+      "alt_sku_1": "ZD0D47F0B051A2FFD5687Z-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
