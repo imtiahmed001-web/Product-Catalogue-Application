@@ -1,6 +1,6 @@
 {
-  "version": 158,
-  "lastUpdated": 1792393816935,
+  "version": 159,
+  "lastUpdated": 1792398221795,
   "totalProducts": 934,
   "products": [
     {
@@ -10284,20 +10284,20 @@
     {
       "id": "prod_1787659425171_w4azn3_457",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-08-26T06:38:24.256Z",
+      "updated_at": "2026-10-19T08:23:37.634Z",
       "brand": "Homecare",
       "category": "Regular",
       "sku": "Z451CEF917A8EDB807096Z-1",
       "name": "LED Fairy String Lights – 10M 100 LED Firefly Lights (Warm White)",
       "barcode": "-",
-      "supplier_code": "",
+      "supplier_code": "KJ972-98H",
       "image1": "sku_images/Z451CEF917A8EDB807096Z-1_img1.png",
       "image2": "sku_images/Z451CEF917A8EDB807096Z-1_img2.png",
       "alt_sku_1": "",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
-      "supplier_name": "Beone Mart Trading LLC"
+      "supplier_name": "DF IMPORT & EXPORT LTD"
     },
     {
       "id": "prod_1787659425171_w8l0x8_448",
