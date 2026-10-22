@@ -1,6 +1,6 @@
 {
-  "version": 163,
-  "lastUpdated": 1792658700585,
+  "version": 164,
+  "lastUpdated": 1792658992493,
   "totalProducts": 935,
   "products": [
     {
@@ -6414,20 +6414,20 @@
     {
       "id": "prod_1787659425171_6sf0cx_237",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-08-26T06:23:32.289Z",
+      "updated_at": "2026-10-22T08:49:48.351Z",
       "brand": "Homecare",
       "category": "Regular",
       "sku": "ZE23A32C0CD84FD883B52Z-1",
       "name": "9-Piece BBQ Grill Tool Set Silver 35 centimeter",
-      "barcode": "-",
-      "supplier_code": "",
+      "barcode": "6815065303096",
+      "supplier_code": "KJ972-309HC",
       "image1": "sku_images/ZE23A32C0CD84FD883B52Z-1.png",
       "image2": "",
       "alt_sku_1": "",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
-      "supplier_name": "Beone Mart Trading LLC"
+      "supplier_name": "DF IMPORT & EXPORT LTD"
     },
     {
       "id": "prod_1787659425171_6t5e50_374",
