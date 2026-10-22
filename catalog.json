@@ -1,6 +1,6 @@
 {
-  "version": 162,
-  "lastUpdated": 1792658648528,
+  "version": 163,
+  "lastUpdated": 1792658700585,
   "totalProducts": 935,
   "products": [
     {
@@ -10590,12 +10590,12 @@
     {
       "id": "prod_1787659425171_ym4dvt_216",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-10-22T08:44:04.366Z",
+      "updated_at": "2026-10-22T08:44:56.276Z",
       "brand": "Homecare",
       "category": "Candle",
       "sku": "Z9A9737E5011BD731E26EZ-1",
       "name": "12 Pcs Golden Taper Candles Set Metallic Dripless Long Candles",
-      "barcode": "-",
+      "barcode": "6815065301803",
       "supplier_code": "KJ972-180HC Gold",
       "image1": "sku_images/Z9A9737E5011BD731E26EZ-1.png",
       "image2": "",
