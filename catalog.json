@@ -1,6 +1,6 @@
 {
-  "version": 170,
-  "lastUpdated": 1792682228477,
+  "version": 171,
+  "lastUpdated": 1792735073577,
   "totalProducts": 936,
   "products": [
     {
@@ -9834,7 +9834,7 @@
     {
       "id": "prod_1787659425171_t0sa9o_316",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-12T13:09:24.759Z",
+      "updated_at": "2026-10-23T05:57:49.199Z",
       "brand": "Homecare",
       "category": "Regular",
       "sku": "Z9363DB073A22D7D809E7Z-1",
@@ -9846,7 +9846,7 @@
       "alt_sku_1": "",
       "alt_sku_2": "",
       "alt_sku_3": "",
-      "saudi_sku": "",
+      "saudi_sku": "ZC01B2ABF46C5326C01BCZ-1",
       "supplier_name": "DF IMPORT & EXPORT LTD"
     },
     {
