@@ -1,6 +1,6 @@
 {
-  "version": 172,
-  "lastUpdated": 1792735256921,
+  "version": 173,
+  "lastUpdated": 1792735443221,
   "totalProducts": 936,
   "products": [
     {
@@ -7926,7 +7926,7 @@
     {
       "id": "prod_1787659425171_frtreq_443",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-12T13:49:29.046Z",
+      "updated_at": "2026-10-23T06:03:58.892Z",
       "brand": "Homecare",
       "category": "Candle",
       "sku": "ZCEA5212284CC5A1433A5Z-1",
@@ -7938,7 +7938,7 @@
       "alt_sku_1": "",
       "alt_sku_2": "",
       "alt_sku_3": "",
-      "saudi_sku": "",
+      "saudi_sku": "Z71699FAFFFB6052EEFF1Z-1",
       "supplier_name": "DF IMPORT & EXPORT LTD"
     },
     {
