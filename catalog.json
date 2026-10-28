@@ -1,6 +1,6 @@
 {
-  "version": 196,
-  "lastUpdated": 1793198883160,
+  "version": 197,
+  "lastUpdated": 1793199778290,
   "totalProducts": 944,
   "products": [
     {
@@ -5064,16 +5064,16 @@
     {
       "id": "prod_1787659425170_tjkgb3_196",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-08-25T12:03:45.171Z",
+      "updated_at": "2026-10-28T15:02:54.049Z",
       "brand": "Homecare",
-      "category": "",
+      "category": "Regular",
       "sku": "N70218742V-1",
       "name": "58 in 1 Multi-Function Steel Screwdriver Set",
       "barcode": "4060460704555",
       "supplier_code": "",
       "image1": "sku_images/N70218742V-1.png",
       "image2": "",
-      "alt_sku_1": "",
+      "alt_sku_1": "N70148875V-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
