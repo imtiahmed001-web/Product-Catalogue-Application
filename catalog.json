@@ -1,6 +1,6 @@
 {
-  "version": 190,
-  "lastUpdated": 1793192904298,
+  "version": 191,
+  "lastUpdated": 1793196937973,
   "totalProducts": 944,
   "products": [
     {
@@ -10266,16 +10266,16 @@
     {
       "id": "prod_1787659425171_uiqss1_257",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-08-25T12:03:45.171Z",
+      "updated_at": "2026-10-28T14:15:33.721Z",
       "brand": "Homecare",
-      "category": "",
+      "category": "Regular",
       "sku": "ZEA1337C1BAFEAF6C80C7Z-1",
       "name": "4 pcs Anti Vibration Pads for Washer Dryer",
       "barcode": "-",
       "supplier_code": "",
       "image1": "sku_images/ZEA1337C1BAFEAF6C80C7Z-1.png",
       "image2": "",
-      "alt_sku_1": "",
+      "alt_sku_1": "ZAF3FD52B9A1B98A003ABZ-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
