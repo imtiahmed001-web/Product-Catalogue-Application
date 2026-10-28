@@ -1,6 +1,6 @@
 {
-  "version": 189,
-  "lastUpdated": 1793082543600,
+  "version": 190,
+  "lastUpdated": 1793192904298,
   "totalProducts": 944,
   "products": [
     {
@@ -7224,7 +7224,7 @@
     {
       "id": "prod_1787659425171_aehgbo_230",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-12T13:42:02.815Z",
+      "updated_at": "2026-10-28T13:08:18.604Z",
       "brand": "Homecare",
       "category": "Regular",
       "sku": "ZB299AD801A1CE88C23ECZ-1",
@@ -7233,7 +7233,7 @@
       "supplier_code": "KJ972-32HC GREY",
       "image1": "sku_images/ZB299AD801A1CE88C23ECZ-1_img1.png",
       "image2": "sku_images/ZB299AD801A1CE88C23ECZ-1_img2.png",
-      "alt_sku_1": "",
+      "alt_sku_1": "N70148874V-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
