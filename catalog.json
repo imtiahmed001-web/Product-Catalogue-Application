@@ -1,6 +1,6 @@
 {
-  "version": 194,
-  "lastUpdated": 1793198384719,
+  "version": 195,
+  "lastUpdated": 1793198655091,
   "totalProducts": 944,
   "products": [
     {
@@ -9798,16 +9798,16 @@
     {
       "id": "prod_1787659425171_rsv2ja_238",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-08-25T12:03:45.171Z",
+      "updated_at": "2026-10-28T14:44:10.344Z",
       "brand": "Homecare",
-      "category": "",
+      "category": "Regular",
       "sku": "Z9EEDC6AC68D9A97A6522Z-1",
       "name": "Wall-Mounted Folding Drying Rack",
       "barcode": "-",
       "supplier_code": "",
       "image1": "sku_images/Z9EEDC6AC68D9A97A6522Z-1.png",
       "image2": "",
-      "alt_sku_1": "",
+      "alt_sku_1": "Z297B498A6A0F34207425Z-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
