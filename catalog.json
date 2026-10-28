@@ -1,6 +1,6 @@
 {
-  "version": 192,
-  "lastUpdated": 1793197089179,
+  "version": 193,
+  "lastUpdated": 1793197221061,
   "totalProducts": 944,
   "products": [
     {
@@ -9960,16 +9960,16 @@
     {
       "id": "prod_1787659425171_szr9bw_329",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-08-25T12:03:45.171Z",
+      "updated_at": "2026-10-28T14:20:16.415Z",
       "brand": "Homecare",
-      "category": "",
+      "category": "Regular",
       "sku": "Z699A72B614341093615FZ-1",
       "name": "1Pcs Glass Cups with Bamboo Lids and Glass Straw 550ML Shaped Cups",
       "barcode": "-",
       "supplier_code": "",
       "image1": "sku_images/Z699A72B614341093615FZ-1_img1.png",
       "image2": "sku_images/Z699A72B614341093615FZ-1_img2.png",
-      "alt_sku_1": "",
+      "alt_sku_1": "Z95CB4873C979E419DAADZ-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
