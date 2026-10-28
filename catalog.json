@@ -1,6 +1,6 @@
 {
-  "version": 195,
-  "lastUpdated": 1793198655091,
+  "version": 196,
+  "lastUpdated": 1793198883160,
   "totalProducts": 944,
   "products": [
     {
@@ -6432,16 +6432,16 @@
     {
       "id": "prod_1787659425171_697auz_352",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-08-25T12:03:45.171Z",
+      "updated_at": "2026-10-28T14:47:57.115Z",
       "brand": "Homecare",
-      "category": "",
+      "category": "Regular",
       "sku": "Z2983C99DF1269A8344F0Z-1",
       "name": "20 Lights Orange Chrysanthemum Flower Garland - 3 m Battery",
       "barcode": "-",
       "supplier_code": "",
       "image1": "sku_images/Z2983C99DF1269A8344F0Z-1.png",
       "image2": "",
-      "alt_sku_1": "",
+      "alt_sku_1": "ZB30E0E4536E1CFEBC17BZ-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
