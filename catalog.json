@@ -1,6 +1,6 @@
 {
-  "version": 191,
-  "lastUpdated": 1793196937973,
+  "version": 192,
+  "lastUpdated": 1793197089179,
   "totalProducts": 944,
   "products": [
     {
@@ -10518,16 +10518,16 @@
     {
       "id": "prod_1787659425171_wmg3ed_236",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-08-25T12:03:45.171Z",
+      "updated_at": "2026-10-28T14:18:04.916Z",
       "brand": "Homecare",
-      "category": "",
+      "category": "Regular",
       "sku": "Z322701D70AC9C3E80B25Z-1",
       "name": "Flower Planting Shovel with Wooden Handle",
       "barcode": "-",
       "supplier_code": "",
       "image1": "sku_images/Z322701D70AC9C3E80B25Z-1_img1.png",
       "image2": "sku_images/Z322701D70AC9C3E80B25Z-1_img2.png",
-      "alt_sku_1": "",
+      "alt_sku_1": "Z4D87EA4C2E99156FE625Z-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
