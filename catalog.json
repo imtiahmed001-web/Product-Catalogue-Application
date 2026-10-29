@@ -1,6 +1,6 @@
 {
-  "version": 199,
-  "lastUpdated": 1793203276640,
+  "version": 200,
+  "lastUpdated": 1793273136318,
   "totalProducts": 944,
   "products": [
     {
@@ -3606,7 +3606,7 @@
     {
       "id": "prod_1787659425170_fcaqqq_26",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-09-12T13:59:10.065Z",
+      "updated_at": "2026-10-29T11:25:31.436Z",
       "brand": "Redblossom",
       "category": "Regular",
       "sku": "Z8A12A9476E78F7B83E45Z-1",
@@ -3615,7 +3615,7 @@
       "supplier_code": "KJ972-22 RB",
       "image1": "sku_images/Z8A12A9476E78F7B83E45Z-1.png",
       "image2": "",
-      "alt_sku_1": "",
+      "alt_sku_1": "ZE0F4AB64890D1F4F34BEZ-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
