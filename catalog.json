@@ -1,6 +1,6 @@
 {
-  "version": 201,
-  "lastUpdated": 1793278990505,
+  "version": 202,
+  "lastUpdated": 1793279284347,
   "totalProducts": 944,
   "products": [
     {
@@ -3768,7 +3768,7 @@
     {
       "id": "prod_1787659425170_htsppi_55",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-09-12T14:36:28.804Z",
+      "updated_at": "2026-10-29T13:07:59.770Z",
       "brand": "Redblossom",
       "category": "Comb",
       "sku": "Z8EFE7BA6AC40E8FC7F11Z-1",
@@ -3780,7 +3780,7 @@
       "alt_sku_1": "",
       "alt_sku_2": "",
       "alt_sku_3": "",
-      "saudi_sku": "",
+      "saudi_sku": "Z6CB82BD3EB65CC257062Z-1",
       "supplier_name": "DF IMPORT & EXPORT LTD"
     },
     {
