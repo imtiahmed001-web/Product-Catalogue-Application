@@ -297,13 +297,13 @@
   --surface-alt: #f8fafc;
   --surface-subtle: #f1f5f9;
 
-  --border: rgba(0, 0, 0, 0.08);
-  --border-light: rgba(0, 0, 0, 0.14);
+  --border: rgba(0, 0, 0, 0.12);
+  --border-light: rgba(0, 0, 0, 0.22);
   --border-focus: #2563eb;
 
-  --text-primary: #0f172a;
-  --text-secondary: #475569;
-  --text-muted: #64748b;
+  --text-primary: #000000;
+  --text-secondary: #0f172a;
+  --text-muted: #334155;
   --text-inverse: #ffffff;
 
   --primary: #2563eb;
@@ -796,13 +796,13 @@ body {
 
 .btn-secondary {
   background-color: var(--surface-input);
-  color: #e2e8f0;
+  color: var(--text-primary);
   border-color: var(--border);
 }
 .btn-secondary:hover {
   background-color: var(--surface-hover);
   border-color: var(--border-light);
-  color: #fff;
+  color: var(--text-primary);
   transform: translateY(-1px);
 }
 
@@ -971,21 +971,21 @@ body {
   gap: 4px;
 }
 
-.pagination button {
+.pagination button, .page-btn {
   padding: 5px 10px;
   border-radius: var(--radius-sm);
   background: var(--surface-input);
   border: 1px solid var(--border);
-  color: #cbd5e1;
+  color: var(--text-primary);
   font-size: 0.78rem;
   cursor: pointer;
   transition: all 0.15s ease;
 }
 
-.pagination button:hover {
+.pagination button:hover, .page-btn:hover {
   background: var(--surface-hover);
   border-color: var(--border-light);
-  color: #fff;
+  color: var(--text-primary);
 }
 
 .pagination button.active {
@@ -1054,7 +1054,7 @@ body {
 .card-title {
   font-size: 0.92rem;
   font-weight: 700;
-  color: #fff;
+  color: var(--text-primary);
   line-height: 1.35;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -1661,4 +1661,384 @@ body, .app-header, .stat-card, .toolbar-card, .product-card, .modal-card,
 .catalog-table thead th, .catalog-table tbody tr, .search-box input,
 .filter-select, .view-btn, .modal-header, .modal-footer, .theme-card {
   transition: background-color 0.22s ease, border-color 0.22s ease, color 0.22s ease, box-shadow 0.22s ease;
+}
+
+
+/* ==========================================================================
+   EXECUTIVE PEARL (WHITE THEME) - HIGH CONTRAST DARK TEXT ENHANCEMENTS
+   Ensures all buttons, text, labels, badges, icons, inputs, and tables are 
+   solid dark/black for crystal-clear readability on light backgrounds.
+   ========================================================================== */
+
+[data-theme="light"] {
+  color: #000000;
+}
+
+/* Header Brand Text */
+[data-theme="light"] .brand-text h1 {
+  color: #000000 !important;
+}
+
+[data-theme="light"] .brand-text p {
+  color: #1e293b !important;
+  font-weight: 500;
+}
+
+/* Secondary Buttons in Header and Modals (Theme, Cloud Sync, Save to File, Import, Export, Print Barcodes) */
+[data-theme="light"] .btn-secondary {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border-color: #cbd5e1 !important;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .btn-secondary svg {
+  stroke: #000000 !important;
+}
+
+[data-theme="light"] .btn-secondary:hover {
+  background-color: #f1f5f9 !important;
+  border-color: #64748b !important;
+  color: #000000 !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="light"] .btn-secondary:hover svg {
+  stroke: #000000 !important;
+}
+
+/* Mobile Quick Cloud Button */
+[data-theme="light"] .mobile-sync-btn {
+  background: #eff6ff !important;
+  color: #1d4ed8 !important;
+  border-color: #bfdbfe !important;
+  font-weight: 700 !important;
+}
+
+/* Auto-Save & Cloud Status Badges */
+[data-theme="light"] .autosave-badge {
+  background: #ecfdf5 !important;
+  border-color: #a7f3d0 !important;
+  color: #047857 !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="light"] .autosave-badge.saving {
+  background: #eff6ff !important;
+  border-color: #bfdbfe !important;
+  color: #1d4ed8 !important;
+}
+
+[data-theme="light"] .autosave-badge.error {
+  background: #fef2f2 !important;
+  border-color: #fecaca !important;
+  color: #b91c1c !important;
+}
+
+/* Quick Statistics Bar */
+[data-theme="light"] .stat-card {
+  background: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="light"] .stat-info .stat-value {
+  color: #000000 !important;
+  font-weight: 800 !important;
+}
+
+[data-theme="light"] .stat-info .stat-label {
+  color: #0f172a !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="light"] .stat-icon.blue { background: #eff6ff !important; color: #1d4ed8 !important; }
+[data-theme="light"] .stat-icon.purple { background: #faf5ff !important; color: #7e22ce !important; }
+[data-theme="light"] .stat-icon.green { background: #ecfdf5 !important; color: #047857 !important; }
+[data-theme="light"] .stat-icon.amber { background: #fffbeb !important; color: #b45309 !important; }
+
+/* Search Box & Controls */
+[data-theme="light"] .search-box input {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border-color: #cbd5e1 !important;
+  font-weight: 500 !important;
+}
+
+[data-theme="light"] .search-box input::placeholder {
+  color: #4b5563 !important;
+}
+
+[data-theme="light"] .search-box .search-icon,
+[data-theme="light"] .search-box .clear-btn {
+  color: #1e293b !important;
+}
+
+[data-theme="light"] .filter-select {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+  border-color: #cbd5e1 !important;
+  font-weight: 600 !important;
+}
+
+[data-theme="light"] .filter-select option {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+[data-theme="light"] .view-toggle-group {
+  background: #f1f5f9 !important;
+  border-color: #cbd5e1 !important;
+}
+
+[data-theme="light"] .view-btn {
+  color: #1e293b !important;
+}
+
+[data-theme="light"] .view-btn:hover {
+  color: #000000 !important;
+  background: #e2e8f0 !important;
+}
+
+[data-theme="light"] .view-btn.active {
+  color: #ffffff !important;
+  background: var(--primary) !important;
+}
+
+/* Catalog Table View */
+[data-theme="light"] .catalog-table {
+  color: #000000 !important;
+}
+
+[data-theme="light"] .catalog-table thead th {
+  background: #f8fafc !important;
+  color: #0f172a !important;
+  font-weight: 700 !important;
+  border-bottom: 2px solid #cbd5e1 !important;
+}
+
+[data-theme="light"] .catalog-table tbody tr {
+  border-top: 1px solid #e2e8f0 !important;
+}
+
+[data-theme="light"] .catalog-table tbody tr:nth-child(even) {
+  background: #f8fafc !important;
+}
+
+[data-theme="light"] .catalog-table tbody tr:hover {
+  background: #f1f5f9 !important;
+}
+
+[data-theme="light"] .catalog-table td {
+  color: #000000 !important;
+}
+
+[data-theme="light"] .item-main-name {
+  color: #000000 !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="light"] .item-main-name:hover {
+  color: #1d4ed8 !important;
+}
+
+/* Badges with Dark Legible Text for Light Mode */
+[data-theme="light"] .badge-brand {
+  background: #eff6ff !important;
+  color: #1e40af !important;
+  border: 1px solid #bfdbfe !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="light"] .badge-category {
+  background: #faf5ff !important;
+  color: #6b21a8 !important;
+  border: 1px solid #e9d5ff !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="light"] .badge-supplier {
+  background: #ecfdf5 !important;
+  color: #065f46 !important;
+  border: 1px solid #a7f3d0 !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="light"] .badge-success {
+  background: #ecfdf5 !important;
+  color: #065f46 !important;
+  border: 1px solid #6ee7b7 !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="light"] .badge-warning {
+  background: #fefce8 !important;
+  color: #854d0e !important;
+  border: 1px solid #fde047 !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="light"] .badge-sku {
+  background: #f1f5f9 !important;
+  color: #0f172a !important;
+  border: 1px solid #cbd5e1 !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="light"] .badge-saudi {
+  background: #ecfdf5 !important;
+  color: #065f46 !important;
+  border: 1px solid #6ee7b7 !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="light"] .badge-alt {
+  background: #f8fafc !important;
+  color: #1e293b !important;
+  border: 1px solid #cbd5e1 !important;
+  font-weight: 600 !important;
+}
+
+[data-theme="light"] .copy-icon-btn {
+  color: #1e293b !important;
+}
+
+/* Product Cards (Grid View) */
+[data-theme="light"] .product-card {
+  background: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06) !important;
+}
+
+[data-theme="light"] .card-title {
+  color: #000000 !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="light"] .card-actions {
+  background: #f8fafc !important;
+  border-top: 1px solid #e2e8f0 !important;
+}
+
+/* Table Footer & Pagination */
+[data-theme="light"] .table-footer {
+  background: #f8fafc !important;
+  border-top: 1px solid #cbd5e1 !important;
+  color: #1e293b !important;
+}
+
+[data-theme="light"] .table-footer b {
+  color: #000000 !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="light"] .pagination button,
+[data-theme="light"] .page-btn {
+  background: #ffffff !important;
+  border-color: #cbd5e1 !important;
+  color: #000000 !important;
+  font-weight: 600 !important;
+}
+
+[data-theme="light"] .pagination button:hover,
+[data-theme="light"] .page-btn:hover {
+  background: #f1f5f9 !important;
+  color: #000000 !important;
+  border-color: #94a3b8 !important;
+}
+
+[data-theme="light"] .pagination button.active,
+[data-theme="light"] .page-btn.active {
+  background: var(--primary) !important;
+  color: #ffffff !important;
+  border-color: var(--primary) !important;
+}
+
+/* Modals & Forms */
+[data-theme="light"] .modal-card {
+  background: #ffffff !important;
+  color: #000000 !important;
+  border-color: #cbd5e1 !important;
+}
+
+[data-theme="light"] .modal-header,
+[data-theme="light"] .modal-footer {
+  background: #f8fafc !important;
+  border-color: #e2e8f0 !important;
+}
+
+[data-theme="light"] .modal-header h2 {
+  color: #000000 !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="light"] .modal-header p {
+  color: #1e293b !important;
+}
+
+[data-theme="light"] .form-label {
+  color: #000000 !important;
+  font-weight: 600 !important;
+}
+
+[data-theme="light"] .form-input,
+[data-theme="light"] .form-select,
+[data-theme="light"] textarea {
+  background: #ffffff !important;
+  color: #000000 !important;
+  border-color: #cbd5e1 !important;
+  font-weight: 500 !important;
+}
+
+[data-theme="light"] .form-section-title {
+  color: #1d4ed8 !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="light"] .quick-chip-btn {
+  background: #f1f5f9 !important;
+  color: #0f172a !important;
+  border-color: #cbd5e1 !important;
+  font-weight: 600 !important;
+}
+
+[data-theme="light"] .quick-chip-btn:hover {
+  background: #e2e8f0 !important;
+  color: #000000 !important;
+}
+
+[data-theme="light"] .btn-icon {
+  color: #1e293b !important;
+}
+
+[data-theme="light"] .btn-icon:hover {
+  color: #000000 !important;
+  background: #e2e8f0 !important;
+}
+
+/* Override Tailwind light text classes in Light Mode */
+[data-theme="light"] .text-slate-400,
+[data-theme="light"] .text-slate-500 {
+  color: #374151 !important;
+}
+
+[data-theme="light"] .text-slate-600,
+[data-theme="light"] .text-slate-700 {
+  color: #111827 !important;
+}
+
+[data-theme="light"] .text-slate-800,
+[data-theme="light"] .text-slate-900 {
+  color: #000000 !important;
+}
+
+/* Appearance & Theme Modal */
+[data-theme="light"] .theme-card-title {
+  color: #000000 !important;
+  font-weight: 700 !important;
+}
+
+[data-theme="light"] .theme-card-desc {
+  color: #374151 !important;
 }

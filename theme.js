@@ -83,7 +83,7 @@
         bg: '#f1f5f9',
         surface: '#ffffff',
         accent: '#2563eb',
-        text: '#0f172a'
+        text: '#000000'
       },
       {
         id: 'midnight',
