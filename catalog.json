@@ -1,6 +1,6 @@
 {
-  "version": 204,
-  "lastUpdated": 1793600321803,
+  "version": 205,
+  "lastUpdated": 1793600501738,
   "totalProducts": 945,
   "products": [
     {
@@ -4416,11 +4416,11 @@
     {
       "id": "prod_1787659425170_ny1myu_183",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-09-12T14:30:26.454Z",
+      "updated_at": "2026-11-02T06:21:37.545Z",
       "brand": "NeoOrbit",
       "category": "Regular",
-      "sku": "NOSKU195",
-      "name": "Screen Cleaning Wipes 40pcs/box",
+      "sku": "Z62A1EBA07FDFBEDB6146Z-1",
+      "name": "40Pcs Screen Cleaning Wipes – Portable LCD Screen Cleaner for Computers, TVs, Phones & Electronic Displays",
       "barcode": "6815065302381",
       "supplier_code": "KJ972-238NE",
       "image1": "sku_images/NOSKU195.png",
