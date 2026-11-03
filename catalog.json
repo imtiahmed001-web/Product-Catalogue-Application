@@ -1,6 +1,6 @@
 {
-  "version": 208,
-  "lastUpdated": 1793718011079,
+  "version": 209,
+  "lastUpdated": 1793718209907,
   "totalProducts": 945,
   "products": [
     {
@@ -2958,7 +2958,7 @@
     {
       "id": "prod_1787659425170_84ww6v_22",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-09-08T13:57:56.363Z",
+      "updated_at": "2026-11-03T15:03:25.736Z",
       "brand": "Redblossom",
       "category": "Regular",
       "sku": "Z00305F5ECEF475589194Z-1",
@@ -2970,7 +2970,7 @@
       "alt_sku_1": "",
       "alt_sku_2": "",
       "alt_sku_3": "",
-      "saudi_sku": "",
+      "saudi_sku": "ZFBF9BE40D8FD0410D7ADZ-1",
       "supplier_name": "DF IMPORT & EXPORT LTD"
     },
     {
