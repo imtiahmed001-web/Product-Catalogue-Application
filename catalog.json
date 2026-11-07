@@ -1,6 +1,6 @@
 {
-  "version": 212,
-  "lastUpdated": 1794034607526,
+  "version": 213,
+  "lastUpdated": 1794034954899,
   "totalProducts": 946,
   "products": [
     {
@@ -5262,12 +5262,12 @@
     {
       "id": "prod_1787659425170_vvwbtu_100",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-10-15T11:13:33.442Z",
+      "updated_at": "2026-11-07T07:02:30.470Z",
       "brand": "Tubeaut",
       "category": "Regular",
       "sku": "NOSKU139",
       "name": "Hairband",
-      "barcode": "-",
+      "barcode": "4060460711102",
       "supplier_code": "XCXC-KJ8972",
       "image1": "sku_images/NOSKU139.jpg",
       "image2": "",
