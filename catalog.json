@@ -1,6 +1,6 @@
 {
-  "version": 228,
-  "lastUpdated": 1794044813403,
+  "version": 229,
+  "lastUpdated": 1794046061407,
   "totalProducts": 957,
   "products": [
     {
@@ -4398,7 +4398,7 @@
     {
       "id": "prod_1787659425170_lgpkwu_195",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-09-23T08:03:18.317Z",
+      "updated_at": "2026-11-07T10:07:37.255Z",
       "brand": "Homecare",
       "category": "Regular",
       "sku": "ZAD0B4DF780F6AF91D478Z-1",
@@ -4408,7 +4408,7 @@
       "image1": "sku_images/ZAD0B4DF780F6AF91D478Z-1_img1.png",
       "image2": "sku_images/ZAD0B4DF780F6AF91D478Z-1_img2.png",
       "alt_sku_1": "N70113785V-1",
-      "alt_sku_2": "",
+      "alt_sku_2": "4060460697686",
       "alt_sku_3": "",
       "saudi_sku": "",
       "supplier_name": ""
