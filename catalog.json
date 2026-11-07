@@ -1,6 +1,6 @@
 {
-  "version": 210,
-  "lastUpdated": 1793718366482,
+  "version": 211,
+  "lastUpdated": 1794032325920,
   "totalProducts": 945,
   "products": [
     {
@@ -2616,18 +2616,18 @@
     {
       "id": "prod_1787659425170_1xxtf2_10",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-09-12T13:12:22.313Z",
+      "updated_at": "2026-11-07T06:18:41.509Z",
       "brand": "Redblossom",
       "category": "Regular",
       "sku": "Z0D74FAD017D2EC3BFF55Z-1",
       "name": "Large Capacity Travel Cosmetic Bag",
-      "barcode": "5893983748",
-      "supplier_code": "KJ972-65 RB",
+      "barcode": "6815065300658",
+      "supplier_code": "KJ972-250RB",
       "image1": "sku_images/Z0D74FAD017D2EC3BFF55Z-1.png",
       "image2": "",
       "alt_sku_1": "",
-      "alt_sku_2": "",
-      "alt_sku_3": "",
+      "alt_sku_2": "KJ972-65 RB",
+      "alt_sku_3": "5893983748",
       "saudi_sku": "",
       "supplier_name": "DF IMPORT & EXPORT LTD"
     },
