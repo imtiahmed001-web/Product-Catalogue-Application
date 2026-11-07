@@ -1,6 +1,6 @@
 {
-  "version": 231,
-  "lastUpdated": 1794046397571,
+  "version": 232,
+  "lastUpdated": 1794051489566,
   "totalProducts": 959,
   "products": [
     {
@@ -3246,9 +3246,9 @@
     {
       "id": "prod_1787659425170_8xi4tk_56",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-08-25T12:03:45.170Z",
+      "updated_at": "2026-11-07T11:38:05.226Z",
       "brand": "Redblossom",
-      "category": "",
+      "category": "Regular",
       "sku": "ZB82307473D7FB5286985Z-1",
       "name": "Large Bath Shower Sponge Pouf LoofahsA: Eco-friendly",
       "barcode": "3784652839",
@@ -3258,7 +3258,7 @@
       "alt_sku_1": "",
       "alt_sku_2": "",
       "alt_sku_3": "",
-      "saudi_sku": "",
+      "saudi_sku": "ZC8A6D851BA5FEAF590A4Z-1",
       "supplier_name": ""
     },
     {
