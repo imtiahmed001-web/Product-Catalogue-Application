@@ -1,6 +1,6 @@
 {
-  "version": 249,
-  "lastUpdated": 1794212491291,
+  "version": 250,
+  "lastUpdated": 1794212772867,
   "totalProducts": 959,
   "products": [
     {
@@ -5496,11 +5496,11 @@
     {
       "id": "prod_1787659425170_vvwbtu_100",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-11-07T07:02:30.470Z",
+      "updated_at": "2026-11-09T08:26:08.617Z",
       "brand": "Tubeaut",
       "category": "Regular",
-      "sku": "NOSKU139",
-      "name": "Hairband",
+      "sku": "ZAA3DE01257B766B9BA51Z-1",
+      "name": "Zig Zag Hair Headbands, Black And Tort, 2 Pcs",
       "barcode": "4060460711102",
       "supplier_code": "XCXC-KJ8972",
       "image1": "sku_images/NOSKU139.jpg",
