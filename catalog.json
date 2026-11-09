@@ -1,6 +1,6 @@
 {
-  "version": 250,
-  "lastUpdated": 1794212772867,
+  "version": 251,
+  "lastUpdated": 1794213296727,
   "totalProducts": 959,
   "products": [
     {
@@ -4164,11 +4164,11 @@
     {
       "id": "prod_1787659425170_ivhenv_98",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-10-02T07:18:05.562Z",
+      "updated_at": "2026-11-09T08:34:52.472Z",
       "brand": "Tubeaut",
       "category": "Clip",
-      "sku": "NOSKU137",
-      "name": "CLAW CLIPS Hairpin Sample",
+      "sku": "Z6BB92E1442990E382BFEZ-1",
+      "name": "Curved Claw Clips, Pink And Blue, 2Pc Set",
       "barcode": "-",
       "supplier_code": "",
       "image1": "sku_images/NOSKU137.jpg",
