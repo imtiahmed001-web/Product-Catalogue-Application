@@ -1,6 +1,6 @@
 {
-  "version": 254,
-  "lastUpdated": 1794214142020,
+  "version": 255,
+  "lastUpdated": 1794234280779,
   "totalProducts": 960,
   "products": [
     {
@@ -4542,12 +4542,12 @@
     {
       "id": "prod_1787659425170_mi0dyt_104",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-10-02T07:12:18.443Z",
+      "updated_at": "2026-11-09T14:24:36.216Z",
       "brand": "Tubeaut",
       "category": "Regular",
-      "sku": "NOSKU186",
-      "name": "Facila Ice Globes",
-      "barcode": "-",
+      "sku": "ZE3DA414FCCC03A3313CAZ-1",
+      "name": "Facial Ice Globes For Depuffing Face And Eyes, Set Of 2",
+      "barcode": "4060460710938",
       "supplier_code": "",
       "image1": "sku_images/NOSKU186.png",
       "image2": "",
