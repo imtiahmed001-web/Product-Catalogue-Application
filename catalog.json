@@ -1,6 +1,6 @@
 {
-  "version": 261,
-  "lastUpdated": 1794318515421,
+  "version": 262,
+  "lastUpdated": 1794318560596,
   "totalProducts": 960,
   "products": [
     {
@@ -15108,12 +15108,12 @@
     {
       "id": "prod_1787659425172_m0mp5o_523",
       "created_at": "2026-08-25T12:03:45.172Z",
-      "updated_at": "2026-11-09T06:16:23.882Z",
+      "updated_at": "2026-11-10T13:49:16.435Z",
       "brand": "Redblossom",
       "category": "Christmas",
       "sku": "ZD10C3DC37B24059832FCZ-1",
       "name": "Christmas Reindeer Santa Hat – Soft Plush Red & White1",
-      "barcode": "-",
+      "barcode": "4060460707402",
       "supplier_code": "",
       "image1": "sku_images/ZD10C3DC37B24059832FCZ-1.png",
       "image2": "",
