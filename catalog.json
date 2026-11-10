@@ -1,6 +1,6 @@
 {
-  "version": 257,
-  "lastUpdated": 1794318198279,
+  "version": 258,
+  "lastUpdated": 1794318251363,
   "totalProducts": 960,
   "products": [
     {
@@ -12138,12 +12138,12 @@
     {
       "id": "prod_1787659425172_513sv7_527",
       "created_at": "2026-08-25T12:03:45.172Z",
-      "updated_at": "2026-11-09T06:21:16.873Z",
+      "updated_at": "2026-11-10T13:44:07.129Z",
       "brand": "Redblossom",
       "category": "Christmas",
       "sku": "ZA31A3176B02C63260004Z-1",
       "name": "Christmas Elf Hat with Ears – Soft Plush Red & Green Santa Helper Hat",
-      "barcode": "-",
+      "barcode": "4060460707440",
       "supplier_code": "",
       "image1": "sku_images/ZA31A3176B02C63260004Z-1.png",
       "image2": "",
