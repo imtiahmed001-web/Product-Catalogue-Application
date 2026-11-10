@@ -1,6 +1,6 @@
 {
-  "version": 259,
-  "lastUpdated": 1794318330845,
+  "version": 260,
+  "lastUpdated": 1794318392577,
   "totalProducts": 960,
   "products": [
     {
@@ -11724,12 +11724,12 @@
     {
       "id": "prod_1787659425172_3a0bh8_520",
       "created_at": "2026-08-25T12:03:45.172Z",
-      "updated_at": "2026-11-09T06:13:40.792Z",
+      "updated_at": "2026-11-10T13:46:28.363Z",
       "brand": "Redblossom",
       "category": "Christmas",
       "sku": "Z55283E7CF444734DB162Z-1",
       "name": "Christmas Reindeer Antler Santa Hat with Golden Bow & Pom Pom1",
-      "barcode": "-",
+      "barcode": "4060460707372",
       "supplier_code": "",
       "image1": "sku_images/Z55283E7CF444734DB162Z-1.png",
       "image2": "",
