@@ -1,6 +1,6 @@
 {
-  "version": 354,
-  "lastUpdated": 1794496918175,
+  "version": 355,
+  "lastUpdated": 1794497055188,
   "totalProducts": 956,
   "products": [
     {
@@ -4380,10 +4380,10 @@
     {
       "id": "prod_1787659425170_fzol7o_129",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-09-10T09:59:38.146Z",
+      "updated_at": "2026-11-12T15:24:10.955Z",
       "brand": "NeoOrbit",
       "category": "Regular",
-      "sku": "NOSKU201",
+      "sku": "n",
       "name": "PU Leather Laptop Case 14INCH Water-Resistant Laptop Sleeve Soft Padded Zipper Sleeve -Pink",
       "barcode": "-",
       "supplier_code": "",
