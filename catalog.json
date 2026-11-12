@@ -1,6 +1,6 @@
 {
-  "version": 366,
-  "lastUpdated": 1794498171723,
+  "version": 367,
+  "lastUpdated": 1794498338355,
   "totalProducts": 953,
   "products": [
     {
@@ -8430,12 +8430,12 @@
     {
       "id": "prod_1787659425171_ewa5yh_441",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-08-25T12:03:45.171Z",
+      "updated_at": "2026-11-12T15:45:33.637Z",
       "brand": "Homecare",
-      "category": "",
+      "category": "Regular",
       "sku": "ZABE3E886CE7DDE30227EZ-1",
       "name": "Pour Over Coffee Maker Kit with Travel Case",
-      "barcode": "-",
+      "barcode": "4060460711454",
       "supplier_code": "",
       "image1": "sku_images/ZABE3E886CE7DDE30227EZ-1.png",
       "image2": "",
