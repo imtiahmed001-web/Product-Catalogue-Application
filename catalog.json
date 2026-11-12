@@ -1,7 +1,7 @@
 {
-  "version": 350,
-  "lastUpdated": 1794496690143,
-  "totalProducts": 960,
+  "version": 351,
+  "lastUpdated": 1794496717555,
+  "totalProducts": 959,
   "products": [
     {
       "id": "alb_1794488285678_tg4mix",
@@ -14612,24 +14612,6 @@
       "barcode": "4060460707389",
       "supplier_code": "",
       "image1": "sku_images/ZC605150554883E1B1839Z-1.png",
-      "image2": "",
-      "alt_sku_1": "",
-      "alt_sku_2": "",
-      "alt_sku_3": "",
-      "saudi_sku": "",
-      "supplier_name": ""
-    },
-    {
-      "id": "prod_1787659425172_ji0arc_757",
-      "created_at": "2026-08-25T12:03:45.172Z",
-      "updated_at": "2026-08-25T12:03:45.172Z",
-      "brand": "Homecare",
-      "category": "Flag",
-      "sku": "NOSKU153",
-      "name": "Mexico FLAG 14*21CM",
-      "barcode": "-",
-      "supplier_code": "",
-      "image1": "sku_images/NOSKU153.png",
       "image2": "",
       "alt_sku_1": "",
       "alt_sku_2": "",
