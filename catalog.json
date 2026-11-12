@@ -1,7 +1,7 @@
 {
-  "version": 369,
-  "lastUpdated": 1794498614965,
-  "totalProducts": 951,
+  "version": 370,
+  "lastUpdated": 1794498650526,
+  "totalProducts": 949,
   "products": [
     {
       "id": "alb_1794488285678_tg4mix",
@@ -13558,24 +13558,6 @@
       "supplier_name": ""
     },
     {
-      "id": "prod_1787659425172_e2qs3w_816",
-      "created_at": "2026-08-25T12:03:45.172Z",
-      "updated_at": "2026-08-25T12:03:45.172Z",
-      "brand": "Homecare",
-      "category": "",
-      "sku": "NOSKU130",
-      "name": "Watch Strap 3 Pcs",
-      "barcode": "-",
-      "supplier_code": "",
-      "image1": "sku_images/NOSKU130.png",
-      "image2": "",
-      "alt_sku_1": "",
-      "alt_sku_2": "",
-      "alt_sku_3": "",
-      "saudi_sku": "",
-      "supplier_name": ""
-    },
-    {
       "id": "prod_1787659425172_e3u5v3_615",
       "created_at": "2026-08-25T12:03:45.172Z",
       "updated_at": "2026-08-25T12:03:45.172Z",
@@ -16431,24 +16413,6 @@
       "supplier_code": "",
       "image1": "sku_images/Z40A2EB77B6E24BE7FC96Z-1.png",
       "image2": "",
-      "alt_sku_1": "",
-      "alt_sku_2": "",
-      "alt_sku_3": "",
-      "saudi_sku": "",
-      "supplier_name": ""
-    },
-    {
-      "id": "prod_1787659425172_vwuq62_817",
-      "created_at": "2026-08-25T12:03:45.172Z",
-      "updated_at": "2026-08-25T12:03:45.172Z",
-      "brand": "Homecare",
-      "category": "",
-      "sku": "NOSKU131",
-      "name": "Watch Strap 2 Pcs",
-      "barcode": "-",
-      "supplier_code": "",
-      "image1": "sku_images/NOSKU131_img1.png",
-      "image2": "sku_images/NOSKU131_img2.png",
       "alt_sku_1": "",
       "alt_sku_2": "",
       "alt_sku_3": "",
