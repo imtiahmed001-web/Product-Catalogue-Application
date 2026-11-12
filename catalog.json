@@ -1,7 +1,7 @@
 {
-  "version": 371,
-  "lastUpdated": 1794498805103,
-  "totalProducts": 949,
+  "version": 372,
+  "lastUpdated": 1794498872884,
+  "totalProducts": 948,
   "products": [
     {
       "id": "alb_1794488285678_tg4mix",
@@ -5060,24 +5060,6 @@
       "alt_sku_3": "",
       "saudi_sku": "",
       "supplier_name": "G525\r\n(25W)"
-    },
-    {
-      "id": "prod_1787659425170_o0ilo1_189",
-      "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-08-25T12:03:45.170Z",
-      "brand": "NeoOrbit",
-      "category": "",
-      "sku": "NOSKU132",
-      "name": "Wrist Guard Mouse Pad Sample",
-      "barcode": "-",
-      "supplier_code": "",
-      "image1": "sku_images/NOSKU132.png",
-      "image2": "",
-      "alt_sku_1": "",
-      "alt_sku_2": "",
-      "alt_sku_3": "",
-      "saudi_sku": "",
-      "supplier_name": ""
     },
     {
       "id": "prod_1787659425170_ocy130_16",
