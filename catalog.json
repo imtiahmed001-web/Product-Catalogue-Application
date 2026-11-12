@@ -1,6 +1,6 @@
 {
-  "version": 360,
-  "lastUpdated": 1794497497226,
+  "version": 361,
+  "lastUpdated": 1794497716965,
   "totalProducts": 954,
   "products": [
     {
@@ -5478,12 +5478,12 @@
     {
       "id": "prod_1787659425170_rkmeps_95",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-08-25T12:03:45.170Z",
-      "brand": "Redblossom",
-      "category": "",
-      "sku": "NOSKU134",
-      "name": "Silicone Ice Compress Basin Black, Green, Rose Red",
-      "barcode": "-",
+      "updated_at": "2026-11-12T15:35:12.204Z",
+      "brand": "Tubeaut",
+      "category": "Regular",
+      "sku": "Z94EDE39544665ED9FAF2Z-1",
+      "name": "Silicone Ice Facial Bowl With Built-in Ice Tray, Collapsible And Reusable 1 Pcs",
+      "barcode": "4060460710921",
       "supplier_code": "",
       "image1": "sku_images/NOSKU134.png",
       "image2": "",
