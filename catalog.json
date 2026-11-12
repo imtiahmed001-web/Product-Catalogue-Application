@@ -1,7 +1,7 @@
 {
-  "version": 306,
-  "lastUpdated": 1794491042584,
-  "totalProducts": 989,
+  "version": 307,
+  "lastUpdated": 1794491079544,
+  "totalProducts": 988,
   "products": [
     {
       "id": "alb_1794488285678_tg4mix",
@@ -8534,24 +8534,6 @@
       "alt_sku_3": "",
       "saudi_sku": "ZE86E5FD3AC5A2F7B018DZ-1",
       "supplier_name": "DF IMPORT & EXPORT LTD"
-    },
-    {
-      "id": "prod_1787659425171_dsvxpn_248",
-      "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-11T15:13:19.440Z",
-      "brand": "Homecare",
-      "category": "3-Way",
-      "sku": "NOSKU020",
-      "name": "3-Way Universal Adaptor Plug with 2 round-pin, 5A 250V",
-      "barcode": "-",
-      "supplier_code": "HCW7998B (DCW7998B)",
-      "image1": "sku_images/NOSKU020.png",
-      "image2": "",
-      "alt_sku_1": "",
-      "alt_sku_2": "",
-      "alt_sku_3": "",
-      "saudi_sku": "",
-      "supplier_name": "GUANGDONG DACHANG ELECTRICAL CO.,LTD"
     },
     {
       "id": "prod_1787659425171_duvfb2_269",
