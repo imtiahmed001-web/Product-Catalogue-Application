@@ -1,6 +1,6 @@
 {
-  "version": 303,
-  "lastUpdated": 1794490423484,
+  "version": 304,
+  "lastUpdated": 1794490491432,
   "totalProducts": 989,
   "products": [
     {
@@ -11526,11 +11526,11 @@
     {
       "id": "prod_1787659425171_yhra51_495",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-12T14:35:43.810Z",
+      "updated_at": "2026-11-12T13:34:47.232Z",
       "brand": "Homecare",
       "category": "Bottle",
-      "sku": "NOSKU178",
-      "name": "1000ml Vaccum Cup with 3 Caps Purple",
+      "sku": "Z010CF7264DCE2419A4E2Z-1",
+      "name": "AEROFLASK Insulated Stainless Steel Water Bottle – Pink 1000ml | Leakproof",
       "barcode": "6815065302269",
       "supplier_code": "KJ972-226HC PURPLE",
       "image1": "sku_images/NOSKU178.png",
