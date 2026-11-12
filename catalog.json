@@ -1,7 +1,7 @@
 {
-  "version": 345,
-  "lastUpdated": 1794496475872,
-  "totalProducts": 965,
+  "version": 346,
+  "lastUpdated": 1794496486998,
+  "totalProducts": 964,
   "products": [
     {
       "id": "alb_1794488285678_tg4mix",
@@ -7472,24 +7472,6 @@
       "alt_sku_3": "",
       "saudi_sku": "",
       "supplier_name": "Beone Mart Trading LLC"
-    },
-    {
-      "id": "prod_1787659425171_7wlnfa_268",
-      "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-12T14:28:41.807Z",
-      "brand": "Homecare",
-      "category": "Tiffin",
-      "sku": "NOSKU182",
-      "name": "Lunch Box 2 pcs Sample",
-      "barcode": "-",
-      "supplier_code": "",
-      "image1": "sku_images/NOSKU182.png",
-      "image2": "",
-      "alt_sku_1": "",
-      "alt_sku_2": "",
-      "alt_sku_3": "",
-      "saudi_sku": "",
-      "supplier_name": ""
     },
     {
       "id": "prod_1787659425171_7wp4i8_466",
