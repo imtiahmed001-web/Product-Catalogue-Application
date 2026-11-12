@@ -1,7 +1,7 @@
 {
-  "version": 352,
-  "lastUpdated": 1794496752688,
-  "totalProducts": 958,
+  "version": 353,
+  "lastUpdated": 1794496836826,
+  "totalProducts": 957,
   "products": [
     {
       "id": "alb_1794488285678_tg4mix",
@@ -16017,24 +16017,6 @@
       "supplier_code": "",
       "image1": "sku_images/Z7ADDB01661D4B89A5ABDZ-1.png",
       "image2": "",
-      "alt_sku_1": "",
-      "alt_sku_2": "",
-      "alt_sku_3": "",
-      "saudi_sku": "",
-      "supplier_name": ""
-    },
-    {
-      "id": "prod_1787659425172_skv10j_814",
-      "created_at": "2026-08-25T12:03:45.172Z",
-      "updated_at": "2026-08-25T12:03:45.172Z",
-      "brand": "Homecare",
-      "category": "",
-      "sku": "NOSKU118",
-      "name": "Pallet 120*100*14cm 7.8kg",
-      "barcode": "-",
-      "supplier_code": "",
-      "image1": "sku_images/NOSKU118_img1.png",
-      "image2": "sku_images/NOSKU118_img2.png",
       "alt_sku_1": "",
       "alt_sku_2": "",
       "alt_sku_3": "",
