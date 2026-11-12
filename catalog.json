@@ -1,7 +1,7 @@
 {
-  "version": 315,
-  "lastUpdated": 1794492768992,
-  "totalProducts": 981,
+  "version": 316,
+  "lastUpdated": 1794492801165,
+  "totalProducts": 980,
   "products": [
     {
       "id": "alb_1794488285678_tg4mix",
@@ -10670,24 +10670,6 @@
       "barcode": "-",
       "supplier_code": "",
       "image1": "sku_images/ZAF794BCCBF9C5844DAF4Z-1.png",
-      "image2": "",
-      "alt_sku_1": "",
-      "alt_sku_2": "",
-      "alt_sku_3": "",
-      "saudi_sku": "",
-      "supplier_name": ""
-    },
-    {
-      "id": "prod_1787659425171_syhlg7_437",
-      "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-08-25T12:03:45.171Z",
-      "brand": "Homecare",
-      "category": "",
-      "sku": "NOSKU009",
-      "name": "Brass Water Pot - Vaastu décor showpiece - Puja Kalash",
-      "barcode": "-",
-      "supplier_code": "",
-      "image1": "sku_images/NOSKU009.png",
       "image2": "",
       "alt_sku_1": "",
       "alt_sku_2": "",
