@@ -1,7 +1,7 @@
 {
-  "version": 332,
-  "lastUpdated": 1794495399040,
-  "totalProducts": 975,
+  "version": 333,
+  "lastUpdated": 1794495494365,
+  "totalProducts": 974,
   "products": [
     {
       "id": "alb_1794488285678_tg4mix",
@@ -14216,24 +14216,6 @@
       "barcode": "-",
       "supplier_code": "",
       "image1": "sku_images/ZBD4B632FFE56F1B2CB46Z-1.png",
-      "image2": "",
-      "alt_sku_1": "",
-      "alt_sku_2": "",
-      "alt_sku_3": "",
-      "saudi_sku": "",
-      "supplier_name": ""
-    },
-    {
-      "id": "prod_1787659425172_fold1l_758",
-      "created_at": "2026-08-25T12:03:45.172Z",
-      "updated_at": "2026-08-25T12:03:45.172Z",
-      "brand": "Homecare",
-      "category": "Flag",
-      "sku": "NOSKU154",
-      "name": "Egypt FLAG 14*21CM",
-      "barcode": "-",
-      "supplier_code": "",
-      "image1": "sku_images/NOSKU154.png",
       "image2": "",
       "alt_sku_1": "",
       "alt_sku_2": "",
