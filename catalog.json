@@ -1,7 +1,7 @@
 {
-  "version": 357,
-  "lastUpdated": 1794497225101,
-  "totalProducts": 955,
+  "version": 358,
+  "lastUpdated": 1794497260363,
+  "totalProducts": 954,
   "products": [
     {
       "id": "alb_1794488285678_tg4mix",
@@ -4232,24 +4232,6 @@
       "alt_sku_3": "",
       "saudi_sku": "",
       "supplier_name": "DF IMPORT & EXPORT LTD"
-    },
-    {
-      "id": "prod_1787659425170_eeoaz1_176",
-      "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-08-25T12:03:45.170Z",
-      "brand": "NeoOrbit",
-      "category": "",
-      "sku": "NOSKU032",
-      "name": "Sample Name Not Avaialable",
-      "barcode": "-",
-      "supplier_code": "",
-      "image1": "sku_images/NOSKU032.png",
-      "image2": "",
-      "alt_sku_1": "",
-      "alt_sku_2": "",
-      "alt_sku_3": "",
-      "saudi_sku": "",
-      "supplier_name": ""
     },
     {
       "id": "prod_1787659425170_ela1wc_180",
