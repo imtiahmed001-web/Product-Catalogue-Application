@@ -1,7 +1,7 @@
 {
-  "version": 337,
-  "lastUpdated": 1794495922771,
-  "totalProducts": 972,
+  "version": 338,
+  "lastUpdated": 1794496034995,
+  "totalProducts": 971,
   "products": [
     {
       "id": "alb_1794488285678_tg4mix",
@@ -12146,24 +12146,6 @@
       "barcode": "-",
       "supplier_code": "",
       "image1": "sku_images/ZCF0A6C08BCCE012C6012Z-1.png",
-      "image2": "",
-      "alt_sku_1": "",
-      "alt_sku_2": "",
-      "alt_sku_3": "",
-      "saudi_sku": "",
-      "supplier_name": ""
-    },
-    {
-      "id": "prod_1787659425172_3ugj1l_799",
-      "created_at": "2026-08-25T12:03:45.172Z",
-      "updated_at": "2026-08-25T12:03:45.172Z",
-      "brand": "Homecare",
-      "category": "Flag",
-      "sku": "NOSKU107",
-      "name": "Flag 90*145cm Portugal",
-      "barcode": "-",
-      "supplier_code": "",
-      "image1": "sku_images/NOSKU107.png",
       "image2": "",
       "alt_sku_1": "",
       "alt_sku_2": "",
