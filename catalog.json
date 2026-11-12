@@ -1,7 +1,7 @@
 {
-  "version": 336,
-  "lastUpdated": 1794495885386,
-  "totalProducts": 973,
+  "version": 337,
+  "lastUpdated": 1794495922771,
+  "totalProducts": 972,
   "products": [
     {
       "id": "alb_1794488285678_tg4mix",
@@ -16376,24 +16376,6 @@
       "barcode": "-",
       "supplier_code": "",
       "image1": "sku_images/Z971A2A0C92FF807ACA56Z-1.png",
-      "image2": "",
-      "alt_sku_1": "",
-      "alt_sku_2": "",
-      "alt_sku_3": "",
-      "saudi_sku": "",
-      "supplier_name": ""
-    },
-    {
-      "id": "prod_1787659425172_tighbo_797",
-      "created_at": "2026-08-25T12:03:45.172Z",
-      "updated_at": "2026-08-25T12:03:45.172Z",
-      "brand": "Homecare",
-      "category": "Flag",
-      "sku": "NOSKU095",
-      "name": "Flag / Opp bag 90*150cm - India",
-      "barcode": "-",
-      "supplier_code": "",
-      "image1": "sku_images/NOSKU095.png",
       "image2": "",
       "alt_sku_1": "",
       "alt_sku_2": "",
