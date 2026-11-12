@@ -1,6 +1,6 @@
 {
-  "version": 362,
-  "lastUpdated": 1794497733177,
+  "version": 363,
+  "lastUpdated": 1794497931905,
   "totalProducts": 953,
   "products": [
     {
@@ -11328,11 +11328,11 @@
     {
       "id": "prod_1787659425171_ziin9i_286",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-12T14:21:42.082Z",
+      "updated_at": "2026-11-12T15:38:47.359Z",
       "brand": "Homecare",
       "category": "Tiffin Bag",
-      "sku": "NOSKU177",
-      "name": "Tiffin Bag Dark Blue",
+      "sku": "ZA5481EB31F8889157C55Z-1",
+      "name": "Insulated Lunch Tote – Navy Leakproof & Waterproof",
       "barcode": "6815065302329",
       "supplier_code": "KJ972-232HC BLACK",
       "image1": "sku_images/NOSKU177.png",
