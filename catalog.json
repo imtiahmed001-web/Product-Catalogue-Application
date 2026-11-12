@@ -1,6 +1,6 @@
 {
-  "version": 356,
-  "lastUpdated": 1794497072316,
+  "version": 357,
+  "lastUpdated": 1794497225101,
   "totalProducts": 955,
   "products": [
     {
@@ -3876,11 +3876,11 @@
     {
       "id": "prod_1787659425170_aj760b_96",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-10-02T07:15:54.668Z",
+      "updated_at": "2026-11-12T15:27:00.890Z",
       "brand": "Tubeaut",
       "category": "Nail Clipper",
-      "sku": "NOSKU135",
-      "name": "Rose Gold Nail Clipper Set Sample",
+      "sku": "Z71523BE1C0BD56765995Z-1",
+      "name": "Nail Clipper, Stainless Steel, Pink Champagne Finish",
       "barcode": "-",
       "supplier_code": "",
       "image1": "sku_images/NOSKU135.jpg",
