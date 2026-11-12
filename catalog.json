@@ -1,6 +1,6 @@
 {
-  "version": 333,
-  "lastUpdated": 1794495494365,
+  "version": 334,
+  "lastUpdated": 1794495724105,
   "totalProducts": 974,
   "products": [
     {
@@ -4686,11 +4686,11 @@
     {
       "id": "prod_1787659425170_iw4xl6_108",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-09-12T13:54:45.597Z",
+      "updated_at": "2026-11-12T15:01:59.856Z",
       "brand": "Redblossom",
       "category": "Regular",
-      "sku": "NOSKU191",
-      "name": "Eye Mask 4PCS Set",
+      "sku": "Z730B894A61C7A9B3AFA6Z-1",
+      "name": "Satin Sleep Set - Pillowcase, Eye Mask, Scrunchie And Hair Band, 4Pc Set",
       "barcode": "4060460602402",
       "supplier_code": "KJ972-240TB",
       "image1": "sku_images/NOSKU191.png",
