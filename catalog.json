@@ -1,7 +1,7 @@
 {
-  "version": 334,
-  "lastUpdated": 1794495724105,
-  "totalProducts": 974,
+  "version": 335,
+  "lastUpdated": 1794495794059,
+  "totalProducts": 973,
   "products": [
     {
       "id": "alb_1794488285678_tg4mix",
@@ -4862,24 +4862,6 @@
       "alt_sku_3": "",
       "saudi_sku": "",
       "supplier_name": "Beone Mart Trading LLC"
-    },
-    {
-      "id": "prod_1787659425170_kae415_93",
-      "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-09-12T13:58:50.041Z",
-      "brand": "Redblossom",
-      "category": "Regular",
-      "sku": "NOSKU002",
-      "name": "Fabric Hairband",
-      "barcode": "6815065301518",
-      "supplier_code": "KJ972-151",
-      "image1": "sku_images/NOSKU002.png",
-      "image2": "",
-      "alt_sku_1": "",
-      "alt_sku_2": "",
-      "alt_sku_3": "",
-      "saudi_sku": "",
-      "supplier_name": "DF IMPORT & EXPORT LTD"
     },
     {
       "id": "prod_1787659425170_kqozhl_12",
