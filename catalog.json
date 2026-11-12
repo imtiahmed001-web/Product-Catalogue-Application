@@ -1,7 +1,7 @@
 {
-  "version": 314,
-  "lastUpdated": 1794492740403,
-  "totalProducts": 982,
+  "version": 315,
+  "lastUpdated": 1794492768992,
+  "totalProducts": 981,
   "products": [
     {
       "id": "alb_1794488285678_tg4mix",
@@ -8618,24 +8618,6 @@
       "barcode": "-",
       "supplier_code": "",
       "image1": "sku_images/ZB79E127910541CEC5B4BZ-1.png",
-      "image2": "",
-      "alt_sku_1": "",
-      "alt_sku_2": "",
-      "alt_sku_3": "",
-      "saudi_sku": "",
-      "supplier_name": ""
-    },
-    {
-      "id": "prod_1787659425171_eft4h0_491",
-      "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-12T14:10:54.936Z",
-      "brand": "Homecare",
-      "category": "Bottle",
-      "sku": "NOSKU126",
-      "name": "Bottle Sample",
-      "barcode": "-",
-      "supplier_code": "",
-      "image1": "sku_images/NOSKU126.png",
       "image2": "",
       "alt_sku_1": "",
       "alt_sku_2": "",
