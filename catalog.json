@@ -1,6 +1,6 @@
 {
-  "version": 367,
-  "lastUpdated": 1794498360354,
+  "version": 368,
+  "lastUpdated": 1794498427134,
   "totalProducts": 952,
   "products": [
     {
@@ -10770,11 +10770,11 @@
     {
       "id": "prod_1787659425171_v9acxs_493",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-12T13:58:32.794Z",
+      "updated_at": "2026-11-12T15:47:02.590Z",
       "brand": "Homecare",
       "category": "Regular",
-      "sku": "NOSKU162",
-      "name": "Vacuum Cup 550ml Cream",
+      "sku": "Z75E5C29BE3116E5E3D49Z-1",
+      "name": "Stainless Steel Travel Tumbler – White 550ml",
       "barcode": "6815065302251",
       "supplier_code": "KJ972-225HC CREAM",
       "image1": "sku_images/NOSKU162.png",
