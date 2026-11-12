@@ -1,6 +1,6 @@
 {
-  "version": 304,
-  "lastUpdated": 1794490491432,
+  "version": 305,
+  "lastUpdated": 1794490781880,
   "totalProducts": 989,
   "products": [
     {
@@ -9960,11 +9960,11 @@
     {
       "id": "prod_1787659425171_nfp0e2_496",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-12T14:34:27.821Z",
+      "updated_at": "2026-11-12T13:39:37.676Z",
       "brand": "Homecare",
       "category": "Bottle",
-      "sku": "NOSKU164",
-      "name": "24OZ Vaccum Cup white box packing Pink",
+      "sku": "Z4EC6D0FE0A3B8E229083Z-1",
+      "name": "Stainless Steel Water Bottle – Pink 720ml | Includes 3 Lids",
       "barcode": "6815065302275",
       "supplier_code": "KJ972-227HC PINK",
       "image1": "sku_images/NOSKU164.png",
