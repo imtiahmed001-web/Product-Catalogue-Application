@@ -1,7 +1,7 @@
 {
-  "version": 341,
-  "lastUpdated": 1794496209008,
-  "totalProducts": 969,
+  "version": 342,
+  "lastUpdated": 1794496220722,
+  "totalProducts": 968,
   "products": [
     {
       "id": "alb_1794488285678_tg4mix",
@@ -12237,24 +12237,6 @@
       "supplier_code": "",
       "image1": "sku_images/Z11B01179614F6FE7A44FZ-1_img1.png",
       "image2": "sku_images/Z11B01179614F6FE7A44FZ-1_img2.png",
-      "alt_sku_1": "",
-      "alt_sku_2": "",
-      "alt_sku_3": "",
-      "saudi_sku": "",
-      "supplier_name": ""
-    },
-    {
-      "id": "prod_1787659425172_4er3pb_753",
-      "created_at": "2026-08-25T12:03:45.172Z",
-      "updated_at": "2026-08-25T12:03:45.172Z",
-      "brand": "Homecare",
-      "category": "Flag",
-      "sku": "NOSKU149",
-      "name": "Jordan FLAG 14*21CM",
-      "barcode": "-",
-      "supplier_code": "",
-      "image1": "sku_images/NOSKU149.png",
-      "image2": "",
       "alt_sku_1": "",
       "alt_sku_2": "",
       "alt_sku_3": "",
