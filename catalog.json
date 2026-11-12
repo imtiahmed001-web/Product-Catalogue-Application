@@ -1,7 +1,7 @@
 {
-  "version": 348,
-  "lastUpdated": 1794496510337,
-  "totalProducts": 962,
+  "version": 349,
+  "lastUpdated": 1794496652694,
+  "totalProducts": 961,
   "products": [
     {
       "id": "alb_1794488285678_tg4mix",
@@ -5348,24 +5348,6 @@
       "alt_sku_3": "",
       "saudi_sku": "",
       "supplier_name": "DF IMPORT & EXPORT LTD"
-    },
-    {
-      "id": "prod_1787659425170_q6zwjn_97",
-      "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-08-25T12:03:45.170Z",
-      "brand": "Redblossom",
-      "category": "",
-      "sku": "NOSKU136",
-      "name": "Makeup Brush Storage Box Sample",
-      "barcode": "-",
-      "supplier_code": "",
-      "image1": "sku_images/NOSKU136.jpg",
-      "image2": "",
-      "alt_sku_1": "",
-      "alt_sku_2": "",
-      "alt_sku_3": "",
-      "saudi_sku": "",
-      "supplier_name": ""
     },
     {
       "id": "prod_1787659425170_qg8nmc_138",
