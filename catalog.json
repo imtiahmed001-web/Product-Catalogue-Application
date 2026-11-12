@@ -1,7 +1,7 @@
 {
-  "version": 308,
-  "lastUpdated": 1794491536575,
-  "totalProducts": 987,
+  "version": 309,
+  "lastUpdated": 1794491958648,
+  "totalProducts": 986,
   "products": [
     {
       "id": "alb_1794488285678_tg4mix",
@@ -10190,24 +10190,6 @@
       "alt_sku_3": "",
       "saudi_sku": "",
       "supplier_name": "Beone Mart Trading LLC"
-    },
-    {
-      "id": "prod_1787659425171_oulkbu_439",
-      "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-08-25T12:03:45.171Z",
-      "brand": "Homecare",
-      "category": "",
-      "sku": "NOSKU011",
-      "name": "53 ARTS Decorative Wooden Pine Cone 4.5 Cm | 6pcs/set",
-      "barcode": "-",
-      "supplier_code": "",
-      "image1": "sku_images/NOSKU011.png",
-      "image2": "",
-      "alt_sku_1": "",
-      "alt_sku_2": "",
-      "alt_sku_3": "",
-      "saudi_sku": "",
-      "supplier_name": ""
     },
     {
       "id": "prod_1787659425171_owqaee_228",
