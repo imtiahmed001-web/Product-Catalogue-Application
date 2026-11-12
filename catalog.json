@@ -1,7 +1,7 @@
 {
-  "version": 353,
-  "lastUpdated": 1794496836826,
-  "totalProducts": 957,
+  "version": 354,
+  "lastUpdated": 1794496918175,
+  "totalProducts": 956,
   "products": [
     {
       "id": "alb_1794488285678_tg4mix",
@@ -15422,24 +15422,6 @@
       "barcode": "-",
       "supplier_code": "",
       "image1": "sku_images/ZA17689603D0F3752B487Z-1.png",
-      "image2": "",
-      "alt_sku_1": "",
-      "alt_sku_2": "",
-      "alt_sku_3": "",
-      "saudi_sku": "",
-      "supplier_name": ""
-    },
-    {
-      "id": "prod_1787659425172_nqjdc0_540",
-      "created_at": "2026-08-25T12:03:45.172Z",
-      "updated_at": "2026-08-25T12:03:45.172Z",
-      "brand": "Homecare",
-      "category": "",
-      "sku": "NOSKU013",
-      "name": "PET / CPP Bag 12nm in 3 colors Printed",
-      "barcode": "-",
-      "supplier_code": "",
-      "image1": "sku_images/NOSKU013.png",
       "image2": "",
       "alt_sku_1": "",
       "alt_sku_2": "",
