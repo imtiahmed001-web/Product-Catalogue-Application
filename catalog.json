@@ -1,7 +1,7 @@
 {
-  "version": 310,
-  "lastUpdated": 1794492113620,
-  "totalProducts": 985,
+  "version": 311,
+  "lastUpdated": 1794492259851,
+  "totalProducts": 984,
   "products": [
     {
       "id": "alb_1794488285678_tg4mix",
@@ -12332,24 +12332,6 @@
       "alt_sku_3": "",
       "saudi_sku": "",
       "supplier_name": "DF IMPORT & EXPORT LTD"
-    },
-    {
-      "id": "prod_1787659425172_4asepn_751",
-      "created_at": "2026-08-25T12:03:45.172Z",
-      "updated_at": "2026-08-25T12:03:45.172Z",
-      "brand": "Homecare",
-      "category": "Flag",
-      "sku": "NOSKU147",
-      "name": "America FLAG 14*21CM",
-      "barcode": "-",
-      "supplier_code": "",
-      "image1": "sku_images/NOSKU147.png",
-      "image2": "",
-      "alt_sku_1": "",
-      "alt_sku_2": "",
-      "alt_sku_3": "",
-      "saudi_sku": "",
-      "supplier_name": ""
     },
     {
       "id": "prod_1787659425172_4auwvm_564",
