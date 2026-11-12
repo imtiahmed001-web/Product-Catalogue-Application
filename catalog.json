@@ -1,7 +1,7 @@
 {
-  "version": 339,
-  "lastUpdated": 1794496051235,
-  "totalProducts": 971,
+  "version": 340,
+  "lastUpdated": 1794496138946,
+  "totalProducts": 970,
   "products": [
     {
       "id": "alb_1794488285678_tg4mix",
@@ -8516,24 +8516,6 @@
       "alt_sku_3": "",
       "saudi_sku": "",
       "supplier_name": "DF IMPORT & EXPORT LTD"
-    },
-    {
-      "id": "prod_1787659425171_eb3kqb_438",
-      "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-08-25T12:03:45.171Z",
-      "brand": "Homecare",
-      "category": "",
-      "sku": "NOSKU010",
-      "name": "Generic 0.5m 10 Lights Warm White",
-      "barcode": "-",
-      "supplier_code": "",
-      "image1": "sku_images/NOSKU010.png",
-      "image2": "",
-      "alt_sku_1": "",
-      "alt_sku_2": "",
-      "alt_sku_3": "",
-      "saudi_sku": "",
-      "supplier_name": ""
     },
     {
       "id": "prod_1787659425171_ecuymi_494",
