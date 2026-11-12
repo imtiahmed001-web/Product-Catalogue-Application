@@ -1,7 +1,7 @@
 {
-  "version": 312,
-  "lastUpdated": 1794492328142,
-  "totalProducts": 983,
+  "version": 313,
+  "lastUpdated": 1794492400148,
+  "totalProducts": 982,
   "products": [
     {
       "id": "alb_1794488285678_tg4mix",
@@ -16922,24 +16922,6 @@
       "alt_sku_3": "",
       "saudi_sku": "",
       "supplier_name": "Beone Mart Trading LLC"
-    },
-    {
-      "id": "prod_1787659425172_vmwin4_815",
-      "created_at": "2026-08-25T12:03:45.172Z",
-      "updated_at": "2026-08-25T12:03:45.172Z",
-      "brand": "Homecare",
-      "category": "",
-      "sku": "NOSKU128",
-      "name": "BAG Sample",
-      "barcode": "-",
-      "supplier_code": "",
-      "image1": "sku_images/NOSKU128.png",
-      "image2": "",
-      "alt_sku_1": "",
-      "alt_sku_2": "",
-      "alt_sku_3": "",
-      "saudi_sku": "",
-      "supplier_name": ""
     },
     {
       "id": "prod_1787659425172_vo5rfc_850",
