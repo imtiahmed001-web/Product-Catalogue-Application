@@ -1,7 +1,7 @@
 {
-  "version": 346,
-  "lastUpdated": 1794496486998,
-  "totalProducts": 964,
+  "version": 347,
+  "lastUpdated": 1794496497304,
+  "totalProducts": 963,
   "products": [
     {
       "id": "alb_1794488285678_tg4mix",
@@ -9050,24 +9050,6 @@
       "barcode": "-",
       "supplier_code": "",
       "image1": "sku_images/Z08437B3B662C364CFD0DZ-1.png",
-      "image2": "",
-      "alt_sku_1": "",
-      "alt_sku_2": "",
-      "alt_sku_3": "",
-      "saudi_sku": "",
-      "supplier_name": ""
-    },
-    {
-      "id": "prod_1787659425171_ioao2u_267",
-      "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-12T14:29:24.785Z",
-      "brand": "Homecare",
-      "category": "Tiffin",
-      "sku": "NOSKU181",
-      "name": "Lunch Box 3 pcs Sample",
-      "barcode": "-",
-      "supplier_code": "",
-      "image1": "sku_images/NOSKU181.png",
       "image2": "",
       "alt_sku_1": "",
       "alt_sku_2": "",
