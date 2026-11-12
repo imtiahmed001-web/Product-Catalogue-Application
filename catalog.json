@@ -1,6 +1,6 @@
 {
-  "version": 331,
-  "lastUpdated": 1794495234175,
+  "version": 332,
+  "lastUpdated": 1794495399040,
   "totalProducts": 975,
   "products": [
     {
@@ -5568,11 +5568,11 @@
     {
       "id": "prod_1787659425170_rjy34f_137",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-08-25T12:03:45.170Z",
+      "updated_at": "2026-11-12T14:56:33.867Z",
       "brand": "NeoOrbit",
-      "category": "",
-      "sku": "NOSKU205",
-      "name": "Earphone Case",
+      "category": "Regular",
+      "sku": "Z107D0DE1CCF75CCD58FEZ-1",
+      "name": "Earphone Case – Hard Protective Storage Case with Soft Microfiber Lining",
       "barcode": "-",
       "supplier_code": "",
       "image1": "sku_images/NOSKU205.png",
