@@ -1,6 +1,6 @@
 {
-  "version": 305,
-  "lastUpdated": 1794490781880,
+  "version": 306,
+  "lastUpdated": 1794491042584,
   "totalProducts": 989,
   "products": [
     {
@@ -10356,20 +10356,20 @@
     {
       "id": "prod_1787659425171_pxu3ai_247",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-12T12:57:59.417Z",
+      "updated_at": "2026-11-12T13:43:58.340Z",
       "brand": "Homecare",
       "category": "Regular",
       "sku": "ZCB63225B90FBAE6D6314Z-1",
       "name": "[1-Piece] Plug Converter, UAE, USA, EU, UK, AU, CN to KSA / EU / Germany Socket",
       "barcode": "4060460705101",
-      "supplier_code": "",
+      "supplier_code": "HCW7998B (DCW7998B)",
       "image1": "sku_images/ZCB63225B90FBAE6D6314Z-1_img1.png",
       "image2": "sku_images/ZCB63225B90FBAE6D6314Z-1_img2.png",
       "alt_sku_1": "Z25B5FA1B441A67FCC24CZ-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
-      "supplier_name": ""
+      "supplier_name": "GUANGDONG DACHANG ELECTRICAL CO.,LTD"
     },
     {
       "id": "prod_1787659425171_pzimj9_241",
