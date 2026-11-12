@@ -1,7 +1,7 @@
 {
-  "version": 329,
-  "lastUpdated": 1794494985036,
-  "totalProducts": 977,
+  "version": 330,
+  "lastUpdated": 1794495184626,
+  "totalProducts": 976,
   "products": [
     {
       "id": "alb_1794488285678_tg4mix",
@@ -15836,24 +15836,6 @@
       "barcode": "4060460707426",
       "supplier_code": "",
       "image1": "sku_images/ZFBD96AC77F46D716E7B7Z-1.png",
-      "image2": "",
-      "alt_sku_1": "",
-      "alt_sku_2": "",
-      "alt_sku_3": "",
-      "saudi_sku": "",
-      "supplier_name": ""
-    },
-    {
-      "id": "prod_1787659425172_p4aga6_813",
-      "created_at": "2026-08-25T12:03:45.172Z",
-      "updated_at": "2026-08-25T12:03:45.172Z",
-      "brand": "Homecare",
-      "category": "",
-      "sku": "NOSKU115",
-      "name": "Cup Sample",
-      "barcode": "-",
-      "supplier_code": "",
-      "image1": "sku_images/NOSKU115.png",
       "image2": "",
       "alt_sku_1": "",
       "alt_sku_2": "",
