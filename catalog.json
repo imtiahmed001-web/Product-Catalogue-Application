@@ -1,7 +1,7 @@
 {
-  "version": 317,
-  "lastUpdated": 1794493196041,
-  "totalProducts": 979,
+  "version": 318,
+  "lastUpdated": 1794493370103,
+  "totalProducts": 978,
   "products": [
     {
       "id": "alb_1794488285678_tg4mix",
@@ -14342,24 +14342,6 @@
       "barcode": "-",
       "supplier_code": "",
       "image1": "sku_images/N22505654A-1.png",
-      "image2": "",
-      "alt_sku_1": "",
-      "alt_sku_2": "",
-      "alt_sku_3": "",
-      "saudi_sku": "",
-      "supplier_name": ""
-    },
-    {
-      "id": "prod_1787659425172_g5m7yb_750",
-      "created_at": "2026-08-25T12:03:45.172Z",
-      "updated_at": "2026-08-25T12:03:45.172Z",
-      "brand": "Homecare",
-      "category": "Flag",
-      "sku": "NOSKU146",
-      "name": "Canada FLAG 14*21CM",
-      "barcode": "-",
-      "supplier_code": "",
-      "image1": "sku_images/NOSKU146.png",
       "image2": "",
       "alt_sku_1": "",
       "alt_sku_2": "",
