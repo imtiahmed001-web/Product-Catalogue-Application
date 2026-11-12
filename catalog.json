@@ -1,7 +1,7 @@
 {
-  "version": 330,
-  "lastUpdated": 1794495184626,
-  "totalProducts": 976,
+  "version": 331,
+  "lastUpdated": 1794495234175,
+  "totalProducts": 975,
   "products": [
     {
       "id": "alb_1794488285678_tg4mix",
@@ -16016,24 +16016,6 @@
       "barcode": "-",
       "supplier_code": "",
       "image1": "sku_images/ZCD230101CAA08DF4930CZ-1.png",
-      "image2": "",
-      "alt_sku_1": "",
-      "alt_sku_2": "",
-      "alt_sku_3": "",
-      "saudi_sku": "",
-      "supplier_name": ""
-    },
-    {
-      "id": "prod_1787659425172_pwmuoi_713",
-      "created_at": "2026-08-25T12:03:45.172Z",
-      "updated_at": "2026-08-25T12:03:45.172Z",
-      "brand": "Homecare",
-      "category": "Diwali",
-      "sku": "NOSKU050",
-      "name": "Diwali Decoration Light",
-      "barcode": "-",
-      "supplier_code": "",
-      "image1": "sku_images/NOSKU050.png",
       "image2": "",
       "alt_sku_1": "",
       "alt_sku_2": "",
