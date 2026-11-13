@@ -1,6 +1,6 @@
 {
-  "version": 381,
-  "lastUpdated": 1794555600234,
+  "version": 382,
+  "lastUpdated": 1794555654827,
   "totalProducts": 951,
   "products": [
     {
@@ -6828,7 +6828,7 @@
     {
       "id": "prod_1787659425171_4sa35y_471",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-12T14:06:17.059Z",
+      "updated_at": "2026-11-13T07:40:50.198Z",
       "brand": "Homecare",
       "category": "Bottle",
       "sku": "Z158359E38CE41C623D76Z-1",
@@ -6837,7 +6837,7 @@
       "supplier_code": "",
       "image1": "sku_images/Z158359E38CE41C623D76Z-1.png",
       "image2": "",
-      "alt_sku_1": "",
+      "alt_sku_1": "Z56B99B5C71ADA195CD1FZ-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
