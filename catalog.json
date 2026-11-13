@@ -1,6 +1,6 @@
 {
-  "version": 385,
-  "lastUpdated": 1794555762417,
+  "version": 386,
+  "lastUpdated": 1794560626080,
   "totalProducts": 951,
   "products": [
     {
@@ -43,7 +43,7 @@
       "id": "alb_1794552203945_1hxo3k",
       "brand": "Homecare",
       "category": "Gift Set",
-      "sku": "N",
+      "sku": "n",
       "name": "Gift Bag 26*32*10cm 2pcs/set",
       "barcode": "6815065303181",
       "supplier_code": "KJ972-318HC",
@@ -55,7 +55,7 @@
       "saudi_sku": "",
       "supplier_name": "DF IMPORT & EXPORT LTD",
       "created_at": "2026-11-13T06:43:23.945Z",
-      "updated_at": "2026-11-13T06:43:23.945Z"
+      "updated_at": "2026-11-13T09:03:40.702Z"
     },
     {
       "id": "alb_1794488285678_tg4mix",
