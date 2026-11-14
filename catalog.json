@@ -1,6 +1,6 @@
 {
-  "version": 405,
-  "lastUpdated": 1794645934595,
+  "version": 406,
+  "lastUpdated": 1794646008572,
   "totalProducts": 964,
   "products": [
     {
@@ -5154,7 +5154,7 @@
     {
       "id": "prod_1787659425170_m3syzl_41",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-09-12T14:30:08.589Z",
+      "updated_at": "2026-11-14T08:46:43.394Z",
       "brand": "Redblossom",
       "category": "Regular",
       "sku": "ZAC66049C6429E9374E60Z-1",
@@ -5163,7 +5163,7 @@
       "supplier_code": "KJ972-19 RB",
       "image1": "sku_images/ZAC66049C6429E9374E60Z-1_img1.png",
       "image2": "sku_images/ZAC66049C6429E9374E60Z-1_img2.png",
-      "alt_sku_1": "",
+      "alt_sku_1": "N15488944A-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
