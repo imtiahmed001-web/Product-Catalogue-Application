@@ -1,6 +1,6 @@
 {
-  "version": 421,
-  "lastUpdated": 1794647034101,
+  "version": 422,
+  "lastUpdated": 1794647106765,
   "totalProducts": 964,
   "products": [
     {
@@ -5604,16 +5604,16 @@
     {
       "id": "prod_1787659425170_qzjt2j_37",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-08-25T12:03:45.170Z",
+      "updated_at": "2026-11-14T09:05:02.363Z",
       "brand": "Redblossom",
-      "category": "",
+      "category": "Regular",
       "sku": "ZB5F7C94D785BEE206899Z-1",
       "name": "20-Piece Hair Scrunchie Set Multicolour 5x10x3cent",
       "barcode": "4060460694870",
       "supplier_code": "",
       "image1": "sku_images/ZB5F7C94D785BEE206899Z-1.png",
       "image2": "",
-      "alt_sku_1": "",
+      "alt_sku_1": "N20644707A-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
