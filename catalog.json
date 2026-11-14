@@ -1,6 +1,6 @@
 {
-  "version": 407,
-  "lastUpdated": 1794646066542,
+  "version": 408,
+  "lastUpdated": 1794646130693,
   "totalProducts": 964,
   "products": [
     {
@@ -4740,7 +4740,7 @@
     {
       "id": "prod_1787659425170_htsppi_55",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-10-29T13:07:59.770Z",
+      "updated_at": "2026-11-14T08:48:46.354Z",
       "brand": "Redblossom",
       "category": "Comb",
       "sku": "Z8EFE7BA6AC40E8FC7F11Z-1",
@@ -4749,7 +4749,7 @@
       "supplier_code": "KJ972-156 RB",
       "image1": "sku_images/Z8EFE7BA6AC40E8FC7F11Z-1_img1.png",
       "image2": "sku_images/Z8EFE7BA6AC40E8FC7F11Z-1_img2.png",
-      "alt_sku_1": "",
+      "alt_sku_1": "N23436042A-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "Z6CB82BD3EB65CC257062Z-1",
