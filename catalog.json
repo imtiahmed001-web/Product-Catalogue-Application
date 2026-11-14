@@ -1,6 +1,6 @@
 {
-  "version": 408,
-  "lastUpdated": 1794646130693,
+  "version": 409,
+  "lastUpdated": 1794646181038,
   "totalProducts": 964,
   "products": [
     {
@@ -3480,7 +3480,7 @@
     {
       "id": "prod_1787659425170_038bcm_20",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-09-12T12:24:16.640Z",
+      "updated_at": "2026-11-14T08:49:36.838Z",
       "brand": "Redblossom",
       "category": "Regular",
       "sku": "Z55A45961887D8299534EZ-1",
@@ -3489,7 +3489,7 @@
       "supplier_code": "KJ972-10 RB",
       "image1": "sku_images/Z55A45961887D8299534EZ-1.png",
       "image2": "",
-      "alt_sku_1": "",
+      "alt_sku_1": "N45794240A-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
