@@ -1,6 +1,6 @@
 {
-  "version": 412,
-  "lastUpdated": 1794646358571,
+  "version": 413,
+  "lastUpdated": 1794646414536,
   "totalProducts": 964,
   "products": [
     {
@@ -6324,16 +6324,16 @@
     {
       "id": "prod_1787659425170_ykvss7_39",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-08-25T12:03:45.170Z",
+      "updated_at": "2026-11-14T08:53:30.093Z",
       "brand": "Redblossom",
-      "category": "",
+      "category": "Regular",
       "sku": "ZBF647E234761BD919963Z-1",
       "name": "4-Piece Dual Heads Needle Blackhead Remover",
       "barcode": "47654389752",
       "supplier_code": "",
       "image1": "sku_images/ZBF647E234761BD919963Z-1_img1.png",
       "image2": "sku_images/ZBF647E234761BD919963Z-1_img2.png",
-      "alt_sku_1": "",
+      "alt_sku_1": "N16505501A-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
