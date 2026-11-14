@@ -1,6 +1,6 @@
 {
-  "version": 406,
-  "lastUpdated": 1794646008572,
+  "version": 407,
+  "lastUpdated": 1794646066542,
   "totalProducts": 964,
   "products": [
     {
@@ -5172,7 +5172,7 @@
     {
       "id": "prod_1787659425170_mccspe_21",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-09-12T14:40:18.815Z",
+      "updated_at": "2026-11-14T08:47:42.116Z",
       "brand": "Redblossom",
       "category": "Nail Clipper",
       "sku": "Z9CC4EC04C346BA11DB48Z-1",
@@ -5181,7 +5181,7 @@
       "supplier_code": "KJ972-86 RB",
       "image1": "sku_images/Z9CC4EC04C346BA11DB48Z-1_img1.png",
       "image2": "sku_images/Z9CC4EC04C346BA11DB48Z-1_img2.png",
-      "alt_sku_1": "",
+      "alt_sku_1": "N23595264A-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
