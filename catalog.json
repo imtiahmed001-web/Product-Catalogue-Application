@@ -1,6 +1,6 @@
 {
-  "version": 420,
-  "lastUpdated": 1794646956901,
+  "version": 421,
+  "lastUpdated": 1794647034101,
   "totalProducts": 964,
   "products": [
     {
@@ -4272,7 +4272,7 @@
     {
       "id": "prod_1787659425170_ccqemr_3",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-09-12T13:01:18.410Z",
+      "updated_at": "2026-11-14T09:03:49.882Z",
       "brand": "Redblossom",
       "category": "Clip",
       "sku": "ZC1145D3EC1BE03100D05Z-1",
@@ -4281,7 +4281,7 @@
       "supplier_code": "KJ972-02 RB",
       "image1": "sku_images/ZC1145D3EC1BE03100D05Z-1.png",
       "image2": "",
-      "alt_sku_1": "",
+      "alt_sku_1": "N24582288A-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
