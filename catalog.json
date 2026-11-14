@@ -1,6 +1,6 @@
 {
-  "version": 416,
-  "lastUpdated": 1794646631745,
+  "version": 417,
+  "lastUpdated": 1794646759669,
   "totalProducts": 964,
   "products": [
     {
@@ -4920,16 +4920,16 @@
     {
       "id": "prod_1787659425170_j9pcc9_61",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-08-25T12:03:45.170Z",
+      "updated_at": "2026-11-14T08:59:15.488Z",
       "brand": "Redblossom",
-      "category": "",
+      "category": "Regular",
       "sku": "Z58D4B30687709D5D81E1Z-1",
       "name": "Hairdressing Teasing Brush Black 23grams",
       "barcode": "4567321234",
       "supplier_code": "",
       "image1": "sku_images/Z58D4B30687709D5D81E1Z-1.png",
       "image2": "",
-      "alt_sku_1": "",
+      "alt_sku_1": "N20403746A-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
