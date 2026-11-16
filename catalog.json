@@ -1,6 +1,6 @@
 {
-  "version": 445,
-  "lastUpdated": 1794810108303,
+  "version": 446,
+  "lastUpdated": 1794810177922,
   "totalProducts": 982,
   "products": [
     {
@@ -7026,7 +7026,7 @@
     {
       "id": "prod_1787659425171_23ghox_253",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-12T13:00:29.402Z",
+      "updated_at": "2026-11-16T06:22:51.629Z",
       "brand": "Homecare",
       "category": "4-Way",
       "sku": "ZA22D77C898CC0CE853F1Z-1",
@@ -7035,7 +7035,7 @@
       "supplier_code": "HC125BU+C",
       "image1": "sku_images/ZA22D77C898CC0CE853F1Z-1.png",
       "image2": "",
-      "alt_sku_1": "",
+      "alt_sku_1": "N70148309V-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
