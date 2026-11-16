@@ -1,6 +1,6 @@
 {
-  "version": 450,
-  "lastUpdated": 1794818389669,
+  "version": 451,
+  "lastUpdated": 1794818657388,
   "totalProducts": 983,
   "products": [
     {
@@ -4524,16 +4524,16 @@
     {
       "id": "prod_1787659425170_avkx4j_94",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-08-25T12:03:45.170Z",
+      "updated_at": "2026-11-16T08:44:12.797Z",
       "brand": "Redblossom",
-      "category": "",
+      "category": "Regular",
       "sku": "ZACB901203C8C90DCDB67Z-1",
       "name": "Body Razor for Women's Hair Removal (Purple)",
       "barcode": "4060460710839",
       "supplier_code": "",
       "image1": "sku_images/ZACB901203C8C90DCDB67Z-1_img1.png",
       "image2": "sku_images/ZACB901203C8C90DCDB67Z-1_img2.png",
-      "alt_sku_1": "",
+      "alt_sku_1": "Z07408981ED7DB8E56687Z-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
