@@ -1,6 +1,6 @@
 {
-  "version": 444,
-  "lastUpdated": 1794662109563,
+  "version": 445,
+  "lastUpdated": 1794810108303,
   "totalProducts": 982,
   "products": [
     {
@@ -10788,16 +10788,16 @@
     {
       "id": "prod_1787659425171_rm9pe5_293",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-08-25T12:03:45.171Z",
+      "updated_at": "2026-11-16T06:21:40.774Z",
       "brand": "Homecare",
-      "category": "",
+      "category": "Regular",
       "sku": "Z914884C0F13384F9C9B5Z-1",
       "name": "Home Care Vacuum Compression 6 Zipper Storage Bags 60cm x 80cm",
       "barcode": "4060460704593",
       "supplier_code": "",
       "image1": "sku_images/Z914884C0F13384F9C9B5Z-1_img1.png",
       "image2": "sku_images/Z914884C0F13384F9C9B5Z-1_img2.png",
-      "alt_sku_1": "",
+      "alt_sku_1": "N70125626V-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
