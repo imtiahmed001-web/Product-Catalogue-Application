@@ -1,6 +1,6 @@
 {
-  "version": 459,
-  "lastUpdated": 1794926222189,
+  "version": 460,
+  "lastUpdated": 1794987483655,
   "totalProducts": 990,
   "products": [
     {
@@ -9132,7 +9132,7 @@
     {
       "id": "prod_1787659425171_evuutu_372",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-29T14:54:24.789Z",
+      "updated_at": "2026-11-18T07:37:59.013Z",
       "brand": "Homecare",
       "category": "Christmas",
       "sku": "ZDB23DF1BABC39CE12B78Z-1",
@@ -9141,7 +9141,7 @@
       "supplier_code": "",
       "image1": "sku_images/ZDB23DF1BABC39CE12B78Z-1.png",
       "image2": "",
-      "alt_sku_1": "",
+      "alt_sku_1": "ZFBF99D080FF2ABBE2FCDZ-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
