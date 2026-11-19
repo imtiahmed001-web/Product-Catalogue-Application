@@ -1,6 +1,6 @@
 {
-  "version": 507,
-  "lastUpdated": 1795077379890,
+  "version": 508,
+  "lastUpdated": 1795077447941,
   "totalProducts": 1000,
   "products": [
     {
@@ -12156,9 +12156,9 @@
     {
       "id": "prod_1787659425171_z0ucnq_235",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-08-25T12:03:45.171Z",
+      "updated_at": "2026-11-19T08:37:23.241Z",
       "brand": "Homecare",
-      "category": "",
+      "category": "Regular",
       "sku": "Z1760FFC4C438241F08F4Z-1",
       "name": "6 Pack Food Bag Clips, 3 Large & 3 Small Bag Sealing Clips",
       "barcode": "4060460704791",
@@ -12169,7 +12169,7 @@
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
-      "supplier_name": ""
+      "supplier_name": "Beone Mart Trading LLC"
     },
     {
       "id": "prod_1787659425171_z4ahez_321",
