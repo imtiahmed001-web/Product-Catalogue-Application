@@ -1,6 +1,6 @@
 {
-  "version": 505,
-  "lastUpdated": 1795077285973,
+  "version": 506,
+  "lastUpdated": 1795077347974,
   "totalProducts": 1000,
   "products": [
     {
@@ -7458,9 +7458,9 @@
     {
       "id": "prod_1787659425171_2mr4qo_301",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-08-25T12:03:45.171Z",
+      "updated_at": "2026-11-19T08:35:42.705Z",
       "brand": "Homecare",
-      "category": "",
+      "category": "Regular",
       "sku": "ZCC161EC32530C5CDCC1AZ-1",
       "name": "Bathroom Rug – 80×50 cm Non-Slip Soft Shaggy Bath Mat",
       "barcode": "-",
@@ -7471,7 +7471,7 @@
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
-      "supplier_name": ""
+      "supplier_name": "Beone Mart Trading LLC"
     },
     {
       "id": "prod_1787659425171_2rz1gb_202",
