@@ -1,6 +1,6 @@
 {
-  "version": 508,
-  "lastUpdated": 1795077447941,
+  "version": 509,
+  "lastUpdated": 1795077530922,
   "totalProducts": 1000,
   "products": [
     {
@@ -9348,7 +9348,7 @@
     {
       "id": "prod_1787659425171_f0z3il_341",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-10-06T06:52:14.163Z",
+      "updated_at": "2026-11-19T08:38:45.972Z",
       "brand": "Homecare",
       "category": "Regular",
       "sku": "ZC07970FDD61662C8729EZ-1",
@@ -9361,7 +9361,7 @@
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
-      "supplier_name": ""
+      "supplier_name": "Beone Mart Trading LLC"
     },
     {
       "id": "prod_1787659425171_f8no9j_200",
