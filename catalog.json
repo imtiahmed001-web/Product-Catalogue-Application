@@ -1,6 +1,6 @@
 {
-  "version": 535,
-  "lastUpdated": 1795097362525,
+  "version": 536,
+  "lastUpdated": 1795100813457,
   "totalProducts": 1005,
   "products": [
     {
@@ -6216,9 +6216,9 @@
     {
       "id": "prod_1787659425170_pn7iwf_45",
       "created_at": "2026-08-25T12:03:45.170Z",
-      "updated_at": "2026-08-25T12:03:45.170Z",
+      "updated_at": "2026-11-19T15:06:49.181Z",
       "brand": "Redblossom",
-      "category": "",
+      "category": "Regular",
       "sku": "ZF1CDA754A6AEDDDF2B21Z-1",
       "name": "3 Pcs Face And Eyebrow Hair Removal Safety Razor",
       "barcode": "18563586753",
@@ -6228,7 +6228,7 @@
       "alt_sku_1": "",
       "alt_sku_2": "",
       "alt_sku_3": "",
-      "saudi_sku": "",
+      "saudi_sku": "ZB8063CE1A91E5B8F83A8Z-1",
       "supplier_name": ""
     },
     {
