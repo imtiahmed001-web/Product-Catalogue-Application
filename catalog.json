@@ -1,6 +1,6 @@
 {
-  "version": 512,
-  "lastUpdated": 1795077947930,
+  "version": 513,
+  "lastUpdated": 1795078026969,
   "totalProducts": 1000,
   "products": [
     {
@@ -11814,7 +11814,7 @@
     {
       "id": "prod_1787659425171_w8l0x8_448",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-12T14:45:00.362Z",
+      "updated_at": "2026-11-19T08:47:01.749Z",
       "brand": "Homecare",
       "category": "Vase",
       "sku": "ZFCD200B7B32790268F5BZ-1",
@@ -11827,7 +11827,7 @@
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
-      "supplier_name": ""
+      "supplier_name": "Beone Mart Trading LLC"
     },
     {
       "id": "prod_1787659425171_w8zyg1_347",
