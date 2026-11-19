@@ -1,6 +1,6 @@
 {
-  "version": 529,
-  "lastUpdated": 1795086863450,
+  "version": 530,
+  "lastUpdated": 1795090187676,
   "totalProducts": 1002,
   "products": [
     {
@@ -11994,16 +11994,16 @@
     {
       "id": "prod_1787659425171_xl626m_419",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-08-25T12:03:45.171Z",
+      "updated_at": "2026-11-19T12:09:43.428Z",
       "brand": "Homecare",
-      "category": "",
+      "category": "Regular",
       "sku": "Z24333E78F2EE10284EF4Z-1",
       "name": "Door 3-Layer Bottom Draft Seal Strip Self Adhesive",
       "barcode": "-",
       "supplier_code": "",
       "image1": "sku_images/Z24333E78F2EE10284EF4Z-1.png",
       "image2": "",
-      "alt_sku_1": "",
+      "alt_sku_1": "N70218723V-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
