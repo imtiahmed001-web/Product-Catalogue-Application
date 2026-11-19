@@ -1,6 +1,6 @@
 {
-  "version": 503,
-  "lastUpdated": 1795077062922,
+  "version": 504,
+  "lastUpdated": 1795077181981,
   "totalProducts": 1000,
   "products": [
     {
@@ -16764,9 +16764,9 @@
     {
       "id": "prod_1787659425172_s6bi81_630",
       "created_at": "2026-08-25T12:03:45.172Z",
-      "updated_at": "2026-08-25T12:03:45.172Z",
+      "updated_at": "2026-11-19T08:32:56.739Z",
       "brand": "Homecare",
-      "category": "",
+      "category": "Regular",
       "sku": "Z9B438051BE19E6506E27Z-1",
       "name": "Ribbed Wall Anchors and Screws Assorted Kit – 510 PCS Plastic Drywall Anchors",
       "barcode": "-",
@@ -16777,7 +16777,7 @@
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
-      "supplier_name": ""
+      "supplier_name": "Beone Mart Trading LLC"
     },
     {
       "id": "prod_1787659425172_s85asq_807",
