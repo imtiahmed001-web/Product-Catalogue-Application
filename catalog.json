@@ -1,6 +1,6 @@
 {
-  "version": 499,
-  "lastUpdated": 1795073033151,
+  "version": 500,
+  "lastUpdated": 1795073053824,
   "totalProducts": 1000,
   "products": [
     {
@@ -3461,7 +3461,7 @@
     },
     {
       "id": "alb_1789028717867_ndqr39",
-      "brand": "Homecare",
+      "brand": "Redblossom",
       "category": "Regular",
       "sku": "Z903DB92AF3BE416F0B59Z-1",
       "name": "2Pcs Reusable Silicone Face Mask Cover – Anti-Wrinkle Sheet Mask Holder",
@@ -3475,7 +3475,7 @@
       "saudi_sku": "",
       "supplier_name": "Shenzhen Weichenyang CHINA",
       "created_at": "2026-09-10T08:25:17.867Z",
-      "updated_at": "2026-10-09T10:10:29.212Z"
+      "updated_at": "2026-11-19T07:24:09.629Z"
     },
     {
       "id": "alb_1789033310534_l2suu5",
