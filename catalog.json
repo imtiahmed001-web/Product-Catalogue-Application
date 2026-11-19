@@ -1,6 +1,6 @@
 {
-  "version": 523,
-  "lastUpdated": 1795085888921,
+  "version": 524,
+  "lastUpdated": 1795086004380,
   "totalProducts": 1002,
   "products": [
     {
@@ -10392,12 +10392,12 @@
     {
       "id": "prod_1787659425171_m8mlni_206",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-08-25T12:03:45.171Z",
+      "updated_at": "2026-11-19T11:00:00.131Z",
       "brand": "Homecare",
-      "category": "",
+      "category": "Artificial Plant",
       "sku": "ZD323F6A5C818660EF341Z-1",
       "name": "4 Pieces Mini Artificial Plants Set",
-      "barcode": "-",
+      "barcode": "4060460704630",
       "supplier_code": "",
       "image1": "sku_images/ZD323F6A5C818660EF341Z-1.png",
       "image2": "",
