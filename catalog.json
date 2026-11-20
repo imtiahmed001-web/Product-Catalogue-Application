@@ -1,6 +1,6 @@
 {
-  "version": 540,
-  "lastUpdated": 1795173778955,
+  "version": 541,
+  "lastUpdated": 1795173858900,
   "totalProducts": 1005,
   "products": [
     {
@@ -12012,7 +12012,7 @@
     {
       "id": "prod_1787659425171_xgejhj_220",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-12T13:45:19.894Z",
+      "updated_at": "2026-11-20T11:24:14.618Z",
       "brand": "Homecare",
       "category": "Candle",
       "sku": "Z6B2366F73ABC7D5BEB29Z-1",
@@ -12021,7 +12021,7 @@
       "supplier_code": "KJ972-180HC WHITE",
       "image1": "sku_images/Z6B2366F73ABC7D5BEB29Z-1.png",
       "image2": "",
-      "alt_sku_1": "",
+      "alt_sku_1": "ZCA873247B048C161EC2EZ-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
