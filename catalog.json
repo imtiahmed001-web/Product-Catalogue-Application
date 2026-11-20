@@ -1,6 +1,6 @@
 {
-  "version": 539,
-  "lastUpdated": 1795173704480,
+  "version": 540,
+  "lastUpdated": 1795173778955,
   "totalProducts": 1005,
   "products": [
     {
@@ -8970,12 +8970,12 @@
     {
       "id": "prod_1787659425171_bs7x8x_218",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-11-20T11:16:08.141Z",
+      "updated_at": "2026-11-20T11:22:54.141Z",
       "brand": "Homecare",
       "category": "Candle",
       "sku": "Z93651248B1BA5BFD249DZ-1",
       "name": "12 Pcs Red Taper Candles Set Elegant Long Stick Candles",
-      "barcode": "6815065301803",
+      "barcode": "6815065301801",
       "supplier_code": "KJ972-180 HC RED",
       "image1": "sku_images/Z93651248B1BA5BFD249DZ-1.png",
       "image2": "",
