@@ -1,6 +1,6 @@
 {
-  "version": 544,
-  "lastUpdated": 1795174479976,
+  "version": 545,
+  "lastUpdated": 1795174561331,
   "totalProducts": 1005,
   "products": [
     {
@@ -9600,7 +9600,7 @@
     {
       "id": "prod_1787659425171_g20f01_224",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-24T14:06:41.365Z",
+      "updated_at": "2026-11-20T11:35:57.048Z",
       "brand": "Homecare",
       "category": "Candle",
       "sku": "ZF9A148B0C085B31E6A67Z-1",
@@ -9609,7 +9609,7 @@
       "supplier_code": "KJ972-260HC SILVER",
       "image1": "sku_images/ZF9A148B0C085B31E6A67Z-1.png",
       "image2": "",
-      "alt_sku_1": "",
+      "alt_sku_1": "ZFF538E7FE7B73C202BC8Z-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
