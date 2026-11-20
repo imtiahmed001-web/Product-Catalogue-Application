@@ -1,6 +1,6 @@
 {
-  "version": 537,
-  "lastUpdated": 1795102673932,
+  "version": 538,
+  "lastUpdated": 1795173372651,
   "totalProducts": 1005,
   "products": [
     {
@@ -8970,7 +8970,7 @@
     {
       "id": "prod_1787659425171_bs7x8x_218",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-24T13:57:03.887Z",
+      "updated_at": "2026-11-20T11:16:08.141Z",
       "brand": "Homecare",
       "category": "Candle",
       "sku": "Z93651248B1BA5BFD249DZ-1",
@@ -8979,7 +8979,7 @@
       "supplier_code": "KJ972-180 HC RED",
       "image1": "sku_images/Z93651248B1BA5BFD249DZ-1.png",
       "image2": "",
-      "alt_sku_1": "",
+      "alt_sku_1": "ZBE3324AF2ABF62EBA50FZ-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
