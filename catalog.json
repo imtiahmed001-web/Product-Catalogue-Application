@@ -1,6 +1,6 @@
 {
-  "version": 542,
-  "lastUpdated": 1795174162949,
+  "version": 543,
+  "lastUpdated": 1795174363531,
   "totalProducts": 1005,
   "products": [
     {
@@ -10968,7 +10968,7 @@
     {
       "id": "prod_1787659425171_pskpg4_223",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-11-20T11:29:18.754Z",
+      "updated_at": "2026-11-20T11:32:39.279Z",
       "brand": "Homecare",
       "category": "Candle",
       "sku": "Z77710F8C09F9FB010E17Z-1",
@@ -10977,7 +10977,7 @@
       "supplier_code": "KJ972-260HC GOLD",
       "image1": "sku_images/Z77710F8C09F9FB010E17Z-1.png",
       "image2": "",
-      "alt_sku_1": "Z9A15F9742CB01057E57CZ-1",
+      "alt_sku_1": "",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
