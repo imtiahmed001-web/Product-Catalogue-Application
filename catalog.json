@@ -1,6 +1,6 @@
 {
-  "version": 545,
-  "lastUpdated": 1795174561331,
+  "version": 546,
+  "lastUpdated": 1795174649366,
   "totalProducts": 1005,
   "products": [
     {
@@ -7746,7 +7746,7 @@
     {
       "id": "prod_1787659425171_4ldofv_225",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-09-24T14:08:55.890Z",
+      "updated_at": "2026-11-20T11:37:25.113Z",
       "brand": "Homecare",
       "category": "Candle",
       "sku": "ZF2C2A16EAFE5BB2EDAC0Z-1",
@@ -7755,7 +7755,7 @@
       "supplier_code": "KJ972-260HC RED",
       "image1": "sku_images/ZF2C2A16EAFE5BB2EDAC0Z-1.png",
       "image2": "",
-      "alt_sku_1": "",
+      "alt_sku_1": "ZFF23EA459349443DB348Z-1",
       "alt_sku_2": "",
       "alt_sku_3": "",
       "saudi_sku": "",
