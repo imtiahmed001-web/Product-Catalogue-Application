@@ -1,8 +1,26 @@
 {
-  "version": 556,
-  "lastUpdated": 1795446097962,
-  "totalProducts": 1008,
+  "version": 557,
+  "lastUpdated": 1795446281223,
+  "totalProducts": 1009,
   "products": [
+    {
+      "id": "alb_1795446276948_vd22hu",
+      "brand": "Homecare",
+      "category": "Flag",
+      "sku": "Z8A40C2CA59E417B733B5Z-1",
+      "name": "UAE Desk Flag with Black Pole & Base – 32 × 21 cm, United Arab Emirates Table Flag Set for Office, Home & National Day Decoration",
+      "barcode": "",
+      "supplier_code": "",
+      "image1": "",
+      "image2": "",
+      "alt_sku_1": "",
+      "alt_sku_2": "",
+      "alt_sku_3": "",
+      "saudi_sku": "",
+      "supplier_name": "",
+      "created_at": "2026-11-23T15:04:36.948Z",
+      "updated_at": "2026-11-23T15:04:36.948Z"
+    },
     {
       "id": "alb_1795445143072_b5klof",
       "brand": "Redblossom",
