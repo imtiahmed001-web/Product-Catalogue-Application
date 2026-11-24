@@ -1,8 +1,26 @@
 {
-  "version": 557,
-  "lastUpdated": 1795446281223,
-  "totalProducts": 1009,
+  "version": 558,
+  "lastUpdated": 1795530188701,
+  "totalProducts": 1010,
   "products": [
+    {
+      "id": "alb_1795530184164_58xxnp",
+      "brand": "Homecare",
+      "category": "Christmas",
+      "sku": "Z59D951CB44FA820F62C6Z-1",
+      "name": "Wooden Christmas Nutcracker Soldier Ornaments – Set of 6, 13 cm Hanging Christmas Tree Decorations in Assorted Festive Designs",
+      "barcode": "",
+      "supplier_code": "",
+      "image1": "",
+      "image2": "",
+      "alt_sku_1": "",
+      "alt_sku_2": "",
+      "alt_sku_3": "",
+      "saudi_sku": "",
+      "supplier_name": "",
+      "created_at": "2026-11-24T14:23:04.164Z",
+      "updated_at": "2026-11-24T14:23:04.164Z"
+    },
     {
       "id": "alb_1795446276948_vd22hu",
       "brand": "Homecare",
