@@ -1,8 +1,26 @@
 {
-  "version": 562,
-  "lastUpdated": 1795531066596,
-  "totalProducts": 1013,
+  "version": 563,
+  "lastUpdated": 1795531227210,
+  "totalProducts": 1014,
   "products": [
+    {
+      "id": "alb_1795531222640_w5wtgh",
+      "brand": "Homecare",
+      "category": "Christmas",
+      "sku": "Z9DA648AB324BBE0E5A11Z-1",
+      "name": "LED Christmas Curtain Lights",
+      "barcode": "",
+      "supplier_code": "",
+      "image1": "",
+      "image2": "",
+      "alt_sku_1": "",
+      "alt_sku_2": "",
+      "alt_sku_3": "",
+      "saudi_sku": "",
+      "supplier_name": "",
+      "created_at": "2026-11-24T14:40:22.640Z",
+      "updated_at": "2026-11-24T14:40:22.640Z"
+    },
     {
       "id": "alb_1795530939204_nvb1w1",
       "brand": "Homecare",
