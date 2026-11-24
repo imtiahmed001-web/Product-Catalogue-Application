@@ -1,6 +1,6 @@
 {
-  "version": 564,
-  "lastUpdated": 1795531587482,
+  "version": 565,
+  "lastUpdated": 1795531755927,
   "totalProducts": 1015,
   "products": [
     {
@@ -10464,7 +10464,7 @@
     {
       "id": "prod_1787659425171_l0nk1l_381",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-11-18T07:49:47.254Z",
+      "updated_at": "2026-11-24T14:49:10.849Z",
       "brand": "Homecare",
       "category": "Christmas",
       "sku": "ZEF222674636BE274FAD6Z-1",
@@ -10474,7 +10474,7 @@
       "image1": "sku_images/ZEF222674636BE274FAD6Z-1.png",
       "image2": "",
       "alt_sku_1": "Z037E7EB4C9E389F1FFFAZ-1",
-      "alt_sku_2": "",
+      "alt_sku_2": "ZE51836D9567EB3227B9AZ-1",
       "alt_sku_3": "",
       "saudi_sku": "",
       "supplier_name": "Beone Mart Trading LLC"
