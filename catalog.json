@@ -1,6 +1,6 @@
 {
-  "version": 575,
-  "lastUpdated": 1795676150315,
+  "version": 576,
+  "lastUpdated": 1795676691313,
   "totalProducts": 1015,
   "products": [
     {
@@ -7458,7 +7458,7 @@
     {
       "id": "prod_1787659425171_135ozm_212",
       "created_at": "2026-08-25T12:03:45.171Z",
-      "updated_at": "2026-10-16T13:45:08.376Z",
+      "updated_at": "2026-11-26T07:04:46.760Z",
       "brand": "Homecare",
       "category": "Candle",
       "sku": "Z96B5DD8BAB0E279CDDBAZ-1",
@@ -7468,7 +7468,7 @@
       "image1": "sku_images/Z96B5DD8BAB0E279CDDBAZ-1.png",
       "image2": "",
       "alt_sku_1": "Z1D2B1684374D0EA42918Z-1",
-      "alt_sku_2": "",
+      "alt_sku_2": "Z400B34E3CB813E6A7390Z-1",
       "alt_sku_3": "",
       "saudi_sku": "",
       "supplier_name": "Beone Mart Trading LLC"
